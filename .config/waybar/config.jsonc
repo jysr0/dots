@@ -38,6 +38,7 @@
 	"modules-left": [
         // "image",
         // "sway/workspaces",
+        // "custom/logo",
         "hyprland/workspaces",
 		"hyprland/window"
         // "dwl/tags"
@@ -66,8 +67,8 @@
         "network",
 		// "group/two",
         
-		// "wireplumber",
-		"pulseaudio",
+		"wireplumber",
+		// "pulseaudio",
 		// "pulseaudio/slider",
         "backlight",
 		// "backlight/slider",
@@ -751,23 +752,50 @@
     "battery": {
         // "bat": "/sys/class/power_supply/BAT1/",
         // "adapter": "/sys/class/power_supply/ACAD/",
-		"full-at": 90,
+		// "full-at": 90,
 		"design-capacity": false,
 		"interval": 60,
 		"states": {
             // "good": 90,
-            "warning": 40,
+            "warning": 43,
             "critical": 40
         },
         "format": "{icon} {capacity}%",
         "format-full": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
+        "format-charging": "{icon} {capacity}%",
 		"format-time": "{H}H:{M}Min",
-        // "format-plugged": " {capacity}%",
-        /*"format-alt": "{icon} {time}",
-          "format-good": "", //An empty format will hide the module
-          "format-full": "",*/
-        "format-icons": ["", "", "", "", ""],
+        "format-plugged": "{icon} {capacity}%",
+        // "format-alt": "{time}",
+        // "format-good": "", //An empty format will hide the module
+        // "format-icons": ["", "", "", "", ""],
+        "format-icons": {
+			"plugged": "",
+			"full": "",
+			"charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+		},
 		"tooltip": false,
 		"max-length": 8,
 		"min-length": 3,
@@ -811,25 +839,26 @@
         "interval": 4,
         "family": "ipv4",
         "format": "{icon}",
-        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "format-ethernet": "  {essid}", 
-        "format-wifi": "  {essid}", 
-        "format-linked": "  {ifname} (No IP)",
-        "format-disconnected": "⚠ (No conn.)", 
-        "format-disabled": "⚠ (Disabled)", 
-        "format-icons": {
-			"wifi": "",
-			"ethernet": "",
-			"linked": "  (No IP)",
-			"disconnected": "⚠ (Disconnected)",
-			"disabled": "⚠ (Disabled)"
-		}, 
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-ethernet": "{icon} {essid}", 
+        "format-wifi": "{icon} {essid}", 
+        "format-linked": "{icon} {ifname}",
+        "format-disconnected": "{icon}", 
+        "format-disabled": "{icon}", 
 		"tooltip": true,
-        "tooltip-format": "Port: {ifname}\nIP: {ipaddr}, CIDR: /{cidr}\nSSID: {essid}\nGateway: {gwaddr}\nStrength: {signalStrength}\ntx/rx: {bandwidthUpBits} / {bandwidthDownBits}",
-        "tooltip-format-ethernet": "Port: {ifname}\nIP: {ipaddr}, CIDR: /{cidr}\nSSID: {essid}\nGateway: {gwaddr}\nStrength: {signalStrength}\ntx/rx: {bandwidthUpBits} / {bandwidthDownBits}",
-        "tooltip-format-wifi": "Port: {ifname}\nIP: {ipaddr}, CIDR: /{cidr}\nSSID: {essid}\nGateway: {gwaddr}\nStrength: {signalStrength}\ntx/rx: {bandwidthUpBits} / {bandwidthDownBits}",
+        // "tooltip-format": "Port: {ifname}\nIP: {ipaddr}, CIDR: /{cidr}\nSSID: {essid}\nGateway: {gwaddr}\nStrength: {signalStrength}\ntx/rx: {bandwidthUpBits} / {bandwidthDownBits}",
+        "tooltip-format": "Port: {ifname}\nSSID: {essid}\ntx / rx: ⇡{bandwidthUpBits} / ⇣{bandwidthDownBits}",
+        "tooltip-format-ethernet": "Port: {ifname}\nSSID: {essid}\ntx / rx: ⇡{bandwidthUpBits} / ⇣{bandwidthDownBits}",
+        "tooltip-format-wifi": "Port: {ifname}\nSSID: {essid}\ntx / rx: ⇡{bandwidthUpBits} / ⇣{bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "tooltip-format-disabled": "Disabled",
+		"format-icons": {
+			"wifi": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+			"ethernet": "󰀂",
+			"linked": "",
+			"disconnected": "󰞃",
+			"disabled": ""
+		},
 		//"on-update": "", 
 		//"on-click": "",
 		//"on-click-release": "",
@@ -863,8 +892,8 @@
    
 	"wireplumber": {
         "node-type": "Audio/Sink",
-        "format": "{icon}  {volume}%",
-        "format-muted": "",
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁",
 		"format-icons": ["", "", ""],
 		"tooltip": false,
 		"tooltip-format": "{node_name}",
@@ -877,35 +906,35 @@
 		"on-update": "",
 		"states": {},
 		"on-click": "",
-		"on-click-middle": "",
-		"smooth-scrolling-threshold": ,*/
+		"on-click-middle": "",*/
+		"smooth-scrolling-threshold": 1.4,
 		"scroll-step": 1.0,
 		// "menu": "",
 		// "menu-file": "",
 		// "menu-actions": [],
 		"on-scroll-up": "pamixer -i 2",
 		"on-scroll-down": "pamixer -d 2",
-		"on-click-right": "pamixer -t"
-		// "expand": false
+		"on-click-right": "pamixer -t",
+		"expand": false
     },
 	"pulseaudio": {
         "scroll-step": 1, // can be a float
-        "format": "{icon}  {volume}%", // {format_source} {volume} {icon} {desc}
-        /*"format-bluetooth": "{icon} {volume}%", //{format_source}",
-        "format-bluetooth-muted": " {icon}", //{format_source}",*/
-        "format-muted": "", //{format_source}",
+        "format": "{icon} {volume}%", // {format_source} {volume} {icon} {desc}
+        // "format-bluetooth": "{icon} {volume}%",
+        // "format-bluetooth-muted": " {icon}",
+        "format-muted": "󰖁",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
-            /*"headphone": "",
-            "speaker": "",
-            "hdmi": "",
-            "hifi": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",*/
+            // "headphone": "",
+            // "speaker": "",
+            // "hdmi": "",
+            // "hifi": "",
+            // "hands-free": "",
+            // "headset": "",
+            // "phone": "",
+            // "portable": "",
+            // "car": "",
             "default": ["", "", ""]
         },
 		"max-volume": 100,
@@ -954,7 +983,7 @@
 	},
 	
 	"disk": {
-		"path": "/home",
+		"path": "/users",
 		"interval": 40,
 		"format": "󰉌 {percentage_used}%",
 		// "format": "󰉌  {used} / {total}",
@@ -979,7 +1008,40 @@
 		"menu-actions": [],*/
 		"expand": false
 	},
-	
+
+	"custom/logo": {
+        "format": "",
+		// "return-type": "json",
+        /*"format-icons": {
+            "default": "🎜"
+        },*/
+        // "exec": "",
+        // "exec-if": "",
+		// "exec-on-event": true,
+		// "hide-empty-text": true,
+		// "interval": ,
+		// "restart-interval": , // Can't be used with `interval`
+		// "signal": 16,
+		"max-length": 5,
+		"min-length": 3,
+		/*"align": 0.5,
+		"rotate": 0,
+		"justify": "center",
+		"on-update": "",*/
+		// "on-click": "rofi -show run",
+		/*"on-click-middle": "",
+		"on-click-right": "",
+		"on-scroll-up": , 
+		"on-scroll-down": , 
+		"smooth-scrolling-threshold": ,
+		"menu": "",
+		"menu-file": "",
+		"menu-actions": [],*/
+		"expand": false,
+		"escape": false,
+		"tooltip": false
+		//"tooltip-format": ""
+    },
 	"custom/uptime": {
         "format": "{text}",
         // "return-type": "json",
