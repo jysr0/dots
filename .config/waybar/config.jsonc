@@ -11,7 +11,7 @@
     "layer": "top",
    	// "output": ["N156BGE-E41 LCD Monitor"],
     "position": "top",
-    "height": 20, /*20*/
+    "height": 24, /*20*/
     // "width": ,
     // "margin": "3",
 	"margin-top": 0,
@@ -40,6 +40,7 @@
         // "sway/workspaces",
         // "custom/logo",
         "hyprland/workspaces",
+		"custom/pipe",
 		"hyprland/window"
         // "dwl/tags"
         // "sway/mode",
@@ -52,8 +53,9 @@
         //"hyprland/window"
     ],*/
     "modules-right": [
+		"custom/pipe",
         "tray",
-        // "mpd",
+		// "mpd",
         // "power-profiles-daemon",
         // "sway/language",
 		
@@ -650,7 +652,7 @@
         "format-warning": "{icon} {temperatureC}°C",
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C", // {temperatureC}°C {temperatureF}°F {temperatureK}°K
-        "format-icons": ["", "", ""],
+        "format-icons": ["","",""],
 		"tooltip": false,
 		"tooltip-format": "",
 		"interval": 30,
@@ -1009,6 +1011,15 @@
 		"expand": false
 	},
 
+	"custom/pipe": {
+		"format": "┃",
+		// "format": "│",
+		"max-length": 2,
+		"min-length": 1,
+		"expand": false,
+		"escape": false,
+		"tooltip": false
+	},
 	"custom/logo": {
         "format": "",
 		// "return-type": "json",
