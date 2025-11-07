@@ -11,7 +11,7 @@
     "layer": "top",
    	// "output": ["N156BGE-E41 LCD Monitor"],
     "position": "top",
-    "height": 24, /*20*/
+    "height": 24, /*same as tray "icon-size"*/
     // "width": ,
     // "margin": "3",
 	"margin-top": 0,
@@ -19,7 +19,7 @@
 	"margin-left": 0,
 	"margin-right": 0,
 	"no-center": false,
-	"spacing": 3,
+	"spacing": 3, /*same as tray "spacing"*/
 	// "name": "bar1",
 	// "mode": "overlay",
 	"start_hidden": false,
@@ -54,7 +54,7 @@
     ],*/
     "modules-right": [
 		"custom/pipe",
-        "tray",
+        "tray", /*tray is the new modules that show when their app opens like telegram app tray icon*/
 		// "mpd",
         // "power-profiles-daemon",
         // "sway/language",
@@ -986,6 +986,7 @@
 	
 	"disk": {
 		"path": "/home",
+		// "path": "/users",
 		"interval": 40,
 		"format": "󰉌 {percentage_used}%",
 		// "format": "󰉌  {used} / {total}",
