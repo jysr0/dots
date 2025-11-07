@@ -932,8 +932,8 @@
             // "speaker": "",
             // "hdmi": "",
             // "hifi": "",
-            // "hands-free": "",
-            // "headset": "",
+            // "hands-free": "",
+            // "headset": "",
             // "phone": "",
             // "portable": "",
             // "car": "",
@@ -985,7 +985,7 @@
 	},
 	
 	"disk": {
-		"path": "/users",
+		"path": "/home",
 		"interval": 40,
 		"format": "󰉌 {percentage_used}%",
 		// "format": "󰉌  {used} / {total}",
@@ -1024,7 +1024,7 @@
         "format": "",
 		// "return-type": "json",
         /*"format-icons": {
-            "default": "🎜"
+            "default": ""
         },*/
         // "exec": "",
         // "exec-if": "",
@@ -1057,7 +1057,7 @@
         "format": "{text}",
         // "return-type": "json",
         /*"format-icons": {
-            "default": "🎜"
+            "default": ""
         },*/
         "exec": "$HOME/.config/waybar/uptime.sh 2> /dev/null",
         // "exec-if": "",
@@ -1091,7 +1091,7 @@
         "return-type": "json",
         "format-icons": {
             "spotify": "",
-            "default": "🎜"
+            "default": ""
         },
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null", // Filter player based on name
