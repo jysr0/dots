@@ -560,8 +560,8 @@
     },
     
 	"tray": {
-        "icon-size": 26,
-        "spacing": 3,
+        "icon-size": 24, // same as bar "height"
+        "spacing": 3, // same as bar "spacing"
         "show-passive-items": false,
         // "smooth-scrolling-threshold": 10,
         // "reverse-direction": false,
