@@ -895,7 +895,7 @@
 	"wireplumber": {
         "node-type": "Audio/Sink",
         "format": "{icon} {volume}%",
-        "format-muted": "󰖁",
+        "format-muted": "",
 		"format-icons": ["", "", ""],
 		"tooltip": false,
 		"tooltip-format": "{node_name}",
@@ -923,8 +923,8 @@
         "scroll-step": 1, // can be a float
         "format": "{icon} {volume}%", // {format_source} {volume} {icon} {desc}
         // "format-bluetooth": "{icon} {volume}%",
-        // "format-bluetooth-muted": " {icon}",
-        "format-muted": "󰖁",
+        // "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
