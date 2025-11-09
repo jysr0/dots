@@ -59,12 +59,13 @@ unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-:set linebreak
+" :set linebreak	"see :help 'linebreak'
+" :set wrap			"see :help 'wrap'
 :set relativenumber
 :set number
-":set whichwrap=b,s,<,>,[,]
+" :set whichwrap=b,s,<,>,[,]
 :set incsearch
-":set hlsearch
+" :set hlsearch
 :set tabstop=4
 
 autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files
