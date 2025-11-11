@@ -1,0 +1,904 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 2.0.0
+ *
+ * each '*{}' and '#....{}' is a widget
+ * @: to referrence property in "*{}", it is same as: var(PROPERTY NAME, DEFAULT)
+ * inherit: to referrence property in "parent" section
+ * see: rofi-theme (5).
+ **/
+* {
+    // enabled: true;
+
+
+
+	// red:                         rgba ( 220, 50, 47, 100 % );
+	red:                         #773333ff; /* #rrggbbaa ; aa suffix is for opacity */
+    // blue:                        rgba ( 38, 139, 210, 100 % );
+    blue:                        #005577ff;
+    green:                       #007730ff;
+    gray:                        #888888ff;
+    gray1:                       #333333ff;
+    
+    // lightfg:                     rgba ( 88, 104, 117, 100 % );
+    // lightbg:                     rgba ( 238, 232, 213, 100 % );
+
+	// background:                  rgba ( 253, 246, 227, 100 % );
+    background:                  #222222ff; /* black */
+    // foreground:                  rgba ( 0, 43, 54, 100 % );
+    foreground:                  #bbbbbbff; /* white */
+
+
+    
+    margin: 0px; /* padding margin, -1 to disable*/
+	border: 0px;
+    padding: 5px; 
+    border-radius: 0px;
+    border-aa: false;
+    border-disable-nvidia-workaround: true;
+    border-color:                #222222ff;
+	
+	
+
+	cursor: pointer; /* default pointer text */
+	font:          "CaskaydiaMono Nerd Font Mono 10"; 
+	prompt-font:   "CaskaydiaMono Nerd Font Mono 10"; 
+	entry-font:    "CaskaydiaMono Nerd Font Mono Italic 10"; 
+	element-font:  "CaskaydiaMono Nerd Font Mono 10"; 
+
+
+    
+	// background-image: "";
+	background-color:            #222222ff;
+  
+
+ 
+	// separatorcolor:              var(foreground);
+	spacing:                     2px;
+
+
+	
+    // selected-normal-background:  var(lightfg);
+    // selected-urgent-background:  var(red);
+    // selected-active-background:  var(blue);
+    
+	// selected-normal-foreground:  var(lightbg);
+    // selected-urgent-foreground:  var(background);
+	// selected-active-foreground:  var(background);
+    
+	// normal-background:           var(background);
+    // urgent-background:           var(background);
+    // active-background:           var(background);
+    
+    // normal-foreground:           var(foreground);
+	// urgent-foreground:           var(red);
+    // active-foreground:           var(blue);
+    
+    // alternate-normal-background: var(lightbg);
+	// alternate-urgent-background: var(lightbg);
+    // alternate-active-background: var(lightbg);
+    
+	// alternate-normal-foreground: var(foreground);
+    // alternate-urgent-foreground: var(red);
+    // alternate-active-foreground: var(blue);
+}
+
+
+
+#window {
+    enabled: true;
+    
+	margin: var(margin, 0px); /* or instead of '@margin' use:  PROPERTY NAME is 'margin' */
+    // border: var(border, 0px);
+    border: 1px;
+	padding: var(padding, 5px); 
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    
+	cursor: var(cursor, default);
+	font: var(font, "monospace 10");
+	// transparency: 0.8; /* real background screenshot Path */
+	location: center; /* (center|east|north|west|south|north east|north west|south west|south east) */
+	// anchor: north;
+	fullscreen: false;
+	width: 40%;    /* #px | #.#% */
+	// x-offset: ; /* #px | #.#% */
+	// y-offset: ; /* #px | #.#% */
+}
+
+
+
+#mainbox {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	padding: var(padding, 0px);
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+}
+
+
+
+#inputbar {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	padding: 1px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	spacing:    var(spacing, 5px);
+    text-color: var(foreground, #bbbbbbff);
+    children: [ "box","prompt","textbox-prompt-colon", /*"textbox-current-entry","icon-current-entry",*/ "entry","overlay","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+}
+
+#prompt {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	font: var(prompt-font, "monospace 10");
+	spacing:    var(spacing, 5px);
+    text-color: var(foreground, #bbbbbbff);
+}
+
+#entry {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	font: var(entry-font, "monospace Italic 10");
+	spacing:    var(spacing, 5px);
+    text-color: var(foreground, #bbbbbbff);
+    
+    placeholder:       "search...";
+	placeholder-color: var(gray, #888888ff);
+}
+
+#num-filtered-rows {
+	enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(gray, #888888ff);
+	expand:     false;
+}
+
+#num-rows {
+	enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(gray, #888888ff);
+	expand:     false;
+}
+
+#case-indicator {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(gray, #888888ff);
+	spacing:    var(spacing, 5px);
+}
+
+#message {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+	// border: 2px dash 0px 0px ;
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	padding: 1px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+	
+	font: var(font, "monospace 10");
+}
+
+#textbox {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+
+	font: var(font, "monospace 10");
+	// str: "";     /* like 'content' */
+	// content: ""; /* like 'str' */
+	vertical-align:   0.5;
+	horizontal-align: 0;
+	
+	text-color:         var(foreground, #bbbbbbff);
+	text-transform:     var(foreground, #bbbbbbff);
+	text-outline:       false;
+	// text-outline-width: 1px;
+	text-outline-color: var(gray, #888888ff);
+	
+	// highlight: none;
+	// highlight: var(red, #773333ff);
+	// width: 30%;
+	
+	// placeholder: "Error messages appear here...";
+	// placeholder-markup: true;
+	// placeholder-color: var(gray, #888888ff);
+	
+	blink: false;
+	markup: true;
+	// tab-stops: [];
+    
+	cursor: var(cursor, default);
+	// cursor-width: 2px;
+	cursor-color: var(foreground, #bbbbbbff);
+	hide-cursor-on-empty: true;
+	cursor-outline: false;
+	// cursor-outline-width: 2px;
+	cursor-outline-color: var(gray, #888888ff);
+}
+
+#textbox-current-entry {
+	enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+}
+
+#textbox-num-sep {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+	
+    str:        "|";
+    text-color: var(gray, #888888ff);
+	expand:     false;
+}
+
+#textbox-prompt-colon {
+    enabled: true;
+    
+	// margin:     0px 0.3000em 0.0000em 0.0000em ;
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+
+    str:        ":";
+    text-color: var(foreground, #bbbbbbff);
+	expand:     false;
+}
+
+#overlay {
+    enabled: true;
+    
+    // margin:           0px 0.2000em ;
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding:          0px 0.2000em ;
+	// padding: var(padding, 1px);
+	padding: 1px 0.2000em;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    text-color: var(foreground, #bbbbbbff);
+	
+	foreground-color: var(background, #222222ff);
+    timeout: 5; /* seconds */
+}
+
+#box {
+	enabled: false;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	orientation: horizontal; /* (horizontal|vertical) */
+    spacing: var(spacing, 5px);
+}
+
+#icon-current-entry {
+	enabled: false;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+}
+
+
+
+#listview {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+
+	scrollbar:       true;
+    scrollbar-width: 6px; /* same as 'width' in scrollbar widget */
+    
+	fixed-height:  false;
+    lines:         10;
+    columns:       1;
+    fixed-columns: true;
+    dynamic:       false;
+    
+	cycle: true;
+    reverse: false;
+    // spacing: var(spacing, 3px);
+    spacing: 0px; /* sets the spacing between its 'children' widgets */
+    
+	layout: vertical;
+    flow: vertical;
+	require-input: false;
+	children:   ["scrollbar","element"];
+}
+
+#scrollbar {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 2px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(gray1, #333333ff);
+    
+	background-color: var(gray1, #333333ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+	
+	width:        6px; /* let 'width' > 'handle-width' for better viewing */
+    handle-width: 4px;
+    handle-color: var(foreground, #bbbbbbff);
+	handle-rounded-corners: false;
+}
+
+#element {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+
+	// spacing: var(spacing, 3px);
+	spacing: 3px; /* sets the spacing between its 'children' widgets */
+    
+	// text-color: var(foreground, #bbbbbbff); /* dose not belong to here */
+    // highlight: none #bbbbbbff;              /* dose not belong to here */
+    // highlight: bold #bbbbbbff;              /* dose not belong to here */
+	
+	// children:   ["element-icon","element-text","element-index"];
+}
+
+#element-icon {
+    enabled: false;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    // border-color: var(border-color, #222222ff);
+    border-color: transparent;
+    
+	// background-color: var(background-color, #222222ff);
+	background-color: transparent;
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+    // text-color: var(foreground, #bbbbbbff);
+	size:             1.0000em ;
+}
+
+#element-text {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    // border-color: var(border-color, #222222ff);
+    border-color: transparent;
+    
+	// background-color: var(background-color, #222222ff);
+	background-color: transparent;
+    // background-image: "";
+    cursor: var(cursor, default);
+
+	font: var(element-font, "monospace 10");
+	highlight: none;
+    // highlight: var(red);
+    text-color: var(foreground, #bbbbbbff);
+}
+
+#element-index {
+	enabled: false;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    // border-color: var(border-color, #222222ff);
+    border-color: transparent;
+    
+	// background-color: var(background-color, #222222ff);
+	background-color: transparent;
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+#element selected.normal {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(blue, #005577ff);
+    
+	background-color: var(blue, #005577ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+#element selected.urgent {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(red, #773333ff);
+    
+	background-color: var(red, #773333ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+#element selected.active {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(green, #007730ff);
+    
+	background-color: var(green, #007730ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+/*
+#element normal.normal {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+#element normal.urgent {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(red, #773333ff);
+}
+
+#element normal.active {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(green, #007730ff);
+}
+
+#element alternate.normal {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(foreground, #bbbbbbff);
+}
+
+#element alternate.urgent {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(red, #773333ff);
+}
+
+#element alternate.active {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	text-color: var(green, #007730ff);
+}
+*/
+
+
+
+/*
+#sidebar {
+    enabled: false;
+    
+	margin:  var(margin, 0px);
+	// border:       2px dash 0px 0px ;
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(gray1, #333333ff);
+    
+	background-color: var(gray1, #333333ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+}
+*/
+
+
+
+/*
+#mode-switcher {
+	enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(gray1, #333333ff);
+    
+	background-color: var(gray1, #333333ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+	
+	vertical-align:   0.9;
+	horizontal-align: 0.5;
+	// spacing: var(spacing, 5px);
+	spacing: 10px;
+	children: ["button"];
+}
+
+#button {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	// vertical-align:   0.9;
+	// horizontal-align: 0.5;
+	// spacing:    0;
+    text-color: var(foreground, #bbbbbbff);
+}
+
+#button selected {
+    enabled: true;
+    
+	margin:  var(margin, 0px);
+    border:  var(border, 0px);
+	// padding: var(padding, 1px);
+	// padding: 0px;
+    
+	border-radius: var(border-radius, 0px);
+    border-aa: var(border-aa, false);
+    border-disable-nvidia-workaround: var(border-disable-nvidia-workaround, true);
+    border-color: var(border-color, #222222ff);
+    
+	background-color: var(background-color, #222222ff);
+    // background-image: "";
+    cursor: var(cursor, default);
+    
+	font: var(font, "monospace 10");
+	// vertical-align:   0.9;
+	// horizontal-align: 0.5;
+	// spacing:    0;
+    text-color: var(blue, #005577ff);
+	
+	// action: "kb-primary-paste";
+}
+*/
