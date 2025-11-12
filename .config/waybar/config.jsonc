@@ -319,6 +319,8 @@
 		 "move-to-monitor": false,
 		 // "ignore-workspaces": [],
 		 "sort-by": "default", // number name id special-centered
+		 "on-scroll-up": "hyprctl dispatch workspace e+1",
+         "on-scroll-down": "hyprctl dispatch workspace e-1",
 		 "expand": false
     },
 	"hyprland/window": {
