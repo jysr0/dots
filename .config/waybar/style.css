@@ -2,6 +2,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
     /* font-family: FontAwesome, monospace; */
+    /* font-family: monospace; */
     font-size: 13px;
 }
 
@@ -9,8 +10,8 @@ window#waybar {
     background-color: rgba(34, 34, 34, 1.0);
     border-bottom: 0px solid rgba(34, 34, 34, 1.0);
     color: #bbbbbb;
-    /* transition-property: background-color;
-    transition-duration: .3s; */
+    /* transition-property: background-color; */
+    /* transition-duration: .3s; */
 }
 
 window#waybar.hidden {
@@ -86,6 +87,7 @@ you can set a style on hover for any module like this
 }
 
 
+
 #clock,
 #battery,
 #cpu,
@@ -103,6 +105,8 @@ you can set a style on hover for any module like this
 #scratchpad,
 #power-profiles-daemon,
 
+
+
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -113,12 +117,28 @@ you can set a style on hover for any module like this
 	color: #bbbbbb;
 }
 
-/*
+
 #hyprland-window {
     background-color: #222222;
 	color: #bbbbbb;
 }
-*/
+
+#hyprland-language {
+    background-color: #005577;
+	color: #bbbbbb;
+	/* padding-top: 4px; */
+	/* padding-bottom: 4px; */
+	/* padding-left: 4px; */
+	/* padding-right: 4px; */
+}
+
+#language {
+    background: #005577;
+    color: #bbbbbb;
+    /* padding: 0 5px; */
+    /* margin: 0 5px; */
+    /* min-width: 16px; */
+}
 
 #workspaces {
     margin: 0 3px;
@@ -216,9 +236,9 @@ label:focus {
     opacity: 1;
     background-image: none;
     background-color: #222222;
-    /* border: none; */
-    /* border: 1px;
-    border-radius: 5px; */
+    border: none; 
+    border: 1px; 
+    border-radius: 5px; 
     box-shadow: none;
 }
 
@@ -228,7 +248,7 @@ label:focus {
     opacity: 0;
     background-image: none;
     background-color: #bbbbbb;
-    /* border: none; */
+    border: none; 
     border: 1px;
     border-radius: 5px;
 }
@@ -236,20 +256,20 @@ label:focus {
 #backlight-slider through {
 	min-height: 80px;
     min-width: 10px;
-    /* opacity: 0; */
+    opacity: 0; 
     background-color: #000000;
-    /* border: none;
-    border: 1px; */
+    border: none;
+    border: 1px; 
     border-radius: 5px;
 }
 
 #backlight-slider highlight {
-	/* min-height: 0px; */
+	min-height: 0px; 
     min-width: 10px;
-    /* opacity: 0; */
+    opacity: 0;
     background-color: #005577;
-    /* border: none;
-    border: 1px; */
+    border: none;
+    border: 1px; 
     border-radius: 5px;
 }
 
@@ -268,15 +288,18 @@ label:focus {
     color: #bbbbbb;
 }
 
+#pulseaudio:hover {
+}
+
 #pulseaudio-slider {
 	min-height: 100px;
     min-width: 200px;
     opacity: 1;
     background-image: none;
     background-color: #222222;
-    /* border: none; */
-    /* border: 1px;
-    border-radius: 5px; */
+    border: none; 
+    border: 1px; 
+    border-radius: 5px; 
     box-shadow: none;
 }
 
@@ -286,7 +309,7 @@ label:focus {
     opacity: 0;
     background-image: none;
     background-color: #bbbbbb;
-    /* border: none; */
+    border: none; 
     border: 1px;
     border-radius: 5px;
 }
@@ -294,20 +317,20 @@ label:focus {
 #pulseaudio-slider trough {
     min-height: 80px;
     min-width: 10px;
-    /* opacity: 0; */
+    opacity: 0; 
     background-color: #000000;
-    /* border: none;
-    border: 1px; */
+    border: none; 
+    border: 1px; 
     border-radius: 5px;
 }
 
 #pulseaudio-slider highlight {
-    /* min-height: 0px; */
+    min-height: 0px; 
     min-width: 10px;
-    /* opacity: 0; */
+    opacity: 0; 
     background-color: #005577;
-    /* border: none;
-    border: 1px; */
+    border: none; 
+    border: 1px; 
     border-radius: 5px;
 }
 
@@ -403,24 +426,16 @@ label:focus {
     color: #bbbbbb;
 }
 
-#language {
-    background: #005577;
-    color: #bbbbbb;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
 #keyboard-state {
     background: #005577;
     color: #bbbbbb;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+    /* padding: 0 0px; */
+    /* margin: 0 5px; */
+    /* min-width: 16px; */
 }
 
 #keyboard-state > label {
-    padding: 0 5px;
+    /* padding: 0 5px; */
 }
 
 #keyboard-state > label.locked {
@@ -436,11 +451,11 @@ label:focus {
 }
 
 #privacy {
-    padding: 0;
+    /* padding: 0; */
 }
 
 #privacy-item {
-    padding: 0 5px;
+    /* padding: 0 5px; */
     color: white;
 }
 

@@ -63,7 +63,7 @@
 		"cpu",
         "temperature",
         
-		"disk",
+		// "disk",
 		
 		// "group/one",
         "network",
@@ -75,15 +75,15 @@
         "backlight",
 		// "backlight/slider",
         // "hyprland/submap",
-        // "hyprland/language",
         "battery",
         // "battery#bat2",
         
 		// "bluetooth",
 
 		"clock",
+        "hyprland/language",
         // "inhibitor",
-        // "idle_inhibitor",
+        "idle_inhibitor",
         // "keyboard-state",
         "custom/uptime",
         "custom/power"
@@ -333,10 +333,10 @@
 		"expand": true
 	},
 	"hyprland/language": {
-		"format": "{}",
-		"format-ar": "{}",
+		"format": "{short}", /* {short} {shortDescription} {long} {variant} */
+		"format-ara": "{short}",
 		"keyboard-name": "at-translated-set-2-keyboard",
-		// "tooltip": false,
+		"tooltip": false,
 		// "menu": "",
 		// "menu-file": "",
 		// "menu-actions": [],
@@ -506,18 +506,19 @@
     },
 	
 	"inhibitor": {
-        // "what": ["handle-lid-switch", "sleep"],
+        // "what": ["handle-lid-switch", "sleep"], /* sleep shutdown idle handle-power-key handle-suspend-key handle-hibernate-key handle-lid-switch */
         "format": "{icon}", // {status}
         "format-icons": {
             "activated": "",
             "deactivated": ""
         },
 		// "timeout": 0,
-		"tooltip": false,
+		// "tooltip": true,
+		// "tooltip-format": "{status}",
 		"start-activated": false,
-		/*"max-length": 4,
-		"min-length": 3,
-		"align": 0.5,
+		"max-length": 3,
+		"min-length": 1,
+		/*"align": 0.5,
 		"rotate": 0,
 		"justify": "center",
 		"on-update": "",
@@ -540,11 +541,11 @@
         },
 		// "timeout": 0,
 		"tooltip": true,
-		"tooltip-format-activated": "{status}",
-		"tooltip-format-disactivated": "{status}",
+		"tooltip-format-activated": "PC sleep/suspend:\n{status}",
+		"tooltip-format-deactivated": "PC sleep/suspend:\n{status}",
 		"start-activated": false,
-		"max-length": 4,
-		"min-length": 3,
+		"max-length": 3,
+		"min-length": 1,
 		/*"align": 0.5,
 		"rotate": 0,
 		"justify": "center",
