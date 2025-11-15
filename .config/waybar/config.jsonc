@@ -628,6 +628,7 @@
 	"cpu": {
         "interval": 10,
         "format": " {usage}%",
+        // "format": "⧯ {usage}%",
         // "format-icons": [],
         "tooltip": false,
 		"max-length": 8,
@@ -655,7 +656,7 @@
         "format-warning": "{icon} {temperatureC}°C",
         "format-critical": "{icon} {temperatureC}°C",
         "format": "{icon} {temperatureC}°C", // {temperatureC}°C {temperatureF}°F {temperatureK}°K
-        "format-icons": ["","",""],
+        "format-icons": ["","","","",""],
 		"tooltip": false,
 		"tooltip-format": "",
 		"interval": 30,
