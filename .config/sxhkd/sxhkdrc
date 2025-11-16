@@ -1,3 +1,9 @@
+# ctrl: control
+# windows key: super
+# shift: shift
+# alt: alt
+# see xev
+
 #BRIGHTNESS
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
 	{brightnessctl -q -e2 -n10 s 5%+ && pkill -RTMIN+2 dwmblocks,brightnessctl -q -e2 -n10 s 5%- && pkill -RTMIN+2 dwmblocks}
@@ -20,15 +26,15 @@ super + e
 	$TERMINAL -e lf
 
 #EMOJIS
-alt + e
+super + alt + e
 	dmenu_emojis.sh
 
 #SET BACKGROUND
-alt + b
+super + alt + b
 	dmenu_bg.sh
 
 #CLIPBOARD
-alt + v
+super + alt + v
 	clipmenu
 
 #TERMINAL
@@ -36,11 +42,11 @@ super + Return
 	$TERMINAL
 
 #POWEROFF
-control + alt + x
+super + alt + x
 	dmenu_poweroff.sh
 
 #LOCKSCREEN
-control + alt + l
+super + alt + l
 	slock
 
 #SCREEN SHOT
