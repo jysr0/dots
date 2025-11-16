@@ -15,34 +15,34 @@
 super + w
 	$BROWSER
 
-#DEFAULT FILE MANAGER
+#FILE MANAGER
 super + e
 	$TERMINAL -e lf
 
 #EMOJIS
-super + alt + e
+alt + e
 	dmenu_emojis.sh
 
 #SET BACKGROUND
-super + alt + w
+alt + b
 	dmenu_bg.sh
 
 #CLIPBOARD
-super + alt + v
+alt + v
 	clipmenu
 
 #TERMINAL
 super + Return
 	$TERMINAL
 
-#SHUTDOWN
-super + alt + x
-	dmenu_shutdown.sh
+#POWEROFF
+control + alt + x
+	dmenu_poweroff.sh
 
 #LOCKSCREEN
-super + control + l
+control + alt + l
 	slock
 
 #SCREEN SHOT
-{super + Print,super + shift + s}
+{super + Print,Print}
 	{flameshot screen,flameshot gui}
