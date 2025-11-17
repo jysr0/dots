@@ -29,6 +29,10 @@ super + e
 super + alt + e
 	dmenu_emojis.sh
 
+#ICONS
+super + alt + i
+	dmenu_icons.sh
+
 #SET BACKGROUND
 super + alt + b
 	dmenu_bg.sh
