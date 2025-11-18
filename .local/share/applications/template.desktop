@@ -30,8 +30,8 @@
 # TEMPLATE:
 # [Desktop Entry]
 # Type=Application
-# GenericName=
 # Name=
+# GenericName=
 # Exec=
 # Icon=
 # MimeType=
@@ -41,12 +41,12 @@
 # Terminal=
 
 [Desktop Entry]
+Type=Application
+Name=zathura
 Exec=zathura
 MimeType=application/pdf;
 GenericName=PDF\s reader  # \s for space
-Name=zathura
 NoDisplay=true
-Type=Application
 
 # [...]
 # ...
