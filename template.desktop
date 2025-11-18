@@ -1,0 +1,58 @@
+# see: <https://specifications.freedesktop.org/desktop-entry/latest/index.html#introduction>
+# 
+# [Desktop Entry]
+# Type=string                  #REQUIRED     # Application Link Directory
+# Name=localestring            #REQUIRED     # name of programm
+# URL=string                   #REQUIRED     # if "Type=Link" set URL here
+# Icon=iconstring              #notREQUIRED
+# Comment=localestring         #notREQUIRED
+# Version=string               #notREQUIRED
+# GenericName=localestring     #notREQUIRED  # just a name so user can know what the app is for i.e. web browser
+# NoDisplay=boolean            #notREQUIRED  # don't display the app in menus
+# Hidden=boolean               #notREQUIRED
+# OnlyShowIn=string(s)         #notREQUIRED  # KEY="VALUE";"VALUE";" ";...;
+# NotShowIn=string(s)          #notREQUIRED
+# DBusActivatable=boolean      #notREQUIRED
+# TryExec=string               #notREQUIRED
+# Exec=string                  #notREQUIRED  # field codes: %f %F %u %U %i %c %k, deprecated: %d %D %n %N %v %m
+# Path=string                  #notREQUIRED
+# Terminal=boolean             #notREQUIRED  # wether the app runs on a terminal window
+# Actions=string(s)            #notREQUIRED
+# MimeType=string(s)           #notREQUIRED  # MIME types supported by the app
+# Categories=string(s)         #notREQUIRED
+# Implements=string(s)         #notREQUIRED
+# Keywords=localestring(s)     #notREQUIRED  # set search words for the app
+# StartupNotify=boolean        #notREQUIRED
+# StartupWMClass=string        #notREQUIRED
+# PrefersNonDefaultGPU=boolean #notREQUIRED
+# SingleMainWindow=boolean     #notREQUIRED  # If true, the app has a single main window, and doesn't support having an additional one opened
+#
+# TEMPLATE:
+# [Desktop Entry]
+# Type=Application
+# GenericName=
+# Name=
+# Exec=
+# Icon=
+# MimeType=
+# NoDisplay=
+# DBusActivatable=false
+# Path=$PWD
+# Terminal=
+
+[Desktop Entry]
+Exec=zathura
+MimeType=application/pdf;
+GenericName=PDF\s reader  # \s for space
+Name=zathura
+NoDisplay=true
+Type=Application
+
+# [...]
+# ...
+# KEY=VALUE;VALUE;...
+# ...
+# [Desktop Action %s]    # %s: placeholder for the actions specified in "Actions" key
+# Name=localestring            #REQUIRED
+# Icon=iconstring            #notREQUIRED
+# Exec=string            #notREQUIRED
