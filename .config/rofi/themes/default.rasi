@@ -40,7 +40,7 @@
 	
 	
 
-	cursor: pointer; /* default pointer text */
+	cursor: default; /* default pointer text */
 	font:          "CaskaydiaMono Nerd Font Mono 10"; 
 	prompt-font:   "CaskaydiaMono Nerd Font Mono 10"; 
 	entry-font:    "CaskaydiaMono Nerd Font Mono Italic 10"; 
@@ -192,7 +192,8 @@
     
 	background-color: var(background-color, #222222ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, text);
+    cursor: text;
     
 	font: var(entry-font, "monospace Italic 10");
 	spacing:    var(spacing, 5px);
@@ -538,7 +539,8 @@
     
 	background-color: var(background-color, #222222ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
 
 	// spacing: var(spacing, 3px);
@@ -568,7 +570,8 @@
 	// background-color: var(background-color, #222222ff);
 	background-color: transparent;
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
     // text-color: var(foreground, #bbbbbbff);
 	size:             1.0000em ;
@@ -591,7 +594,8 @@
 	// background-color: var(background-color, #222222ff);
 	background-color: transparent;
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
 
 	font: var(element-font, "monospace 10");
 	highlight: none;
@@ -616,7 +620,8 @@
 	// background-color: var(background-color, #222222ff);
 	background-color: transparent;
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
 	text-color: var(foreground, #bbbbbbff);
 }
@@ -636,7 +641,8 @@
     
 	background-color: var(blue, #005577ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
 	text-color: var(foreground, #bbbbbbff);
 }
@@ -656,7 +662,8 @@
     
 	background-color: var(red, #773333ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
 	text-color: var(foreground, #bbbbbbff);
 }
@@ -676,7 +683,8 @@
     
 	background-color: var(green, #007730ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    // cursor: var(cursor, pointer);
+    cursor: pointer;
     
 	text-color: var(foreground, #bbbbbbff);
 }
@@ -868,7 +876,7 @@
     
 	background-color: var(background-color, #222222ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    cursor: var(cursor, pointer);
     
 	// vertical-align:   0.9;
 	// horizontal-align: 0.5;
@@ -891,7 +899,7 @@
     
 	background-color: var(background-color, #222222ff);
     // background-image: "";
-    cursor: var(cursor, default);
+    cursor: var(cursor, pointer);
     
 	font: var(font, "monospace 10");
 	// vertical-align:   0.9;
