@@ -1,6 +1,9 @@
-#~/.config/lf/lfrc
+# ~/.config/lf/lfrc
 
-#install:--------------------------------------------------------------------------------------------------- 
+###########
+# INSTALL #
+###########
+
 #ctpv (clone it from github OR yay) 
 #ffmpeg 
 #ffmpegthumbnailer 
@@ -19,7 +22,10 @@
 #imagemagick
 #ffmpegthumbnailer
 
-#config order for changes to take effect (just a thought of mine):----------------------------------------------------
+################
+# CONFIG ORDER # -*- for changes to take effect, just a thought of mine -*-
+################
+
 #OPTIONS
 #CUSTOM COMMANDS
 #DISABLED KEYBINDINGS
@@ -28,92 +34,112 @@
 #NORMAL MODE KEYBINDINGS
 #NORMAL/VISUAL MODE KEYBINDINGS
 
-#NOTES:------------------------------------------------------------------------------------------------------
+#########
+# NOTES #
+#########
+
 #key `l` won't open an empty file, use `e` instead and make sure $EDITOR environment variable is set to your favourite editor (nano or vim or whatever)
 #<c-h> (control+h) in lf is concidered `backspace`, unknown why is so
 #white spaces (space character) in file names are not recommended, reason is: probably won't open
 #default keys of lf was copied into this file so easily can be modified when desired
 #probably most frequently, keys that will be modified are noted by `#---` characters
 
-#quick tutorial in this configuration only not lf's defaults:-------------------------------------------------
-#`alt+h` show/hide hidden files
-#`$` character to enter command line mode and then create file/directory using shell commands
-#`j/k` for go down/up
-#`h/l` for back/enter directories or files
-#`y/d/p/X/r` for copy/cut/paste/delete/rename (for uppercase hold `shift`)
-#`slash/?` to search forward/backward
-#`control+f` to filter out files/directories
-#`control+shift+y` to extract a compressed file
-#for anything else see command `man lf`
+############
+# TUTORIAL #
+############
 
-# OPTIONS: ------------------------------------------------------------------------------------------------------
-#previewer
+# "alt+h"           show/hide hidden files
+# "$"               character to enter command line mode and then create file/directory using shell commands
+# "j/k"             for go down/up
+# "h/l"             for back/enter directories or files
+# "y/d/p/X/r"       for copy/cut/paste/delete/rename (for uppercase hold `shift`)
+# "slash/?"         to search forward/backward
+# "control+f"       to filter out files/directories
+# "control+shift+y" to extract a compressed file
+#
+# for anything else see command "man lf"
+
+###########
+# OPTIONS #
+###########
+
+#
+# previewer:
+#
+
 # ctpv:
 #set previewer ctpv
 #set cleaner ctpvclear
 #&ctpv -s $id
 #&ctpvquit $id
+
 # ueberzug:
 #set previewer ~/.config/lf/previewer.sh
 #set cleaner ~/.config/lf/cleaner.sh
+
 # stpv:
 set previewer stpv
 set cleaner stpvimgclr
 &stpvimg --listen $id
 cmd on-quit $stpvimg --end $id
 
-#icons
-set icons true  # ~/.config/lf #------------------
+#
+# icons:
+#
+set icons true  # ~/.config/lf                -*-
 
-set cursorpreviewfmt "\033[0m" #--------------------
-set cursorparentfmt "\033[4;2m" #-----------------
-set cursoractivefmt "\033[4m" #-------------------------
-set selectfmt "\033[7;35m" #-------------------------------
-set drawbox true #------------------
-set roundbox true #-------------------
-set borderfmt "\033[0m" #-------------------
+set cursorpreviewfmt "\033[0m" #        -*-
+set cursorparentfmt "\033[7m" #        -*-
+set cursoractivefmt "\033[7m" #        -*-
+set selectfmt "\033[7;35m" #        -*-
+set drawbox true #        -*-
+set roundbox true #        -*-
+set borderfmt "\033[0m" #        -*-
 
 set autoquit true
 set dirpreviews true
 set dupfilefmt "%n-(cp)_%f"
-set filesep ' ' #\n #-------------------
-set hidden false #----------------
-set hiddenfiles '.*' #-----------------
+set filesep ' ' #\n         -*-
+set hidden false #        -*-
+set hiddenfiles '.*' #        -*-
 set dircounts false
 set info 'user:time:size'
 set history true
 set mouse false
-#set number false #-----------
-#set relativenumber true #-------------
-#set numberfmt "\033[90m" #------------
+#set number false #        -*-
+#set relativenumber true #        -*-
+#set numberfmt "\033[90m" #        -*-
 set infotimefmtnew 'Jan _2 2006 15:04'
 set infotimefmtold 'Jan _2 2006 15:04'
 set timefmt 'Mon Jan _2 2006 15:04:05'
 set period 0
 set preview true
-set promptfmt "\033[33m%u@%h:\033[0m\033[34m%d\033[0m%f\033[0m" #---------------
-set ratios '1:3:2' #------------
+set promptfmt "\033[94m%u@%h:\033[0m\033[34m%d\033[0m%f\033[0m" #        -*-
+set ratios '1:3:2' #        -*-
 #set reverse false
 #set rulerfmt ""
 #set statfmt ""
 set tabstop 4
-set truncatechar '~' #------------
+set truncatechar '~' #        -*-
 set truncatepct 100
 set ignorecase true
 set ignoredia true
 set incfilter true
 set incsearch false
 set searchmethod text
-set showbinds true #------------
+set showbinds true #        -*-
 set smartcase true
 set smartdia false
-set sortby natural #-----------
+set sortby natural #        -*-
 set selmode all #selected files for lf commands mode
 set wrapscan true
 set wrapscroll false
 set shell 'sh' 
 
-# custom commands: ------------------------------------------------------------------------------------------------------------
+###################
+# CUSTOM COMMANDS #
+###################
+
 #cmd open ${{
 #        case $(file --mime-type -Lb $f) in
 #            	#video/*) mpv $fx &;;
@@ -178,8 +204,14 @@ cmd bg ${{
 }}
 map b	bg
 
-#disabled keybindings:------------------------------------------------------------------------
-#normal/visual mode commands:
+########################
+# DISABLED KEYBINDINGS #
+########################
+
+#
+# normal/visual mode commands:
+#
+
 #map i
 #map w
 map <f-1>
@@ -197,16 +229,28 @@ map za
 #map sc 
 #map se 
 #map gh 
-#normal mode commands:
+
+#
+# normal mode commands:
+#
+
 nmap <home>
 nmap <end>
-#command-line mode commands:
+
+#
+# command-line mode commands:
+#
+
 cmap <end> 	
 cmap <delete> 	
 cmap <home>
 #cmap <backspace2> 	
 #cmap <a-backspace2> 	
-#custom commands:
+
+#
+# custom commands:
+#
+
 #cmd open
 cmd doc
 cmd maps
@@ -216,8 +260,10 @@ cmd cmaps
 cmd cmds
 
 
+#################################
+# COMMAND-LINE mode keybindings #
+#################################
 
-# command-line mode keybindings: -------------------------------------------------------------------------------------------------
 cmap <enter>	:cmd-enter #enter command-line mode
 cmap <c-j>	:cmd-enter
 cmap <esc>	:cmd-escape
@@ -253,7 +299,11 @@ cmap <a-c>	:cmd-capitalize-word
 cmap <a-u>	:cmd-uppercase-word
 cmap <a-l>	:cmd-lowercase-word
 
-# visual mode keybindings: ----------------------------------------------------------------------------------------
+
+###########################
+# VISUAL mode keybindings #
+###########################
+
 nmap v		:visual
 vmap v 		:visual-accept #add selected file(s) to selection list and return to normal mode
 vmap w 		:visual-unselect #remove selected file(s) from selection list and return to normal mode
@@ -261,7 +311,10 @@ vmap o 		:visual-change
 vmap <esc> 	:visual-discard
 
 
-# normal mode keybindings: ------------------------------------------------------------------------------------
+###########################
+# NORMAL mode keybindings #
+###########################
+
 nmap sr 	:set reverse! 
 nmap sm 	:set sortby name #; set info 'user:time:size'
 
@@ -348,6 +401,9 @@ nmap t 		:tag-toggle #also there is `tag` command
 nmap gh cd ~
 
 
-# normal/visual mode keybindings: -------------------------------------------------------------------------------------
+##################################
+# NORMAL/VISUAL mode keybindings #
+##################################
+
 map e 		$$EDITOR "$f" #open text/* files
 
