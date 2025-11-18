@@ -1,7 +1,8 @@
-#look for `.desktop` files in: /usr/share/applications
+#look for `.desktop` files in: /usr/share/applications or ~/.local/share/applications
 [Default Applications]
 x-scheme-handler/http=brave-browser.desktop
 x-scheme-handler/https=brave-browser.desktop
+
 application/xhtml+xml=brave-browser.desktop
 application/x-xpinstall=brave-browser.desktop
 #application/pdf=org.pwmt.zathura-pdf-poppler.desktop
@@ -9,23 +10,32 @@ application/x-xpinstall=brave-browser.desktop
 application/pdf=org.kde.okular.desktop
 application/pdf=okularApplication_pdf.desktop
 #application/x-gnome-saved-search=nemo.desktop
+
 inode/directory=org.kde.dolphin.desktop
+
 #image/*=sxiv.desktop
 image/*=oculante.desktop
+
 audio/*=vlc.desktop
 #audio/*=mpv.desktop
 #audio/ogg=mpv.desktop
 audio/opus=mpv.desktop
+
 video/*=vlc.desktop
 #video/*=mpv.desktop
 #video/webm=mpv.desktop
+
 text/*=vim.desktop
 
-[Added Associations]
-#image/*=sxiv.desktop
-audio/ogg=mpv.desktop
-audio/opus=mpv.desktop
 
-[Removed Associations]
-audio/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
-video/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
+
+#[Added Associations]
+#image/*=sxiv.desktop
+#audio/ogg=mpv.desktop
+#audio/opus=mpv.desktop
+
+
+
+#[Removed Associations]
+#audio/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
+#video/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
