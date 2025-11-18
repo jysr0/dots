@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ncmpcpp
+GenericName=Audio Player
+Exec=/usr/bin/ncmpcpp %f
+#DBusActivatable=false
+#Terminal=false

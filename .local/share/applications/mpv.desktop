@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=mpv
+GenericName=Video Player
+Exec=/usr/bin/mpv -quiet %f
+#DBusActivatable=false
+#Terminal=false

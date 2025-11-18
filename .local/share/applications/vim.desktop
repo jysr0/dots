@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=vim
+GenericName=Text Editor
+#Exec=/usr/bin/alacritty -e vim %u
+Exec=/usr/bin/vim %u
+#DBusActivatable=false
+Terminal=true

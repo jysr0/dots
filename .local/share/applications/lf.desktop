@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=lf
+GenericName=File Manager
+#Exec=/usr/bin/alacritty -e lf %u
+Exec=/usr/bin/lf %u
+#DBusActivatable=false
+Terminal=true
