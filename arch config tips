@@ -1,5 +1,5 @@
 #############################
-########## Configs ##########
+########## Configs ########## -*-
 #############################
 
 #######
@@ -65,9 +65,10 @@ setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara (add in xinitrc
 * add the `user` to wheel group and add or uncomment `wheel ALL=(ALL:ALL) ALL` in /etc/sudoers 
 * add the `user` to input, mpd and wheel groups for waybar-keyboard-state module
 * install: webkit2gtk-4.(something) & gcr to avoid suckless surf compilation problems 
+* to set a programm as default create a .desktop entry for it in ~/.local/share/applications
 
 ##############################
-########## Packages ##########
+########## Packages ########## -*-
 ##############################
 
 coreutils
