@@ -1,26 +1,55 @@
-#`.desktop` files are in: /usr/share/applications
+#look for `.desktop` files in: /usr/share/applications or ~/.local/share/applications
 [Default Applications]
 x-scheme-handler/http=brave-browser.desktop
 x-scheme-handler/https=brave-browser.desktop
+
 application/xhtml+xml=brave-browser.desktop
 application/x-xpinstall=brave-browser.desktop
 #application/pdf=org.pwmt.zathura-pdf-poppler.desktop
-application/pdf=org.pwmt.zathura.desktop
+#application/pdf=org.pwmt.zathura.desktop
+application/pdf=zathura.desktop
 #application/x-gnome-saved-search=nemo.desktop
-#inode/directory=lf.desktop
+
+inode/directory=lf.desktop
+
 image/*=sxiv.desktop
-audio/*=mpv.desktop
-audio/ogg=mpv.desktop
-audio/opus=mpv.desktop
-video/*=mpv.desktop
+image/jpeg=sxiv.desktop
+image/png=sxiv.desktop
+image/gif=sxiv.desktop
+
+#audio/*=ncmpcpp.desktop
+#audio/ogg=ncmpcpp.desktop
+#audio/opus=ncmpcpp.desktop
+#audio/mp4=ncmpcpp.desktop
+#audio/webm=ncmpcpp.desktop
+#audio/mpeg=ncmpcpp.desktop
+
+#video/*=mpv.desktop
+video/mp4=mpv.desktop
 video/webm=mpv.desktop
-text/*=vim.desktop
+video/mpeg=mpv.desktop
+video/ogg=mpv.desktop
 
-[Added Associations]
+#text/*=vim.desktop
+text/x-shellscript=vim.desktop
+text/plain=vim.desktop
+#text/markdown=vim.desktop
+#text/css=vim.desktop
+text/csv=vim.desktop
+text/tab-separated-values=vim.desktop
+#text/html=vim.desktop
+#text/javascript=vim.desktop
+#text/rust=vim.desktop
+
+
+
+#[Added Associations]
 #image/*=sxiv.desktop
-audio/ogg=mpv.desktop
-audio/opus=mpv.desktop
+#audio/ogg=mpv.desktop
+#audio/opus=mpv.desktop
 
-[Removed Associations]
-audio/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
-video/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
+
+
+#[Removed Associations]
+#audio/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
+#video/*=firefox.desktop;librewolf.desktop;brave-browser.desktop
