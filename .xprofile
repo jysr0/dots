@@ -4,7 +4,7 @@
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
-export PATH="${PATH}:$HOME/.scripts:$HOME/.config/environment.d"
+export PATH="$PATH:$HOME/.local/bin/dwm scripts:$HOME/.config/environment.d"
 
 #XDG env variables:
 #export XDG_CURRENT_DESKTOP="dwm"
@@ -22,13 +22,11 @@ export XDG_DESKTOP_DIR="$HOME/desk"
 export XDG_DOWNLOAD_DIR="$HOME/dl"
 export XDG_DOCUMENTS_DIR="$HOME/dox"
 export XDG_MUSIC_DIR="$HOME/music"
-#export XDG_AUDIO_DIR="$HOME/audio"
 export XDG_PICTURES_DIR="$HOME/pix"
 export XDG_VIDEOS_DIR="$HOME/vids"
 export XDG_PUBLIC_DIR="$HOME/pub"
-#export XDG_SCRIPTS_DIR="$HOME/.scripts"
 export XDG_TEMPLATES_DIR="$HOME/templates"
-#export XDG_WALLPAPERS_DIR="$HOME/pictures/wallpapers"
+#export XDG_AUDIO_DIR="$HOME/audio"
 
 #user env variables:
 export EDITOR="vim"
