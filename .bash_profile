@@ -12,7 +12,7 @@
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
-export PATH="$PATH:$HOME/.local/bin/dwm scripts:$HOME/.config/environment.d"
+export PATH="$PATH:$HOME/.scripts:$HOME/.config/environment.d"
 
 #XDG env variables:
 #export XDG_CURRENT_DESKTOP="dwm"
