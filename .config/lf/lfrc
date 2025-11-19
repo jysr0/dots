@@ -4,23 +4,26 @@
 # INSTALL #
 ###########
 
-#ctpv (clone it from github OR yay) 
+#ctpv (uninstall if ueberzug/stpv is used) 
+#stpv (uninstall if ueberzug/ctpv is used) 
 #ffmpeg 
 #ffmpegthumbnailer 
-#ueberzug (don't install if you're going to use `ctpv`) 
-#chafa (don't install if you're going to use `ctpv`)
-#and for icons and colors see `lf wiki` in github
-# the following are for ueberzug:
-#ueberzug
-#jq
-#ouch
-#poppler
-#djvulibre
-#pandoc
-#lynx
 #bat
 #imagemagick
-#ffmpegthumbnailer
+#poppler
+#lynx
+#pandoc
+#chafa (uninstall if ctpv/stpv is used)
+#
+#the following are for ueberzug:
+#ueberzug (uninstall if ctpv/stpv is used)
+#jq
+#ouch
+#djvulibre
+#
+#
+#
+#for icons and colors see "lf wiki" on github
 
 ################
 # CONFIG ORDER # -*- for changes to take effect, just a thought of mine -*-
@@ -38,11 +41,11 @@
 # NOTES #
 #########
 
-#key `l` won't open an empty file, use `e` instead and make sure $EDITOR environment variable is set to your favourite editor (nano or vim or whatever)
-#<c-h> (control+h) in lf is concidered `backspace`, unknown why is so
-#white spaces (space character) in file names are not recommended, reason is: probably won't open
-#default keys of lf was copied into this file so easily can be modified when desired
-#probably most frequently, keys that will be modified are noted by `#---` characters
+#key "l" won't open an empty file, use "e" instead and make sure $EDITOR environment variable is set to your favourite editor (nano or vim or whatever).
+#<c-h> (control+h) in lf is concidered "backspace", unknown why is so.
+#white spaces (space character) in file name(s) full path are not recommended, reason is probably won't open.
+#default keys of lf was copied into this file so easily can be modified when desired.
+#probably most frequently, keys that will be modified are noted by -*-.
 
 ############
 # TUTORIAL #
@@ -52,7 +55,7 @@
 # "$"               character to enter command line mode and then create file/directory using shell commands
 # "j/k"             for go down/up
 # "h/l"             for back/enter directories or files
-# "y/d/p/X/r"       for copy/cut/paste/delete/rename (for uppercase hold `shift`)
+# "y/d/p/X/r"       for copy/cut/paste/delete/rename (for uppercase hold "shift")
 # "slash/?"         to search forward/backward
 # "control+f"       to filter out files/directories
 # "control+shift+y" to extract a compressed file
