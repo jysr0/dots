@@ -11,7 +11,7 @@ history = 1000
 multiplier = 1
 
 [font]
-size = 10
+size = 9.6
 normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
 italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
 bold = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
