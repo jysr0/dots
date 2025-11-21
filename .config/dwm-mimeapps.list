@@ -17,18 +17,18 @@ image/jpeg=sxiv.desktop
 image/png=sxiv.desktop
 image/gif=sxiv.desktop
 
-#audio/*=ncmpcpp.desktop
-#audio/ogg=ncmpcpp.desktop
-#audio/opus=ncmpcpp.desktop
-#audio/mp4=ncmpcpp.desktop
-#audio/webm=ncmpcpp.desktop
-#audio/mpeg=ncmpcpp.desktop
+audio/*=vlc.desktop
+audio/ogg=vlc.desktop
+audio/opus=vlc.desktop
+audio/mp4=vlc.desktop
+audio/webm=vlc.desktop
+audio/mpeg=vlc.desktop
 
-#video/*=mpv.desktop
-video/mp4=mpv.desktop
-video/webm=mpv.desktop
-video/mpeg=mpv.desktop
-video/ogg=mpv.desktop
+video/*=vlc.desktop
+video/mp4=vlc.desktop
+video/webm=vlc.desktop
+video/mpeg=vlc.desktop
+video/ogg=vlc.desktop
 
 #text/*=vim.desktop
 text/x-shellscript=vim.desktop
