@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=vlc
+GenericName=Video/Audio Player
+Exec=/usr/bin/setsid -f vlc %f
+#DBusActivatable=false
+#Terminal=false
