@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=mpv
-GenericName=Audio Player
-#Exec=/usr/bin/mpv --audio-display=no %f
-#DBusActivatable=false
-#Terminal=false
