@@ -13,7 +13,7 @@ lfcd () {
 bind '"\C-o":"lfcd\C-m"'
 
 ################
-#  ls aliases  #
+#  ls ALIASES  #
 ################
 
 alias ll="ls -lAFh --color=auto --group-directories-first "
@@ -22,14 +22,14 @@ alias l1="ls -1AF --color=auto --group-directories-first "
 alias ls="ls --color=auto --group-directories-first "
 
 ################
-#  rm aliases  #
+#  rm ALIASES  #
 ################
 
 #alias rm="trash "
 #alias rmdir="trash "
 
 #################
-#  DWM aliases  #
+#  DWM ALIASES  #
 #################
 
 alias dwmc="sudo vim ~/.suckless/dwm/config.h "
@@ -41,9 +41,9 @@ alias stm="cd ~/.suckless/st/ && sudo make clean install && cd ~ "
 alias dwmbc="sudo vim ~/.suckless/dwmblocks/blocks.h "
 alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd ~ "
 
-##################
-# other alaiases #
-##################
+#################
+# OTHER ALIASES #
+#################
 
 #alias v="vim "
 alias grep="grep --color=auto "
@@ -52,15 +52,14 @@ alias sudo="sudo "
 #alias sn="~/Downloads/Simplenote-linux-2.23.2-x64/simplenote "
 
 ############
-# commands #
+# COMMANDS #
 ############
 
 shopt -s histappend #keep shell history accross terminal sessions, also there is HISTSIZE env var to determine how much commands to remember
-
 xset r rate 200 55
 
 ##########
-# prompt #
+# PROMPT #
 ##########
 # \e[ = \033[
 
