@@ -349,29 +349,7 @@ label:focus {
     color: #bbbbbb;
 }
 
-#custom-power {
-    background-color: #770033;
-    color: #bbbbbb;
-}
 
-#custom-uptime {
-    background-color: #005577;
-    color: #bbbbbb;
-}
-
-#custom-media {
-    background-color: #005577;
-    color: #bbbbbb;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #005577;
-}
-
-#custom-media.custom-vlc {
-    background-color: #005577;
-}
 
 #temperature {
     background-color: #005577;
@@ -471,11 +449,37 @@ label:focus {
     background-color: #550077;
 }
 
+#custom-uptime {
+    background-color: #005577;
+    color: #bbbbbb;
+}
+
+#custom-media {
+    background-color: #005577;
+    color: #bbbbbb;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #005577;
+}
+
+#custom-media.custom-vlc {
+    background-color: #005577;
+}
+
+#custom-power {
+    background-color: #770033;
+    color: #bbbbbb;
+}
+
 menu {
     border-radius: 5px;
     background: #222222;
-    color: #005577;
+    color: #bbbbbb;
 }
 menuitem {
-     border-radius: 5px;
+    border-radius: 0px;
+    /* background: #222222; */
+    color: #bbbbbb;
 }
