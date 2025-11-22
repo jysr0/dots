@@ -55,7 +55,10 @@ alias sudo="sudo "
 # COMMANDS #
 ############
 
-shopt -s histappend #keep shell history accross terminal sessions, also there is HISTSIZE env var to determine how much commands to remember
+#keep shell history accross terminal sessions
+#also there is HISTSIZE env var to determine how much commands to remember
+shopt -s histappend 
+
 xset r rate 200 55
 
 ##########
