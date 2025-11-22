@@ -1,8 +1,7 @@
 #
 # ~/.xinitrc
 #
-
-#copy .xinitrc content that want to be runned to .bash_profile so ly display manager can start them
+#copy runnable .xinitrc content to .bash_profile so ly display manager can start them
 
 if [ -d "$xinitdir"/xinitrc.d ] ; then
 	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
@@ -11,7 +10,7 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-#[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f ~/.xprofile ] && . ~/.xprofile
 
 ############
 # COMMANDS #
@@ -20,6 +19,7 @@ fi
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
 #dbus-update-activation-environment XDG_CURRENT_DESKTOP DISPLAY # used for filechoose when (down/up)load from browser
+
 #setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
 #xset r rate 200 55
 #sxhkd &
