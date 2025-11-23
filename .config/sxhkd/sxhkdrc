@@ -56,3 +56,7 @@ super + alt + l
 #SCREEN SHOT
 {super + Print,Print}
 	{flameshot screen,flameshot gui}
+
+#DWM EXIT
+super + shift + q
+	loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}
