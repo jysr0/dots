@@ -1,9 +1,11 @@
-#/usr/share/xsessions
-
 [Desktop Entry]
-Name=dwm
-Comment=tiling window manager
-Exec=dwm
 Type=Application
-DesktopNames=dwm
-Keywords=tiling;compositor;
+Name=dwm
+GenericName=Dinamic Window Manager
+Exec=dwm
+#Icon=
+#MimeType=
+#NoDisplay=false
+#DBusActivatable=false
+#Path=$PWD
+#Terminal=false
