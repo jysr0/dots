@@ -10,7 +10,7 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-[ -f ~/.xprofile ] && . ~/.xprofile
+#[ -f ~/.xprofile ] && . ~/.xprofile
 
 ############
 # COMMANDS #

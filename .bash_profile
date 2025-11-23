@@ -60,10 +60,13 @@ export CM_LAUNCHER="dmenu"
 ############
 
 #setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
-#xset r rate 200 55
+xset r rate 200 55
 #sxhkd &
 #dunst &
+
+#[[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 #xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg
+
 #picom -b
 #systemctl --user start clipmenud.service
 #xrdb ~/.Xresources
