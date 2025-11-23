@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+
+
 # If not running interactively, don"t do anything
 [[ $- != *i* ]] && return
 
@@ -12,14 +14,16 @@ lfcd () {
 }
 bind '"\C-o":"lfcd\C-m"'
 
+
+
 ################
 #  ls ALIASES  #
 ################
 
-alias ll="ls -lAFh --color=auto --group-directories-first "
-alias la="ls -AF --color=auto --group-directories-first "
-alias l1="ls -1AF --color=auto --group-directories-first "
-alias ls="ls --color=auto --group-directories-first "
+alias ll="ls -lAFh --color=auto --group-directories-first " \
+      la="ls -AF --color=auto --group-directories-first " \
+      l1="ls -1AF --color=auto --group-directories-first " \
+      ls="ls --color=auto --group-directories-first "
 
 ################
 #  rm ALIASES  #
@@ -51,9 +55,9 @@ alias grep="grep --color=auto "
 alias sudo="sudo "
 #alias sn="~/Downloads/Simplenote-linux-2.23.2-x64/simplenote "
 
-############
-# COMMANDS #
-############
+############################
+# NON-LOGIN SHELL COMMANDS #
+############################
 
 #keep shell history accross terminal sessions
 #also there is HISTSIZE env var to determine how much commands to remember

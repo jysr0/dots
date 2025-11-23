@@ -1,7 +1,10 @@
 #
 # ~/.xinitrc
 #
-#copy runnable .xinitrc content to .bash_profile so ly display manager can start them
+
+#copy runnable .xinitrc content to .bash_profile/.xprofile so ly display manager can start them
+
+
 
 if [ -d "$xinitdir"/xinitrc.d ] ; then
 	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
@@ -12,9 +15,9 @@ fi
 
 #[ -f ~/.xprofile ] && . ~/.xprofile
 
-############
-# COMMANDS #
-############
+#####################
+# START UP COMMANDS #
+#####################
 
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY

@@ -1,20 +1,17 @@
 #
 # ~/.bash_profile
 #
-
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-
 #[[ -f ~/.xprofile ]] && . ~/.xprofile
-
-################
-# ENVIRONMENTS #
-################
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
 export PATH="$PATH:$HOME/.scripts:$HOME/.config/environment.d"
 
-#XDG env variables:
+#######
+# XDG #
+#######
+
 #export XDG_CURRENT_DESKTOP="dwm"
 #export XDG_SESSION_TYPE="x11"
 #export XDG_SESSION_TYPE="wayland"
@@ -36,7 +33,10 @@ export XDG_PUBLIC_DIR="$HOME/pub"
 export XDG_TEMPLATES_DIR="$HOME/templates"
 #export XDG_AUDIO_DIR="$HOME/audio"
 
-#user env variables:
+#####################
+# DEFAULT PROGRAMMS #
+#####################
+
 export EDITOR="vim"
 #export PAGER="vim -R"
 #export BROWSER="librewolf"
@@ -46,30 +46,24 @@ export TERMINAL="alacritty"
 export TERM="alacritty"
 export HISTSIZE=500 #shell history size
 
-#lf file manager vars:
+######
+# LF #
+######
+
 export lf="/usr/bin/lf"
 export lf_mode="normal"
 export OPERNER="xdg-open"
 
-#clipmenu vars:
+############
+# CLIPMENU #
+############
+
 export CM_HISTLENGTH="10"
 export CM_LAUNCHER="dmenu"
 
-############
-# COMMANDS #
-############
+########################
+# LOGIN-SHELL COMMANDS #
+########################
 
 #setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
 xset r rate 200 55
-#sxhkd &
-#dunst &
-
-#[[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
-#xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg
-
-#picom -b
-#systemctl --user start clipmenud.service
-#xrdb ~/.Xresources
-#dwmblocks &
-#exec dwm
-#exec startx dwm #to start dwm
