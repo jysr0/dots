@@ -12,10 +12,11 @@ multiplier = 1
 
 [font]
 size = 9.6
-normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
-italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
-bold = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
-bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
+#normal = { family = "CaskaydiaMono NFM", style = "SemiLight" }
+normal = { family = "LiterationMono Nerd Font Mono", style = "Regular" }
+italic = { family = "LiterationMono Nerd Font Mono", style = "Italic" }
+bold = { family = "LiterationMono Nerd Font Mono", style = "Bold" }
+bold_italic = { family = "LiterationMono Nerd Font Mono", style = "Bold Italic" }
 
 [colors]	
 cursor = { text = "CellBackground", cursor = "CellForeground" }
