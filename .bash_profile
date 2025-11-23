@@ -6,7 +6,7 @@
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
-export PATH="$PATH:$HOME/.scripts:$HOME/.config/environment.d"
+#export PATH="$PATH:$HOME/.scripts:$HOME/.config/environment.d"
 
 #######
 # XDG #
