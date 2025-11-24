@@ -333,8 +333,8 @@
 		"expand": true
 	},
 	"hyprland/language": {
-		"format": "{short}", /* {short} {shortDescription} {long} {variant} */
-		"format-ara": "{short}",
+		"format": "󰌓 {short}", /* {short} {shortDescription} {long} {variant} */
+		"format-ara": "󰌓 {short}",
 		"keyboard-name": "at-translated-set-2-keyboard",
 		"tooltip": false,
 		// "menu": "",
