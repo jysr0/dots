@@ -24,14 +24,13 @@ fi
 #dbus-update-activation-environment XDG_CURRENT_DESKTOP DISPLAY # used for filechoose when (down/up)load from browser
 
 #setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
-#xset r rate 200 55
+#xset r rate 200 55 2> /dev/null
 #sxhkd &
-#systemctl --user start dunst.service
+#systemctl --user start dunst.service 2> /dev/null
 #dunst &
 #xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg
 #picom -b
 #clipmenud &
-#systemctl --user start clipmenud.service
+#systemctl --user start clipmenud.service 2> /dev/null
 #xrdb ~/.Xresources
 #dwmblocks &
-#exec dwm
