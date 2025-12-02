@@ -37,9 +37,14 @@ super + alt + i
 super + alt + b
 	dmenu_bg.sh
 
-#CLIPBOARD
-super + alt + v
+#CLIPBOARD SHOW
+#super + alt + v
+super + v
 	clipmenu
+#CLIPBOARD CLEAR
+#super + alt + v
+super + shift + v
+	clipdel -d '.*'
 
 #TERMINAL
 super + Return
