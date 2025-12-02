@@ -1,34 +1,35 @@
 [window]
-dimensions = { columns = 88, lines = 27 }
+dimensions      = { columns = 88, lines = 27 }
 dynamic_padding = true
-opacity = 0.88
-#startup_mode = "Windowed"
-title = "Alacritty"
-dynamic_title = false
+opacity         = 0.88
+#startup_mode   = "Windowed"
+title           = "Alacritty"
+dynamic_title   = false
 
 [scrolling]
-history = 1000
+history    = 1000
 multiplier = 1
 
 [font]
 size = 9
-#normal = { family = "LiterationMono Nerd Font Mono", style = "Regular" }
-#normal = { family = "CaskaydiaMono NFM", style = "SemiLight" }
+#normal = { family = "CaskaydiaMono NFM",            style = "SemiLight" }
 #normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
-normal = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
-italic = { family = "NotoSansM Nerd Font Mono", style = "Italic" }
-bold = { family = "NotoSansM Nerd Font Mono", style = "Bold" }
+#normal = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
+#normal = { family = "LiterationMono Nerd Font Mono", style = "Regular" }
+normal      = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
+italic      = { family = "NotoSansM Nerd Font Mono", style = "Italic" }
+bold        = { family = "NotoSansM Nerd Font Mono", style = "Bold" }
 bold_italic = { family = "NotoSansM Nerd Font Mono", style = "Bold Italic" }
 
 [colors]	
-cursor = { text = "CellBackground", cursor = "CellForeground" }
+cursor    = { text = "CellBackground", cursor = "CellForeground" }
 selection = { text = "CellBackground", background = "CellForeground" }
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
 foreground = "#dddddd"
 background = "#090909"
-#dim_foreground = "#828482"
+#dim_foreground    = "#828482"
 #bright_foreground = "None"
 
 [selection]
@@ -36,7 +37,7 @@ save_to_clipboard = false
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
-blink_timeout = 10
+blink_timeout    = 10
 unfocused_hollow = true #when true cursor will be rendered as a hollow box when the window is not focused
 
 [mouse]
@@ -63,6 +64,6 @@ bindings = [
 
 [bell]
 animation = "Ease"
-duration = 0
+duration  = 0
 color = "#777777"
 #command = { program = "echo", args = ["WRONG",] }
