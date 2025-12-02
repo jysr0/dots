@@ -41,14 +41,10 @@
 	
 
 	cursor: default; /* default pointer text */
-	// font:          "LiterationMono Nerd Font Mono 10"; 
-	// prompt-font:   "LiterationMono Nerd Font Mono 10"; 
-	// entry-font:    "LiterationMono Nerd Font Mono Italic 10"; 
-	// element-font:  "LiterationMono Nerd Font Mono 10"; 
-	font:          "CaskaydiaMono Nerd Font Mono 10"; 
-	prompt-font:   "CaskaydiaMono Nerd Font Mono 10"; 
-	entry-font:    "CaskaydiaMono Nerd Font Mono Italic 10"; 
-	element-font:  "CaskaydiaMono Nerd Font Mono 10";
+	font:          "monospace 10"; 
+	prompt-font:   "monospace 10"; 
+	entry-font:    "monospace 10"; 
+	element-font:  "monospace 10";
 
 
     
