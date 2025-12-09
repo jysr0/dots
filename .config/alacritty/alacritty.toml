@@ -1,7 +1,7 @@
 [window]
 dimensions      = { columns = 88, lines = 27 }
 dynamic_padding = true
-opacity         = 0.88
+opacity         = 0.95
 #startup_mode   = "Windowed"
 title           = "Alacritty"
 dynamic_title   = false
@@ -11,15 +11,16 @@ history    = 1000
 multiplier = 1
 
 [font]
-size = 9
+size = 8.7
 #normal = { family = "CaskaydiaMono NFM",            style = "SemiLight" }
 #normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
 #normal = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
 #normal = { family = "LiterationMono Nerd Font Mono", style = "Regular" }
-normal      = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
-italic      = { family = "NotoSansM Nerd Font Mono", style = "Italic" }
-bold        = { family = "NotoSansM Nerd Font Mono", style = "Bold" }
-bold_italic = { family = "NotoSansM Nerd Font Mono", style = "Bold Italic" }
+#normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+normal      = { family = "CaskaydiaMono NFM", style = "Regular" }
+italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
+bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
+bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
 
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
