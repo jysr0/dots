@@ -36,6 +36,9 @@ super + alt + i
 #SET BACKGROUND
 super + alt + b
 	dmenu_bg.sh
+#SET RANDOM BACKGROUND
+super + alt + w
+	random_bg.sh
 
 #CLIPBOARD SHOW
 #super + alt + v
