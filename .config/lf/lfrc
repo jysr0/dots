@@ -77,14 +77,14 @@
 #&ctpvquit $id
 
 # ueberzug:
-#set previewer ~/.config/lf/previewer.sh
-#set cleaner ~/.config/lf/cleaner.sh
+set previewer ~/.config/lf/preview
+set cleaner ~/.config/lf/cleaner
 
 # stpv:
-set previewer stpv
-set cleaner stpvimgclr
-&stpvimg --listen $id
-cmd on-quit $stpvimg --end $id
+#set previewer stpv
+#set cleaner stpvimgclr
+#&stpvimg --listen $id
+#cmd on-quit $stpvimg --end $id
 
 #
 # icons:
