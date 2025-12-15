@@ -23,7 +23,7 @@ super + w
 
 #FILE MANAGER
 super + e
-	$TERMINAL -e lf
+	$TERMINAL -e lfub
 
 #EMOJIS
 super + alt + e
