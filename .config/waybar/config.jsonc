@@ -1135,7 +1135,9 @@
 			"shutdown": "systemctl poweroff",
 			"reboot": "systemctl reboot",
 			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"hibernate": "systemctl hibernate",
+			"lock": "hyprlock -q",
+			"logout": "loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}"
 		}
     }
 }
