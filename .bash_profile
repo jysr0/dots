@@ -62,6 +62,12 @@ export OPERNER="xdg-open"
 export CM_HISTLENGTH="10"
 export CM_LAUNCHER="dmenu"
 
+########
+# GRIM #
+########
+
+export GRIM_DEFAULT_DIR="$XDG_PICTURES_DIR"
+
 #########################
 # X11 START UP COMMANDS #
 #########################
