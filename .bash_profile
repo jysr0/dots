@@ -70,6 +70,13 @@ export CM_LAUNCHER="dmenu"
 
 export GRIM_DEFAULT_DIR="$XDG_PICTURES_DIR"
 
+############
+# STARSHIP #
+############
+
+export STARSHIP_CONFIG="~/.config/starship.toml"
+#export STARSHIP_CACHE="~/.cache/starship/session_${STARSHIP_SESSION_KEY}.log"
+
 #########################
 # X11 START UP COMMANDS #
 #########################

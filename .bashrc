@@ -102,3 +102,12 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir6__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir3__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir4__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+
+
+
+############
+# STARSHIP #
+############
+
+eval "$(starship init bash)"
+
