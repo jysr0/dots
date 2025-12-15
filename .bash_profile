@@ -7,6 +7,7 @@
 #export DISPLAY=":0"
 #export HOME="$HOME"
 export PATH="$PATH:$(find ~/.scripts -type d | paste -sd ':' -):$HOME/.config/environment.d"
+export TMPDIR="/tmp"
 
 #######
 # XDG #
@@ -54,6 +55,7 @@ export HISTSIZE=500 #shell history size
 export lf="/usr/bin/lf"
 export lf_mode="normal"
 export OPERNER="xdg-open"
+#export UEBERZUGPP_TMPDIR="${TMPDIR}/ueberzugpp"
 
 ############
 # CLIPMENU #
