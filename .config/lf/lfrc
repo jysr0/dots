@@ -203,7 +203,7 @@ cmd bg ${{
 	read ans
 	([[ $(file --mime-type -b "$f") == image/* ]]) || (echo 'file is not an image' && sleep 3 && exit 1)
 	([[ $ans == "n" ]] || [[ $ans == "N" ]]) && exit
-	xwallpaper --stretch $f && cp $f $XDG_CACHE_HOME/bg.jpg
+	xwallpaper --stretch $f && cp $f $XDG_CACHE_HOME/bg.jpg && notify-send 'Wallpaper set'
 }}
 map b	bg
 
