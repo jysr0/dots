@@ -167,7 +167,7 @@ cmd trash ${{
 	printf "%s\n" "$fx"; printf "move to trash?[y/N] "
 	[[ -d "~/.trash" ]] && mkdir ~/.trash
 	read ans
-	([[ $ans = "y" ]] || [[ $ans = "Y" ]]) && mv $fx ~/.trash
+	([[ $ans == "y" ]] || [[ $ans == "Y" ]]) && mv $fx ~/.trash
 }}
 map x 	trash
 
@@ -178,7 +178,7 @@ cmd extract ${{
 	printf "%s\n" "$fx"
 	printf "extract?[y/N] "
 	read ans
-	([[ $ans = "y" ]] || [[ $ans = "Y" ]]) && {
+	([[ $ans == "y" ]] || [[ $ans == "Y" ]]) && {
 		case $fx in
 			*.tar.bz2)   tar xjf $fx     ;;
 			*.tar.gz)    tar xzf $fx     ;;
@@ -199,10 +199,10 @@ map Y	extract
 
 cmd bg ${{
 	clear; set -f
-	printf "%s, " "$f"; printf "set as wallpaper?[Y/n]"
+	printf "%s\n" "$f"; printf "set as wallpaper?[Y/n] "
 	read ans
-	[[ $ans == "n" ]] && exit
-	#[[ $(file --mime-type -b $f) == "image/*" ]] && \
+	([[ $(file --mime-type -b "$f") == image/* ]]) || (echo 'file is not an image' && sleep 3 && exit 1)
+	([[ $ans == "n" ]] || [[ $ans == "N" ]]) && exit
 	xwallpaper --stretch $f && cp $f $XDG_CACHE_HOME/bg.jpg
 }}
 map b	bg
