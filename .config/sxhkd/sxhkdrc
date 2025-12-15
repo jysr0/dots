@@ -54,7 +54,7 @@ super + v
 #CLIPBOARD CLEAR
 #super + alt + v
 super + shift + v
-	clipdel -d '.*'
+	clipdel -d '.*' && notify-send 'Clipboard cleared'
 
 #TERMINAL
 super + Return
@@ -70,7 +70,7 @@ super + F12
 
 #SCREEN SHOT
 {super + Print,Print}
-	{flameshot screen,flameshot gui}
+	{flameshot screen && notify-send 'Fullscreen taken',flameshot gui && notify-send 'Screenshot taken'}
 
 #DWM EXIT
 super + shift + q
