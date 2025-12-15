@@ -17,6 +17,13 @@
 	# wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+5 dwmblocks,\
 	# wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks}
 
+#SLEEP
+#XF86Sleep
+#	slock
+#LOCK AT WAKEUP
+XF86WakeUp
+	slock
+
 #BROWSER
 super + w
 	$BROWSER
