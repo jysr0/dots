@@ -53,12 +53,12 @@ super + shift + v
 super + Return
 	$TERMINAL
 
-#POWEROFF
+#POWERMENU
 super + alt + x
-	dmenu_poweroff.sh
+	dmenu_powermenu.sh
 
 #LOCKSCREEN
-super + alt + l
+super + F12
 	slock
 
 #SCREEN SHOT
