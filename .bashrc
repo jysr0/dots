@@ -106,7 +106,7 @@ __workingdir6__="\[\033[1;38:2:121:208:191m\]"
 
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 
-#PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir2__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir2__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir6__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir3__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir4__\W$__endeffect__$__dollar1__\$$__endeffect__ "
@@ -117,5 +117,4 @@ __workingdir6__="\[\033[1;38:2:121:208:191m\]"
 # STARSHIP #
 ############
 
-#eval "$(starship init zsh)"
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
