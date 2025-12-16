@@ -110,4 +110,3 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 ############
 
 eval "$(starship init bash)"
-
