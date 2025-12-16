@@ -117,4 +117,4 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 # STARSHIP #
 ############
 
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
