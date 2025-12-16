@@ -17,7 +17,7 @@
 #format = '$username[@](#7c0c9e)$hostname $directory $character '
 
 format = '''
-[╭───\[](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[\]──┈┈](custom_green) $cmd_duration $character
+[╭───\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]──┈┈](custom_green) $cmd_duration $character
 [╰──](custom_green) '''
 
 #format = '''
@@ -40,7 +40,7 @@ palette = 'colors'
 # define colors here, see: https://starship.rs/config/#prompt
 "custom_pink" = "#fd6fcb"
 "custom_green" = "#30b682"
-"custom_porpul" = "#7c0c9e"
+"custom_purpol" = "#7c0c9e"
 
 
 
