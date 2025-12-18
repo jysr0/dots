@@ -17,7 +17,7 @@
 #format = '$username[@](#7c0c9e)$hostname $directory $character '
 
 format = '''
-[╭───\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]──┈┈](custom_green) $cmd_duration $character
+[╭───\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]](custom_green) $cmd_duration $character
 [╰──](custom_green) '''
 
 #format = '''
@@ -89,12 +89,12 @@ style = '#6acba5' # 'bold cyan'
 disabled = false
 read_only = '🔒' # '🔒'
 read_only_style = '' # 'red'
-truncation_symbol = '../' # '', symbol who will replace the truncated directory path at `truncation_length`
+truncation_symbol = '.../' # '', symbol who will replace the truncated directory path at `truncation_length`
 #before_repo_root_style = '' # equivalent to `style`
 #repo_root_style = '' # equivalent to `style`
 repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)' # '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
 #home_symbol = '🏠' # '~'
-home_symbol = '🏡'
+home_symbol = ''
 use_os_path_sep = true
 #fish_style_pwd_dir_length = 0 # 0
 use_logical_path = true # true, If false instead render the physical filesystem path with symlinks resolved
