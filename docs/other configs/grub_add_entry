@@ -1,0 +1,4 @@
+see GRUB in archwiki
+
+use "lsblk -f" to get the uuid
+or blkid
