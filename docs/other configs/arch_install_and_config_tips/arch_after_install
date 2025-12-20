@@ -1,0 +1,80 @@
+- systemctl (enable/start) systemd-timesyncd.service
+- chown -R USER:USER /directory/location
+
+- Or install with "yay"
+- Don't install if vlc exists: mpd, mpv, mpc, ncmpcpp
+- optional: vlc, vlc-plugins-all
+
+yay -S \
+brave-bin \
+stpv 
+
+sudo pacman -S \
+alsa-utils \
+acpi \
+alacritty \
+android-tools \
+android-udev \
+brightnessctl \
+cronie \
+clipmenu \
+dmenu \
+dunst \
+dialog \
+figlet \
+ffmpeg \
+ffmpegthumbnailer \
+flameshot \
+fzf \
+gvim \
+gtk3 \
+hwinfo \
+iputils \
+lm_sensors \
+lf \
+ly \
+libnotify \
+noto-fonts-emoji \
+networkmanager \
+otf-font-awesome \
+polkit \
+picom \
+pamixer \
+pipewire \
+pipewire-alsa \
+pipewire-pulse \
+plocate \
+poppler \
+rofi \
+sysstat \
+sxiv \
+sxhkd \
+slock \
+starship \
+ttf-liberation-mono-nerd \
+ttf-liberation \
+ttf-noto-nerd \
+ttf-cascadia-mono-nerd \
+usbutils \
+ueberzugpp \
+unzip \
+wireplumber \
+woff2-font-awesome \
+xorg \
+xorg-xinit \
+xorg-xwininfo \
+xorg-xprop \
+xorg-xsetroot \
+xorg-setxkbmap \
+xorg-xset \
+xorg-xev \
+xclip \
+xsel \
+xdg-utils \
+xdg-desktop-portal \
+xdg-desktop-portal-gtk \
+xwallpaper \
+xcolor \
+zathura \
+zathura-pdf-poppler \
+zip

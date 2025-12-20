@@ -1,0 +1,85 @@
+- Or install with "yay"
+- optional: yazi, vlc, vlc-plugins-all, hyprland-guiutils
+- Don't install if vlc exists: mpd, mpv, mpc, ncmpcpp
+
+yay -S \
+brave-bin \
+clipman \
+hyprdim \
+woomer \
+hyprmag-git
+
+sudo pacman -S \
+alsa-utils \
+acpi \
+alacritty \
+brightnessctl \
+cronie \
+dmenu \
+dunst \
+dialog \
+dolphin \
+figlet \
+ffmpeg \
+ffmpegthumbnailer \
+flameshot \
+fzf \
+gvim \
+gtk3 \
+grim \
+hwinfo \
+hyprland \
+hypridle \
+hyprlock \
+hyprpaper \
+hyprpicker \
+hyprpolkitagent \
+iputils \
+lm_sensors \
+ly \
+libnotify \
+noto-fonts-emoji \
+networkmanager \
+ncmpcpp \
+otf-font-awesome \
+oculante \
+okular \
+polkit \
+pamixer \
+pipewire \
+pipewire-alsa \
+pipewire-pulse \
+plocate \
+poppler \
+qt5-wayland \
+qt6-wayland \
+rofi \
+sysstat \
+sxiv \
+slurp \
+starship \
+ttf-liberation-mono-nerd \
+ttf-noto-nerd \
+ttf-cascadia-mono-nerd \
+usbutils \
+ueberzugpp \
+wireplumber \
+woff2-font-awesome \
+wofi \
+wl-clipboard \
+waybar \
+wev \
+xorg \
+xorg-xinit \
+xorg-xwininfo \
+xorg-xprop \
+xorg-xsetroot \
+xorg-setxkbmap \
+xorg-xset \
+xorg-xev \
+xdg-utils \
+xdg-desktop-portal \
+xdg-desktop-portal-gtk \
+xdg-desktop-portal-hyprland \
+zathura \
+zathura-pdf-poppler 

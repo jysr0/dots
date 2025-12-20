@@ -1,0 +1,10 @@
+* lf file manager:
+- for a previewer:
+ueberzug, ffmpeg, ffmpegthumbnailer, chafa.
+
+* cursor theme: 
+* preferred: BreezeX-(Light/Dark/Black), ArcStarry, Bibata cursor.
+- put `Inherits=yourCursorTheme` -which is directory name that contains the theme- in ~/.local/share/icons/default/index.theme under [Icon Theme]
+- cursor themes directory should be in ~/.local/share/icons/ 
+
+* chown -R (at first arch install to change git repo's owner to get over some problems)
