@@ -1,77 +1,102 @@
-# ctrl: control
-# windows key: super
-# shift: shift
-# alt: alt
-# see xev
+#
+# see: xev.
+# see: man sxhkd.
+#
 
-#BRIGHTNESS
-{XF86MonBrightnessUp,XF86MonBrightnessDown}
-	{brightnessctl -q -e2 -n10 s 5%+ && pkill -RTMIN+2 dwmblocks,brightnessctl -q -e2 -n10 s 5%- && pkill -RTMIN+2 dwmblocks}
 
-#VOLUME
-{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-	{pamixer -i 2 && pkill -RTMIN+5 dwmblocks,pamixer -d 2 && pkill -RTMIN+5 dwmblocks,pamixer -t && pkill -RTMIN+5 dwmblocks}
-#{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute,XF86AudioMicMute}
-	#{wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+ && pkill -RTMIN+5 dwmblocks,\
-	# wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%- && pkill -RTMIN+5 dwmblocks,\
-	# wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+5 dwmblocks,\
-	# wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks}
 
-#SLEEP
-#XF86Sleep
-#	slock
-#LOCK AT WAKEUP
-#XF86WakeUp
-#	slock
 
-#BROWSER
+# BRIGHTNESS
+XF86MonBrightness{Up,Down}
+	brightnessctl -q -e2 -n10 s {5%+,5%-} && pkill -RTMIN+2 dwmblocks
+
+# VOLUME
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
+#XF86Audio{Mute,MicMute,RaiseVolume,LowerVolume}
+	#{\
+	# wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && pkill -RTMIN+5 dwmblocks,		\
+	# wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks 		\
+	# wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+ && pkill -RTMIN+5 dwmblocks,	\
+	# wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%- && pkill -RTMIN+5 dwmblocks,		\
+	#}
+
+
+
+
+
+
+# TERMINAL
+super + Return
+	$TERMINAL
+
+# BROWSER
 super + w
 	$BROWSER
 
-#FILE MANAGER
+# FILE MANAGER
 super + e
 	$TERMINAL -e lfub
 
-#EMOJIS
-super + alt + e
-	dmenu_emojis.sh
+# GIMP
+super + g ; o
+	gimp
 
-#ICONS
-super + alt + i
-	dmenu_icons.sh
 
-#SET BACKGROUND
-super + alt + b
-	dmenu_bg.sh
-#SET RANDOM BACKGROUND
-super + alt + w
-	random_bg.sh
 
-#CLIPBOARD VIEW
+
+
+# CLIPBOARD VIEW
 #super + alt + v
 super + v
 	clipmenu
-#CLIPBOARD CLEAR
+# CLIPBOARD CLEAR
 #super + alt + v
 super + shift + v
 	clipdel -d '.*' && notify-send 'Clipboard cleared'
 
-#TERMINAL
-super + Return
-	$TERMINAL
 
-#POWERMENU
-super + alt + x
-	dmenu_powermenu.sh
 
-#LOCKSCREEN
-super + F12
-	slock
+# EMOJIS
+super + alt + e
+	dmenu_emojis.sh
 
-#SCREEN SHOT
+# ICONS
+super + alt + i
+	dmenu_icons.sh
+
+
+
+# BACKGROUND SET
+super + alt + b
+	dmenu_bg.sh
+# BACKGROUND RANDOM SET
+super + alt + w
+	random_bg.sh
+
+# SCREEN SHOT
 {super + Print,Print}
 	{flameshot screen && notify-send 'Fullscreen taken',flameshot gui && notify-send 'Screenshot taken'}
 
-#DWM EXIT
+
+
+# LOCKSCREEN
+super + F12
+	slock
+
+# POWERMENU
+super + alt + x
+	dmenu_powermenu.sh
+
+# SLEEP
+#XF86Sleep
+#	slock
+# LOCK AT WAKEUP
+#XF86WakeUp
+#	slock
+
+
+
+# DWM EXIT
 super + shift + q
 	loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}
