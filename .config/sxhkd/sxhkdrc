@@ -1,6 +1,7 @@
 #
 # see: xev.
 # see: man sxhkd.
+# see: sxhkd on github.
 #
 
 
@@ -39,7 +40,7 @@ super + e
 	$TERMINAL -e lfub
 
 # GIMP
-super + g ; o
+super + g
 	gimp
 
 
