@@ -31,11 +31,12 @@ super + g
 
 # BRIGHTNESS
 XF86MonBrightness{Up,Down}
-	brightnessctl -q -e2 -n10 s {5%+,5%-} && pkill -RTMIN+2 dwmblocks
+	brightnessctl -q -e2 -n10 s {5%+,5%-} && kill -36 $(pidof dwmblocks)
 
 # VOLUME
 XF86Audio{Mute,RaiseVolume,LowerVolume}
-	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
+#	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
+	pamixer {-t,-i,-d} 2 && kill -39 $(pidof dwmblocks)
 #XF86Audio{MicMute,Mute,RaiseVolume,LowerVolume}
 	#{\
 	# wpctl set-mute 		@DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks, 	\
