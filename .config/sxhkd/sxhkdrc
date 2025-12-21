@@ -21,8 +21,8 @@
 #XF86Sleep
 #	slock
 #LOCK AT WAKEUP
-XF86WakeUp
-	slock
+#XF86WakeUp
+#	slock
 
 #BROWSER
 super + w
@@ -47,7 +47,7 @@ super + alt + b
 super + alt + w
 	random_bg.sh
 
-#CLIPBOARD SHOW
+#CLIPBOARD VIEW
 #super + alt + v
 super + v
 	clipmenu
