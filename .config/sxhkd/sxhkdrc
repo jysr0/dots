@@ -7,25 +7,6 @@
 
 
 
-# BRIGHTNESS
-XF86MonBrightness{Up,Down}
-	brightnessctl -q -e2 -n10 s {5%+,5%-} && pkill -RTMIN+2 dwmblocks
-
-# VOLUME
-XF86Audio{Mute,RaiseVolume,LowerVolume}
-	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
-#XF86Audio{MicMute,Mute,RaiseVolume,LowerVolume}
-	#{\
-	# wpctl set-mute 		@DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks, 	\
-	# wpctl set-mute 		@DEFAULT_AUDIO_SINK@   toggle && pkill -RTMIN+5 dwmblocks,	\
-	# wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@   2%+    && pkill -RTMIN+5 dwmblocks,	\
-	# wpctl set-volume 		@DEFAULT_AUDIO_SINK@   2%-    && pkill -RTMIN+5 dwmblocks	\
-	#}
-
-
-
-
-
 
 # TERMINAL
 super + Return
@@ -42,6 +23,26 @@ super + e
 # GIMP
 super + g
 	gimp
+
+
+
+
+
+
+# BRIGHTNESS
+XF86MonBrightness{Up,Down}
+	brightnessctl -q -e2 -n10 s {5%+,5%-} && pkill -RTMIN+2 dwmblocks
+
+# VOLUME
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
+#XF86Audio{MicMute,Mute,RaiseVolume,LowerVolume}
+	#{\
+	# wpctl set-mute 		@DEFAULT_AUDIO_SOURCE@ toggle && pkill -RTMIN+5 dwmblocks, 	\
+	# wpctl set-mute 		@DEFAULT_AUDIO_SINK@   toggle && pkill -RTMIN+5 dwmblocks,	\
+	# wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@   2%+    && pkill -RTMIN+5 dwmblocks,	\
+	# wpctl set-volume 		@DEFAULT_AUDIO_SINK@   2%-    && pkill -RTMIN+5 dwmblocks	\
+	#}
 
 
 
