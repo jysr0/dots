@@ -1,2 +1,21 @@
+###################
+# GENERAL CONFIGS #
+###################
+
+*.font: monospace:size=10
+#*.alpha: 0.9
+
+################
+# CURSOR THEME #
+################
+
 Xcursor.theme: BreezeX-Dark
 Xcursor.size: 24
+
+########
+# SXIV #
+########
+
+Sxiv.background: #000000
+Sxiv.foreground: #005577
+Sxiv.font: monospace
