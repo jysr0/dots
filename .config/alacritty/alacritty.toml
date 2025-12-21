@@ -11,7 +11,7 @@ history    = 1000
 multiplier = 1
 
 [font]
-size = 8.3 #8.3
+size = 8.4 #8.4
 #normal = { family = "CaskaydiaMono NFM",            style = "SemiLight" }
 #normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
 #normal = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
