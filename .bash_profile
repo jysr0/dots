@@ -96,6 +96,10 @@ xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
 picom -b
 clipmenud &
+
+#systemctl --user start xscreensaver.service
+xscreensaver &
+
 xrdb ~/.Xresources
 dwmblocks &
 #exec dwm
