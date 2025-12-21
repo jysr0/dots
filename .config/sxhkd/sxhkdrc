@@ -83,19 +83,13 @@ super + alt + w
 
 
 # LOCKSCREEN
-super + F12
-	slock
+super + shift + ctrl + q
+	xscreensaver-command -quiet -lock
 
 # POWERMENU
 super + alt + x
 	dmenu_powermenu.sh
 
-# SLEEP
-#XF86Sleep
-#	slock
-# LOCK AT WAKEUP
-#XF86WakeUp
-#	slock
 
 
 
