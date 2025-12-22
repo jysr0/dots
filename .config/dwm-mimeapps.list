@@ -10,7 +10,7 @@ application/x-xpinstall=brave-browser.desktop
 application/pdf=zathura.desktop
 #application/x-gnome-saved-search=nemo.desktop
 
-inode/directory=lf.desktop
+#inode/directory=lf.desktop
 
 image/*=sxiv.desktop
 image/jpeg=sxiv.desktop
