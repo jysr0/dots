@@ -2,6 +2,6 @@
 Type=Application
 Name=sxiv
 GenericName=Image Viewer
-Exec=/usr/bin/sxiv %f
+Exec=/usr/bin/setsid -f sxiv %f
 #DBusActivatable=false
 #Terminal=false
