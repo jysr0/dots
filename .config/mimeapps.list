@@ -24,6 +24,7 @@ audio/opus=vlc.desktop
 audio/mp4=vlc.desktop
 audio/webm=vlc.desktop
 audio/mpeg=vlc.desktop
+audio/x-m4a=vlc.desktop
 
 video/*=vlc.desktop
 video/mp4=vlc.desktop
