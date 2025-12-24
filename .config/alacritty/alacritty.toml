@@ -58,7 +58,7 @@ bindings = [
     { key = "0", mods = "Control", action = "ResetFontSize" },
     { key = "Numpad0", mods = "Control", action = "ResetFontSize" },
 	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
-	{ key = "c", mods = "Super", action = "Quit" },
+	{ key = "c", mods = "Super | Shift", action = "Quit" },
 	{ key = "PageUp", action = "ScrollHalfPageDown" },
 	{ key = "PageDown", action = "ScrollHalfPageUp" },
 	{ key = "n", mods = "Control | Shift", command = "alacritty --working-directory $PWD" },
