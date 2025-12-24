@@ -46,14 +46,14 @@ alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o
 #  DWM ALIASES  #
 #################
 
-alias dwmc="sudo vim ~/.suckless/dwm/config.h "
-alias dwmm="cd ~/.suckless/dwm/ && sudo make clean install && cd ~ "
-alias dmc="sudo vim ~/.suckless/dmenu/config.h "
-alias dmm="cd ~/.suckless/dmenu/ && sudo make clean install && cd ~ "
-alias stc="sudo sudo vim ~/.suckless/st/config.h "
-alias stm="cd ~/.suckless/st/ && sudo make clean install && cd ~ "
-alias dwmbc="sudo vim ~/.suckless/dwmblocks/blocks.h "
-alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd ~ "
+alias dwmc="vim ~/.suckless/dwm/config.h "
+alias dwmm="cd ~/.suckless/dwm/ && sudo make clean install && cd - "
+alias dmc="vim ~/.suckless/dmenu/config.h "
+alias dmm="cd ~/.suckless/dmenu/ && sudo make clean install && cd - "
+#alias stc="vim ~/.suckless/st/config.h "
+#alias stm="cd ~/.suckless/st/ && sudo make clean install && cd - "
+alias dwmbc="vim ~/.suckless/dwmblocks/blocks.h "
+alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd - "
 
 #################
 # OTHER ALIASES #
