@@ -86,7 +86,7 @@ export STARSHIP_SHELL=/usr/bin/sh
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
 #dbus-update-activation-environment XDG_CURRENT_DESKTOP DISPLAY # used for filechoose when (down/up)load from browser
 
-setxkbmap -model acer_laptop -option grp:alt_shift_toggle us,ara
+#setxkbmap -model acer_laptop -option grp:alt_space_toggle us,ara
 xset r rate 200 55 2> /dev/null
 sxhkd &
 dunst &
