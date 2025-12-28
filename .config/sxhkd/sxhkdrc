@@ -5,9 +5,6 @@
 #
 
 
-
-
-
 # TERMINAL
 super + Return
 	$TERMINAL
@@ -28,9 +25,6 @@ super + g
 super + r
 	rofi -show drun
 
-
-
-
 # BRIGHTNESS
 XF86MonBrightness{Up,Down}
 	brightnessctl -q -e2 -n10 s {5%+,5%-} && kill -36 $(pidof dwmblocks)
@@ -47,11 +41,6 @@ XF86Audio{Mute,RaiseVolume,LowerVolume}
 	# wpctl set-volume 		@DEFAULT_AUDIO_SINK@   2%-    && pkill -RTMIN+5 dwmblocks	\
 	#}
 
-
-
-
-
-
 # CLIPBOARD VIEW
 #super + alt + v
 super + v
@@ -61,33 +50,17 @@ super + v
 super + shift + v
 	clipdel -d '.*' && notify-send 'Clipboard cleared'
 
+# {EMOJIS,ICONS}
+super + alt + {_,shift +} g
+	{dmenu_emojis.sh,dmenu_icons.sh}
 
-
-# EMOJIS
-super + alt + e
-	dmenu_emojis.sh
-
-# ICONS
-super + alt + i
-	dmenu_icons.sh
-
-
-
-# BACKGROUND SET
-super + alt + b
-	dmenu_bg.sh
-# BACKGROUND RANDOM SET
-super + alt + w
-	random_bg.sh
+# {BACKGROUND SET,BACKGROUND RANDOM SET}
+super + alt + {_,shift +} b
+	{dmenu_bg.sh,random_bg.sh}
 
 # SCREEN SHOT
 {super + Print,Print}
 	{flameshot screen && notify-send 'Fullscreen taken',flameshot gui && notify-send 'Screenshot taken'}
-
-
-
-
-
 
 # SIGNALS TO DWMBLOCKS
 # keyboard
@@ -97,11 +70,6 @@ alt + space
 @XF86WakeUp
 	kill -41 $(pidof dwmblocks)
 
-
-
-
-
-
 # LOCKSCREEN
 super + shift + ctrl + q
 	xscreensaver-command -quiet -lock
@@ -109,9 +77,6 @@ super + shift + ctrl + q
 # POWERMENU
 super + alt + x
 	dmenu_powermenu.sh
-
-
-
 
 # DWM EXIT
 #super + shift + q
