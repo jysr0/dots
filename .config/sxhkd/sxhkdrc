@@ -51,6 +51,7 @@ XF86Audio{Mute,RaiseVolume,LowerVolume}
 
 
 
+
 # CLIPBOARD VIEW
 #super + alt + v
 super + v
@@ -85,6 +86,22 @@ super + alt + w
 
 
 
+
+
+
+# SIGNALS TO DWMBLOCKS
+# keyboard
+alt + space
+	kill -43 $(pidof dwmblocks)
+# clock at wakeup
+@XF86WakeUp
+	kill -41 $(pidof dwmblocks)
+
+
+
+
+
+
 # LOCKSCREEN
 super + shift + ctrl + q
 	xscreensaver-command -quiet -lock
@@ -97,5 +114,5 @@ super + alt + x
 
 
 # DWM EXIT
-super + shift + q
-	loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}
+#super + shift + q
+#	loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}
