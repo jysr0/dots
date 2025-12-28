@@ -33,7 +33,7 @@ format = '''
 
 #scan_timeout = 30
 #command_timeout = 500
-add_newline = false
+add_newline = true
 follow_symlinks = true
 palette = 'colors'
 [palettes.colors]
