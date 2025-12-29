@@ -13,9 +13,9 @@ Xcursor.theme: BreezeX-Dark
 Xcursor.size: 24
 
 ########
-# SXIV #
+# NSXIV #
 ########
 
-Sxiv.background: #000000
-Sxiv.foreground: #005577
-Sxiv.font: monospace
+Nsxiv.*.background: #222222
+Nsxiv.*.foreground: #005577
+Nsxiv.*.font: monospace
