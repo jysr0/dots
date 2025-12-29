@@ -1,3 +1,7 @@
+dwm-6.6  
+set dwm font to JetBrainsMono NFM   
+--------------------------------------------------
+needed:  
 * awesomebar 
 * alpha (fixborders) 
 * colorschemes   ||  scheme switch  
@@ -11,12 +15,10 @@
 * swaptags  
 * tiledmove 
 * tagintostack (onemaster) 
-* vanitygaps 
-* viewontag  
+* vanitygaps (tile, bstack, ...)  
+* viewontag  || windowfollow  
 * winicon  
 * zoomswap  
---------------------------------
-set dwm font to JetBrainsMono NFM
 ------------------------------------
 * alpha (fixborders) ** ---------
 * awesomebar (if used, skip any scratchpad patch) ** ---------
