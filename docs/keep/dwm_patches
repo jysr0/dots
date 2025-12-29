@@ -1,0 +1,230 @@
+* awesomebar 
+* alpha (fixborders) 
+* colorschemes   ||  scheme switch  
+* clientopacity  
+* focusmaster (focusmaster-return)  || mark || switchcol      X
+* focusonclick  
+* hide vacant tags  
+* pertag  
+* push (push no master)   
+* stackmfact  || moveresize   
+* swaptags  
+* tiledmove 
+* tagintostack (onemaster) 
+* vanitygaps 
+* viewontag  
+* winicon  
+* zoomswap  
+--------------------------------
+set dwm font to JetBrainsMono NFM
+------------------------------------
+* alpha (fixborders) ** ---------
+* awesomebar (if used, skip any scratchpad patch) ** ---------
+* alwayscenter ** -------
+* anybar 
+* appicons
+* attachabove
+* attachaside 
+* attachasideandbelow ** -------
+* autodarkmode
+* autoraise windows
+* autoswitch (to monocle)
+
+* bardwmlogo ** --------
+* bottomstack -------
+* bulkill ------
+* barpadding ** 
+* bar height
+* backlight
+* betterswallow
+* bidi
+* bottomdockgap (for plank)
+
+* colorschemes ** -------- 
+      -- skip if those patched:  
+      - flycolors  
+      - scheme switch  [use this]
+* clientindicators **  ------
+     -- skip if those patched:
+     - hide vacant tags [use this]
+     - tagcolorscheme  
+     - taggrid
+* cfacts ---------
+     -- skip if those patched:
+     - stackmfact [use this]
+* clientopacity **-----
+* cursorwarp ------
+* centeredwindowname
+
+* exitmenu ------
+
+* flycolors ** -------
+     -- skip if those patched:  
+     - colorschemes  
+     - scheme switch  [use this]
+* fullgaps ** ---------
+     -- skip if those patched:
+     - vanitygaps  [use this]
+     - tilegap 
+     - functionalgaps
+* functionalgaps ** ------
+     -- skip if those patched:
+     - vanitygaps  [use this]
+     - tilegap 
+     - fullgaps
+* focusmaster (focusmaster-return) ** ---------
+    -- skip if those patched:  
+     - mark  
+     - swapfocus  [use this]  
+     - switchcol  
+* focusonclick ** ----------
+* focusurgent ------
+* fullscreen ------
+* floatingstatus --------
+
+* hide vacant tags [use this] ** --------
+    -- skip if those patched:
+     - clientindicators 
+     - tagcolorscheme  
+     - taggrid
+* horizontal vertical i3 ------
+
+* ispermanent ** --------
+* inplacerotate -------
+
+* killunsel ** ----------
+* keysequence  --------
+
+* launcher ** ------
+* leftstack ----
+* locktagsfor
+
+* mark ** ------
+    -- skip if those patched: 
+    - focusmaster  
+    - swapfocus [use this]  
+    - switchcol  
+* multipledynamicscratchpads ** ---------
+    -- skip if those patched:  
+     - awesomebar  
+* movestack ** ------
+   -- skip if those patched:  
+   - push  [use this]
+* moveresize ** --------
+* mainmon 
+* mpdcontrol  
+
+* notallowed ** --------
+
+* onlyquitonempty --------
+
+* pwkl (keyboard layout per window) ** ------
+* pertag ** ------
+* push (push no master) [use this] ** ------
+    -- skip if those patched:  
+    - movestack  
+* pango  
+
+* quitprompt ** ------
+
+* resizecorners ** ------
+* restartsig (used by luke smith) ** ---------
+* rulerefresher -------
+* restoreafterrestart -------
+
+* sgrstatus (colors for status text)** ------
+      -- skip if those patched:  
+       - statuscolors  
+* statuscolors ** -----
+      -- skip if those patched:  
+       - sgrstatus  
+* statuscmd **------
+* systray ** ------
+* stackmfact [use this]**  --------
+    -- skip if those patched:  
+     - cfacts
+* setxkbgroup ** -------
+* spawn cwd ** -----
+* statusbutton ** ------
+* swallow ** -----
+* swapfocus [use this] ** --------
+     -- skip if those patched: 
+     - focusmaster  
+     - mark  
+     - switchcol  
+* switchcol ** ------
+     -- skip if those patched: 
+     - focusmaster  
+     - mark  
+     - swapfocus [use this]  
+* scheme switch  [use this] ** -------
+      -- skip if those patched:  
+      - colorschemes  
+      - flycolors  
+* swaptags ** -----
+* sticky -----
+* shift tools -----
+* save floats -------
+* statuspadding
+* smartborders
+
+* tagintostack (onemaster) ** ---------
+* tilegap ** ------
+     -- skip if those patched:
+     - fullgaps
+     - vanitygaps  [use this]
+     - functionalgaps
+* tagcolorscheme ** ------
+    -- skip if those patched:
+     - clientindicators 
+     - hide vacant tags  [use this]
+     - taggrid  
+* taggrid ** ------
+    -- skip if those patched:
+     - clientindicators 
+     - hide vacant tags  [use this] 
+     - tagcolorscheme  
+* tiledmove ** ------
+* transfer ** ------
+* taglayouts ** -----
+* tagshift ** -----
+* tagspawn ** ------
+* taglabels -------
+* toggletopbar 
+* togglebartag 
+
+* uselessgap ** -----
+* unfocusednoborders ** -----
+* underlinetags -----
+* unicode ellipsis 
+
+* vanitygaps (tile, bstack, ...) [use this] ** -------
+     -- skip if those patched:
+     - fullgaps
+     - tilegap 
+     - functionalgaps
+* viewontag ** -------
+     -- skip if those patched:  
+     - windowfollow  [use this]
+
+* warp (cursor) ** -----
+* windowfollow [use this] ** -----
+     -- skip if those patched:  
+     - viewontag  
+* winicon ** -------
+* winview -----
+* win31theme ----
+* windowmap ----
+
+* xtile ** ------
+    -- must patch before this: 
+    - pertag  
+* xkb ----
+* xrdb -----
+     -- skip if those patched:  
+     - xresources [use this]  
+* xresources [use this] ------
+     -- skip if those patched: 
+      - xrdb  
+
+* zoomswap ** ------
