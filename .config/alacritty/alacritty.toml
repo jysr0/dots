@@ -65,7 +65,7 @@ bindings = [
 	#{ key = "c", mods = "Super | Shift", action = "Quit" },
 	{ key = "PageUp", action = "ScrollHalfPageDown" },
 	{ key = "PageDown", action = "ScrollHalfPageUp" },
-	#{ key = "n", mods = "Control | Shift", command = "alacritty --working-directory $PWD" },
+	{ key = "Return", mods = "Super | Shift", command = "alacritty" },
 ]
 
 [bell]
