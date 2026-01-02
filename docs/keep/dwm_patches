@@ -2,21 +2,28 @@ dwm-6.6
 set dwm font to JetBrainsMono NFM   
 --------------------------------------------------
 needed:  
-* awesomebar 
-* alpha (fixborders) 
-* colorschemes   ||  scheme switch  
-* clientopacity  
-* focusmaster (focusmaster-return)  || mark || switchcol      X
-* focusonclick  
-* hide vacant tags  
-* pertag  
-* push (push no master)   
-* stackmfact  || moveresize   
+* awesomebar --- 3
+* alpha (fixborders) --- (4)
+* attachdirection  --- 7
+* bulkill  (after systray if patching systray)  
+* colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
+* clientopacity (didn't work for dwm-6.6) ---11     X  || defaulttransparency  
+* decoration hints  ---10
+* doublepressquit   
+* focusonclick  (don't patch)        X
+* focusmaster (focusmaster-return)(works only with 1 master) || switchcol ---9 || mark 
+* hide vacant tags  --- 5  
+* moveresize (for float layout) ---12  
+* push  --- (8) || mark 
+* pertag  --- 6
+* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6) (just skip) --- 1
 * swaptags  
+* statuscmd  
+* systray 
 * tiledmove 
-* tagintostack (onemaster) 
-* vanitygaps (tile, bstack, ...)  
-* viewontag  || windowfollow  
+* tagintostack (all master) (don't need it)      X
+* vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2
+* viewontag  || windowfollow  ---14
 * winicon  
 * zoomswap  
 ------------------------------------
@@ -25,17 +32,26 @@ needed:
 * alwayscenter ** -------
 * anybar 
 * appicons
-* attachabove
-* attachaside 
+* attachdirection [use this] ** ------
+      -- skip if those patched:  
+      - attachasideandbelow     
+      - attachbellow  
 * attachasideandbelow ** -------
+       -- skip if those patched:  
+       - attachdirection [use this]   
+       - attachbellow  
+* attachbellow ** ------
+      -- skip if those patched:  
+      - attachasideandbellow   
+      - attachdirection [use this]  
 * autodarkmode
 * autoraise windows
 * autoswitch (to monocle)
 
 * bardwmlogo ** --------
+* bulkill **------
 * bottomstack -------
-* bulkill ------
-* barpadding ** 
+* barpadding -----
 * bar height
 * backlight
 * betterswallow
@@ -51,12 +67,22 @@ needed:
      - hide vacant tags [use this]
      - tagcolorscheme  
      - taggrid
-* cfacts ---------
+* cfacts (if this, then don't patch vanitygaps)---------
      -- skip if those patched:
      - stackmfact [use this]
-* clientopacity **-----
+* clientopacity [use this] **-----
+      -- skip if those patched:  
+      - defaulttransparency    
 * cursorwarp ------
 * centeredwindowname
+
+* decoration hints ** -------
+* doublepressquit [use this] ** -----
+      -- skip if those patched:  
+      - onlyquitonempty   
+* defaulttransparency ** -------
+       -- skip if those patched:   
+       - clientopacity [use this]   
 
 * exitmenu ------
 
@@ -77,8 +103,8 @@ needed:
 * focusmaster (focusmaster-return) ** ---------
     -- skip if those patched:  
      - mark  
-     - swapfocus  [use this]  
-     - switchcol  
+     - swapfocus   
+     - switchcol  [use this]   
 * focusonclick ** ----------
 * focusurgent ------
 * fullscreen ------
@@ -104,27 +130,33 @@ needed:
 * mark ** ------
     -- skip if those patched: 
     - focusmaster  
-    - swapfocus [use this]  
-    - switchcol  
+    - swapfocus  
+    - switchcol  [use this]   
+    - push  [use this]  
+    - movestack  
 * multipledynamicscratchpads ** ---------
     -- skip if those patched:  
      - awesomebar  
 * movestack ** ------
    -- skip if those patched:  
-   - push  [use this]
-* moveresize ** --------
+   - push  [use this]  
+   - mark   
+* moveresize (for float layout)** --------
 * mainmon 
 * mpdcontrol  
 
 * notallowed ** --------
 
-* onlyquitonempty --------
+* onlyquitonempty ** --------
+     -- skip if those patched:  
+     - doublepressquit [use this]   
 
 * pwkl (keyboard layout per window) ** ------
 * pertag ** ------
 * push (push no master) [use this] ** ------
     -- skip if those patched:  
     - movestack  
+    - mark  
 * pango  
 
 * quitprompt ** ------
@@ -142,23 +174,23 @@ needed:
        - sgrstatus  
 * statuscmd **------
 * systray ** ------
-* stackmfact [use this]**  --------
+* stackmfact [use this] (if this, then don't patch vanitygaps)**  --------
     -- skip if those patched:  
      - cfacts
 * setxkbgroup ** -------
 * spawn cwd ** -----
 * statusbutton ** ------
 * swallow ** -----
-* swapfocus [use this] ** --------
+* swapfocus ** --------
      -- skip if those patched: 
-     - focusmaster  
+     - focusmaster 
      - mark  
-     - switchcol  
-* switchcol ** ------
+     - switchcol  [use this]   
+* switchcol [use this] ** ------
      -- skip if those patched: 
-     - focusmaster  
+     - focusmaster   
      - mark  
-     - swapfocus [use this]  
+     - swapfocus   
 * scheme switch  [use this] ** -------
       -- skip if those patched:  
       - colorschemes  
@@ -200,7 +232,7 @@ needed:
 * underlinetags -----
 * unicode ellipsis 
 
-* vanitygaps (tile, bstack, ...) [use this] ** -------
+* vanitygaps (tile, bstack, ...) [use this] (if this, then don't patch stackmfact/cfacts)** ---
      -- skip if those patched:
      - fullgaps
      - tilegap 
