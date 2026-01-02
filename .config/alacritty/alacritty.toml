@@ -11,7 +11,7 @@ history    = 1000
 multiplier = 1
 
 [font]
-size = 8.8 #8.4
+size = 8.4 #8.4
 #normal = { family = "CaskaydiaMono NFM",            style = "Regular" }
 #normal = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
 #normal = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
@@ -22,10 +22,11 @@ size = 8.8 #8.4
 #normal      = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
 #normal      = { family = "SauceCodePro Nerd Font Mono", style = "Regular" }
 #normal      = { family = "SauceCodePro NFM", style = "Regular" }
-normal      = { family = "CaskaydiaMono NFM", style = "Light" }
-italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
-bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
-bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
+#normal      = { family = "SauceCodePro NFM", style = "Medium" }
+normal      = { family = "SauceCodePro NFM", style = "Medium" }
+italic      = { family = "SauceCodePro NFM", style = "Italic" }
+bold        = { family = "SauceCodePro NFM", style = "Bold" }
+bold_italic = { family = "SauceCodePro NFM", style = "Bold Italic" }
 
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
