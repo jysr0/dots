@@ -7,7 +7,7 @@
 
 # TERMINAL
 super + Return
-	$TERMINAL
+	$TERMINAL 
 
 # BROWSER
 super + w
@@ -52,11 +52,11 @@ super + shift + v
 
 # {EMOJIS,ICONS}
 super + alt + {_,shift +} g
-	{dmenu_emojis.sh,dmenu_icons.sh}
+	{emoji,icon}
 
 # {BACKGROUND SET,BACKGROUND RANDOM SET}
 super + alt + {_,shift +} b
-	{dmenu_bg.sh,random_bg.sh}
+	{bground,bg-ran}
 
 # SCREEN SHOT
 {super + Print,Print}
@@ -76,7 +76,7 @@ super + shift + ctrl + q
 
 # POWERMENU
 super + alt + x
-	dmenu_powermenu.sh
+	pow-mnu
 
 # DWM EXIT
 #super + shift + q
