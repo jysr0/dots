@@ -90,7 +90,7 @@ export STARSHIP_SHELL=/usr/bin/sh
 xset r rate 200 55 2> /dev/null
 sxhkd &
 dunst &
-xrandr --dpi 110 #for dwmblocks-async icon size
+#xrandr --dpi 110 #for dwmblocks-async size
 
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
