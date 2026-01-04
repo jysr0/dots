@@ -53,8 +53,10 @@ alias dmc="vim ~/.suckless/dmenu/config.def.h "
 alias dmm="cd ~/.suckless/dmenu/ && sudo make clean install && cd - "
 #alias stc="vim ~/.suckless/st/config.def.h "
 #alias stm="cd ~/.suckless/st/ && sudo make clean install && cd - "
-alias dwmbc="vim ~/.suckless/dwmblocks/blocks.def.h "
-alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd - "
+#alias dwmbc="vim ~/.suckless/dwmblocks/blocks.def.h "
+#alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd - "
+alias dwmbc="vim ~/.suckless/dwmblocks-async/config.h "
+alias dwmbm="cd ~/.suckless/dwmblocks-async/ && sudo make install  && cd - "
 
 #################
 # OTHER ALIASES #
