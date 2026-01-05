@@ -17,7 +17,7 @@ highest order: 21
 * focusmaster (focusmaster-return)(works only with 1 master) || switchcol ---9 || mark 
 * hide vacant tags  --- 5  
 * moveresize (for float layout) ---12  
-* push  --- (8) || mark 
+* movestack --- (8) || push || mark 
 * pertag  --- 6
 * stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) --- 1
 * swaptags --- 21  
@@ -142,14 +142,14 @@ highest order: 21
     - focusmaster  
     - swapfocus  
     - switchcol  [use this]   
-    - push  [use this]  
-    - movestack  
+    - push   
+    - movestack [use this]   
 * multipledynamicscratchpads ** ---------
     -- skip if those patched:  
      - awesomebar  
-* movestack ** ------
+* movestack [use this]** ------
    -- skip if those patched:  
-   - push  [use this]  
+   - push   
    - mark   
 * moveresize (for float layout)** --------
 * mainmon 
@@ -163,9 +163,9 @@ highest order: 21
 
 * pwkl (keyboard layout per window) ** ------
 * pertag ** ------
-* push (push no master) [use this] ** ------
+* push (push no master) ** ------
     -- skip if those patched:  
-    - movestack  
+    - movestack [use this] 
     - mark  
 * pango  
 
