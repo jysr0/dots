@@ -2,14 +2,17 @@ dwm-6.6
 set dwm font to JetBrainsMono NFM   
 --------------------------------------------------
 needed:  
+highest order: 20   
 * awesomebar --- 3
-* alpha (fixborders) --- (4)
+* alpha (fixborders) --- (4) 
+* alwayscenter --- 20
 * attachdirection  --- 7
-* bulkill  (after systray if patching systray)  
+* barpadding/floatingstatus (skip if statuscmd patched) ---15
+* bulkill  (after systray if patching systray) --- 17  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
 * clientopacity (didn't work for dwm-6.6) ---11     X  || defaulttransparency  
 * decoration hints  ---10
-* doublepressquit   
+* doublepressquit (don't need it)  X  
 * focusonclick  (don't patch)        X
 * focusmaster (focusmaster-return)(works only with 1 master) || switchcol ---9 || mark 
 * hide vacant tags  --- 5  
@@ -18,14 +21,15 @@ needed:
 * pertag  --- 6
 * stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6) (just skip) --- 1
 * swaptags  
-* statuscmd  
-* systray 
-* tiledmove 
+* statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15
+* systray (after barpadding if patching barpadding) (don't need it)  X 
+* tiledmove ---18 
+* togglefloatingcenter --- 19  
 * tagintostack (all master) (don't need it)      X
 * vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2
-* viewontag  || windowfollow  ---14
-* winicon  
-* zoomswap  
+* viewontag ---14 || windowfollow (problem here)  
+* winicon (don't patch) X  
+* zoomswap  --- 16
 ------------------------------------
 * alpha (fixborders) ** ---------
 * awesomebar (if used, skip any scratchpad patch) ** ---------
@@ -48,10 +52,13 @@ needed:
 * autoraise windows
 * autoswitch (to monocle)
 
-* bardwmlogo ** --------
+* bardwmlogo ** -----
+* barpadding ** -----
+     -- skip if those patched:
+     - statuscmd  [use this]  
+     - floatingstatus   
 * bulkill **------
 * bottomstack -------
-* barpadding -----
 * bar height
 * backlight
 * betterswallow
@@ -108,7 +115,10 @@ needed:
 * focusonclick ** ----------
 * focusurgent ------
 * fullscreen ------
-* floatingstatus --------
+* floatingstatus ** -----
+     -- skip if those patched:  
+     - statuscmd [use this]  
+     - barpadding  
 
 * hide vacant tags [use this] ** --------
     -- skip if those patched:
@@ -172,7 +182,10 @@ needed:
 * statuscolors ** -----
       -- skip if those patched:  
        - sgrstatus  
-* statuscmd **------
+* statuscmd [use this]**------
+     -- skip if those patched: 
+     - barpadding   
+     - floatingstatus  
 * systray ** ------
 * stackmfact [use this] (if this, then don't patch vanitygaps)**  --------
     -- skip if those patched:  
@@ -223,6 +236,7 @@ needed:
 * taglayouts ** -----
 * tagshift ** -----
 * tagspawn ** ------
+* togglefloatingcenter ** -----
 * taglabels -------
 * toggletopbar 
 * togglebartag 
