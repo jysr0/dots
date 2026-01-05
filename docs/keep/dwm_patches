@@ -2,7 +2,7 @@ dwm-6.6
 set dwm font to JetBrainsMono NFM   
 --------------------------------------------------
 needed:  
-highest order: 20   
+highest order: 21   
 * awesomebar --- 3
 * alpha (fixborders) --- (4) 
 * alwayscenter --- 20
@@ -19,8 +19,8 @@ highest order: 20
 * moveresize (for float layout) ---12  
 * push  --- (8) || mark 
 * pertag  --- 6
-* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6) (just skip) --- 1
-* swaptags  
+* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) --- 1
+* swaptags --- 21  
 * statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15
 * systray (after barpadding if patching barpadding) (don't need it)  X 
 * tiledmove ---18 
