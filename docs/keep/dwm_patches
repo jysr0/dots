@@ -2,13 +2,14 @@ dwm-6.6
 set dwm font to JetBrainsMono NFM   
 --------------------------------------------------
 needed:  
-highest order: 21   
+highest order: 22   
 * awesomebar --- 3
 * alpha (fixborders) --- (4) 
 * alwayscenter --- 20
-* attachdirection  --- 7
+* attachdirection  --- 7  
+* allowkillrule ---22  
 * barpadding/floatingstatus (skip if statuscmd patched) ---15
-* bulkill  (after systray if patching systray) --- 17  
+* bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
 * clientopacity (didn't work for dwm-6.6) ---11     X  || defaulttransparency  
 * decoration hints  ---10
@@ -23,7 +24,7 @@ highest order: 21
 * swaptags --- 21  
 * statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15
 * systray (after barpadding if patching barpadding) (don't need it)  X 
-* tiledmove ---18 
+* tiledmove ---(18) 
 * togglefloatingcenter --- 19  
 * tagintostack (all master) (don't need it)      X
 * vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2
@@ -31,11 +32,6 @@ highest order: 21
 * winicon (don't patch) X  
 * zoomswap  --- 16
 ------------------------------------
-* alpha (fixborders) ** ---------
-* awesomebar (if used, skip any scratchpad patch) ** ---------
-* alwayscenter ** -------
-* anybar 
-* appicons
 * attachdirection [use this] ** ------
       -- skip if those patched:  
       - attachasideandbelow     
@@ -48,16 +44,22 @@ highest order: 21
       -- skip if those patched:  
       - attachasideandbellow   
       - attachdirection [use this]  
+* alpha (fixborders) ** ---------
+* awesomebar (if used, skip any scratchpad patch) ** ---------
+* alwayscenter ** -------
+* allowkillrule **------
+* anybar 
+* appicons
 * autodarkmode
 * autoraise windows
 * autoswitch (to monocle)
 
-* bardwmlogo ** -----
 * barpadding ** -----
      -- skip if those patched:
      - statuscmd  [use this]  
      - floatingstatus   
-* bulkill **------
+* bardwmlogo ** -----
+* bulkill (use safe version if patching 'allowkillrule') **------
 * bottomstack -------
 * bar height
 * backlight
