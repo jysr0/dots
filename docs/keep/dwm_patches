@@ -1,33 +1,58 @@
 dwm-6.6  
 set dwm font to JetBrainsMono NFM   
 --------------------------------------------------
+layouts: patch at the end   
+* bottomstack (remove bstack/bstackhoriz functions redefinition from dwm.c not vanitygaps)** ---- (4)
+* centeredmaster (remove centeredmaster/centeredfloatingmaster functions redefinition from dwm.c not vanitygaps)(problems with vanitygaps)** ---- (5)
+* cyclelayouts (use if so much layouts are applied)**----
+* columns 
+* deck (remove deck function redefinition from dwm.c not vanitygaps)**---- (3)
+* fibonacci **---- (2)
+* flextile 
+* gaplessgrid (little problem with vanitygaps inter-horiz/vert gaps)** ----- (1*)
+* gridmode (use 'gaplessgrid/nrowgrid') ----
+* horizontal   
+* leftstack (skip if 'rmaster/xtile' patched)  
+* nmaster ----
+* nrowgrid (little problem with vanitygaps inter-vert gaps)**---- (1*)
+* rmaster (skip if 'leftstack/xtile' patched)  
+* three column ---
+* xtile (skip if 'rmaster/leftstack/vanitygaps' used)  
+--------------------------------------------------
 needed:  
-highest order: 22   
+order: 2 to 27    
 * awesomebar --- 3
 * alpha (fixborders) --- (4) 
 * alwayscenter --- 20
 * attachdirection  --- 7  
 * allowkillrule ---22  
-* barpadding/floatingstatus (skip if statuscmd patched) ---15
+* barpadding/floatingstatus (skip if statuscmd patched) ---15*
 * bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
 * clientopacity (didn't work for dwm-6.6) ---11     X  || defaulttransparency  
+* center ---27 
 * decoration hints  ---10
 * doublepressquit (don't need it)  X  
 * focusonclick  (don't patch)        X
 * focusmaster (focusmaster-return)(works only with 1 master) || switchcol ---9 || mark 
 * hide vacant tags  --- 5  
+* horizontal vertical i3 (notice inc/decrementation of num of masters)(don't need it) ---25    X   
+* inplacerotate ---24 
+* monocle count (don't patch, specially if 'statuscmd' is used)---26    X
 * moveresize (for float layout) ---12  
 * movestack --- (8) || push || mark 
-* pertag  --- 6
-* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) --- 1
+* pertag  --- 6*  
+* pwkl (apply the patch and if encountered problems patch its fix, see the dwm page)---23  
+* resetlayout (use if 'pertag' is used)(don't patch, has problem in floating layout)---6*    X 
+* resetnmaster (after 'pertag' if patched) ---6*  
+* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) ---2* 
 * swaptags --- 21  
-* statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15
-* systray (after barpadding if patching barpadding) (don't need it)  X 
+* statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15*
+* systray (after barpadding if patching barpadding) (don't need it)---15*  X 
 * tiledmove ---(18) 
 * togglefloatingcenter --- 19  
 * tagintostack (all master) (don't need it)      X
-* vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2
+* vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2* 
 * viewontag ---14 || windowfollow (problem here)  
 * winicon (don't patch) X  
 * zoomswap  --- 16
@@ -44,10 +69,12 @@ highest order: 22
       -- skip if those patched:  
       - attachasideandbellow   
       - attachdirection [use this]  
+* allowkillrule [use this] **------
+    -- skip if those patched:  
+    - ispermanent  
 * alpha (fixborders) ** ---------
 * awesomebar (if used, skip any scratchpad patch) ** ---------
 * alwayscenter ** -------
-* allowkillrule **------
 * anybar 
 * appicons
 * autodarkmode
@@ -82,6 +109,7 @@ highest order: 22
 * clientopacity [use this] **-----
       -- skip if those patched:  
       - defaulttransparency    
+* center **----
 * cursorwarp ------
 * centeredwindowname
 
@@ -127,16 +155,18 @@ highest order: 22
      - clientindicators 
      - tagcolorscheme  
      - taggrid
-* horizontal vertical i3 ------
+* horizontal vertical i3 **------
 
 * ispermanent ** --------
-* inplacerotate -------
+     -- skip if those patched:  
+     - allowkillrule [use this]
+* inplacerotate **-------
 
 * killunsel ** ----------
 * keysequence  --------
+* keycodes  
 
 * launcher ** ------
-* leftstack ----
 * locktagsfor
 
 * mark ** ------
@@ -154,6 +184,7 @@ highest order: 22
    - push   
    - mark   
 * moveresize (for float layout)** --------
+* monocle count (don't patch, specially if 'statuscmd' is used)**-----
 * mainmon 
 * mpdcontrol  
 
@@ -173,6 +204,8 @@ highest order: 22
 
 * quitprompt ** ------
 
+* resetlayout (use if 'pertag' is used)** ------
+* resetnmaster (after 'pertag' if patched)** ------
 * resizecorners ** ------
 * restartsig (used by luke smith) ** ---------
 * rulerefresher -------
@@ -243,6 +276,7 @@ highest order: 22
 * toggletopbar 
 * togglebartag 
 
+* unfloatvisible **----
 * uselessgap ** -----
 * unfocusednoborders ** -----
 * underlinetags -----
@@ -262,7 +296,7 @@ highest order: 22
      -- skip if those patched:  
      - viewontag  
 * winicon ** -------
-* winview -----
+* winview (use if any scratchpad patch is used)(skip if 'awesomebar' used)**----
 * win31theme ----
 * windowmap ----
 

@@ -40,6 +40,7 @@ noto-fonts-cjk \
 networkmanager \
 nsxiv \
 otf-font-awesome \
+otf-firamono-nerd \
 polkit \
 picom \
 pamixer \
@@ -62,6 +63,7 @@ ttf-terminus-nerd \
 ttf-meslo-nerd \
 ttf-jetbrains-mono-nerd \
 ttf-sourcecodepro-nerd \
+ttf-firacode-nerd \
 usbutils \
 ueberzugpp \
 unzip \
