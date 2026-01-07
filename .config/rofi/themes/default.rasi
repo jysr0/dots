@@ -445,7 +445,7 @@
 }
 
 #icon-current-entry {
-	enabled: false;
+	enabled: true;
     
 	margin:  var(margin, 0px);
     border:  var(border, 0px);
@@ -490,7 +490,7 @@
     fixed-columns: true;
     dynamic:       false;
     
-	cycle: true;
+	cycle: false;
     reverse: false;
     // spacing: var(spacing, 3px);
     spacing: 0px; /* sets the spacing between its 'children' widgets */
@@ -554,7 +554,7 @@
 }
 
 #element-icon {
-    enabled: false;
+    enabled: true;
     
 	margin:  var(margin, 0px);
     border:  var(border, 0px);
