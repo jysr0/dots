@@ -484,7 +484,7 @@
 	scrollbar:       true;
     scrollbar-width: 6px; /* same as 'width' in scrollbar widget */
     
-	fixed-height:  false;
+	fixed-height:  true;
     lines:         10;
     columns:       1;
     fixed-columns: true;
