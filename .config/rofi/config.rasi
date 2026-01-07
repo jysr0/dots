@@ -130,7 +130,7 @@ configuration {
 	sorting-method: "levenshtein";
 	
 	case-sensitive: false;
-	case-smart: true;
+	case-smart: false;
 	cycle: false;
 	sidebar-mode: false;
 	hover-select: false;
