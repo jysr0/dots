@@ -24,10 +24,13 @@ size = 8.4 #8.4
 #normal      = { family = "SauceCodePro NFM", style = "Regular" }
 #normal      = { family = "SauceCodePro NFM", style = "Medium" }
 #normal      = { family = "Maple Mono NF", style = "Regular" }
-normal      = { family = "Maple Mono NF", style = "Regular" }
-italic      = { family = "Maple Mono NF", style = "Italic" }
-bold        = { family = "Maple Mono NF", style = "Bold" }
-bold_italic = { family = "Maple Mono NF", style = "Bold Italic" }
+#normal      = { family = "Maple Mono NL NF", style = "Regular" }
+#normal      = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+#normal      = { family = "FiraCode Nerd Font Mono", style = "Retina" }
+normal      = { family = "CaskaydiaMono NFM", style = "SemiLight" }
+italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
+bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
+bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
 
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
