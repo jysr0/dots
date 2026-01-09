@@ -11,6 +11,7 @@
 # see: https://starship.rs/config/#text-group and https://starship.rs/config/#style-strings
 
 
+#  
 
 #format = '$all'
 #format = '\[$username@$hostname[:](bold green) $directory\][\$](#30b682) '
@@ -18,16 +19,16 @@
 
 format = '''
 [╭───\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]](custom_green) $cmd_duration $character
-[╰──](custom_green) '''
+[╰──](custom_green) '''
 
 #format = '''
 #[╭───](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[──┈┈](custom_green) $character
-#[╰─](custom_green) '''
+#[╰─](custom_green) '''
 
 #format = '''
 #[╭───](custom_green)$cmd_duration
 #[├───](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[──┈┈](custom_green) $character
-#[╰─](custom_green) '''
+#[╰─](custom_green) '''
 
 #right_format = '$cmd_duration' # requires `ble.sh` to work on bash, see: https://starship.rs/advanced-config/#enable-right-prompt
 
