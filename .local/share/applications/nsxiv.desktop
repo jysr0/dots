@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=sxiv
+GenericName=Image Viewer
+Exec=/usr/bin/setsid -f nsxiv %f
+#DBusActivatable=false
+#Terminal=false
