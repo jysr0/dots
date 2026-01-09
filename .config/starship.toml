@@ -67,13 +67,12 @@ disabled = false
 #aliases = { "arch" = "archey" } # if `trim_at` is specified only the untrimed part (first part) will be replaced with the alias
 
 
-
+# ✗ 󰬅 󰞇 
 [character]
 format = '$symbol' # '$symbol '
 #success_symbol = '[](#30b682)' # '[❯](bold green)'
 success_symbol = ''
-#error_symbol = '[󰞇](bold bright-red)' # '[❯](bold red)'
-error_symbol = '[✗](bold bright-red)'
+error_symbol = '[](bold bright-red)' # '[❯](bold red)'
 #vimcmd_symbol = ''             # '[❮](bold green)' #only supported in: cmd, fish, zsh
 #vimcmd_replace_one_symbol = '' # '[❮](bold green)'  #only supported in: fish
 #vimcmd_replace_symbol = ''     # '[❮](bold purple)'  #only supported in: fish
