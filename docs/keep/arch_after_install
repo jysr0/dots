@@ -59,6 +59,7 @@ ttf-liberation-mono-nerd \
 ttf-liberation \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
+ttf-cascadia-code-nerd \
 ttf-terminus-nerd \
 ttf-meslo-nerd \
 ttf-jetbrains-mono-nerd \
@@ -91,6 +92,7 @@ xorg-xfontsel \
 xorg-fonts-misc \
 xf86-input-libinput \
 xorg-xlsfonts \
+xorg-fonts-type1 \
 yt-dlp \
 zathura \
 zathura-pdf-poppler \
