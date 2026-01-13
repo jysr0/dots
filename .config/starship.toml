@@ -52,7 +52,7 @@ detect_env_vars = ["USER", "HOSTNAME"] # do not use '$' in front of a env var in
 format = '[$user]($style)' # '[$user]($style) in ', user and style are vars
 show_always = true # false
 disabled = false
-aliases = { "moh" = "me" } # replace username with a nickname: { "username" = "nickname", ... }
+#aliases = { "moh" = "me" } # replace username with a nickname: { "username" = "nickname", ... }
 
 
 
