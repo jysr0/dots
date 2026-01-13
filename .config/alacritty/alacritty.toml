@@ -23,14 +23,15 @@ size = 8.4 #8.4
 #normal      = { family = "SauceCodePro Nerd Font Mono", style = "Regular" }
 #normal      = { family = "SauceCodePro NFM", style = "Regular" }
 #normal      = { family = "SauceCodePro NFM", style = "Medium" }
+#normal      = { family = "SauceCodePro NFM", style = "SemiBold" }
 #normal      = { family = "Maple Mono NF", style = "Regular" }
 #normal      = { family = "Maple Mono NL NF", style = "Regular" }
 #normal      = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 #normal      = { family = "FiraCode Nerd Font Mono", style = "Retina" }
-normal      = { family = "SauceCodePro NFM", style = "Medium" }
+normal      = { family = "SauceCodePro NFM", style = "SemiBold" }
 italic      = { family = "SauceCodePro NFM", style = "Italic" }
-bold        = { family = "SauceCodePro NFM", style = "Bold" }
-bold_italic = { family = "SauceCodePro NFM", style = "Bold Italic" }
+bold        = { family = "SauceCodePro NFM", style = "Black" }
+bold_italic = { family = "SauceCodePro NFM", style = "Black Italic" }
 
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
