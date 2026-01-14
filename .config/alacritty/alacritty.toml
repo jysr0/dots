@@ -28,7 +28,7 @@ size = 8.4 #8.4
 #normal      = { family = "Maple Mono NL NF", style = "Regular" }
 #normal      = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 #normal      = { family = "FiraCode Nerd Font Mono", style = "Retina" }
-normal      = { family = "SauceCodePro NFM", style = "SemiBold" }
+normal      = { family = "SauceCodePro NFM", style = "Medium" }
 italic      = { family = "SauceCodePro NFM", style = "Italic" }
 bold        = { family = "SauceCodePro NFM", style = "Black" }
 bold_italic = { family = "SauceCodePro NFM", style = "Black Italic" }
