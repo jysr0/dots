@@ -37,7 +37,7 @@ RestrictNamespaces=yes
 # because systemd 232 is unable to reduce its own capabilities
 # ("Failed at step CAPABILITIES spawning /usr/bin/mpd: Operation not
 # permitted")
-ProtectKernelModules=no
+ProtectKernelModules=no # <--------------
 
 [Install]
 WantedBy=default.target
