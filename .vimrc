@@ -69,5 +69,5 @@ source $VIMRUNTIME/defaults.vim
 :set tabstop=8
 
 " autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files.
-autocmd BufRead,BufNewFile * setlocal syntax=conf "enable syntax highlighting for files.
+" autocmd BufRead,BufNewFile * setlocal syntax=conf "enable syntax highlighting for files.
 autocmd BufNewFile,BufRead * setlocal formatoptions-=ro "prevent auto adding comment leaders, see: vim formatoptions.
