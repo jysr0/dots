@@ -1,6 +1,6 @@
 - systemctl (enable/start) systemd-timesyncd.service
 - chown -R moh:moh /github/cloned/repo
-- optional: xf86-input-synaptics, xxkb  
+- optional: xf86-input-synaptics, xxkb, vlc, vlc-plugin-ffmpeg  
 yay -S \
 brave-bin
 
@@ -68,8 +68,6 @@ ttf-firacode-nerd \
 usbutils \
 ueberzugpp \
 unzip \
-vlc \
-vlc-plugin-ffmpeg \
 wireplumber \
 woff2-font-awesome \
 xorg \

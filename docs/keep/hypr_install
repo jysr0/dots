@@ -1,4 +1,4 @@
-- optional: yazi, hyprland-guiutils
+- optional: yazi, hyprland-guiutils, vlc, vlc-plugin-ffmpeg
 
 yay -S \
 brave-bin \
@@ -64,8 +64,6 @@ ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 usbutils \
 ueberzugpp \
-vlc \
-vlc-plugin-ffmpeg \
 wireplumber \
 woff2-font-awesome \
 wofi \
