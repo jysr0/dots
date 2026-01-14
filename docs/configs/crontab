@@ -3,5 +3,5 @@
 # See cron(8) and crontab(5) for details.
 
 # m h dom mon dow user command
-#  * * */2  *   *  moh  sudo pacman -Syu
-@daily sudo pacman -Syu
+#  * * */2  *   *  moh  sudo pacman -Sy
+* * */2 * * root pacman -Sy
