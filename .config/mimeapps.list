@@ -18,19 +18,19 @@ image/png=nsxiv.desktop
 image/gif=nsxiv.desktop
 image/webp=nsxiv.desktop
 
-audio/*=vlc.desktop
-audio/ogg=vlc.desktop
-audio/opus=vlc.desktop
-audio/mp4=vlc.desktop
-audio/webm=vlc.desktop
-audio/mpeg=vlc.desktop
-audio/x-m4a=vlc.desktop
+audio/*=mpv.desktop
+audio/ogg=mpv.desktop
+audio/opus=mpv.desktop
+audio/mp4=mpv.desktop
+audio/webm=mpv.desktop
+audio/mpeg=mpv.desktop
+audio/x-m4a=mpv.desktop
 
-video/*=vlc.desktop
-video/mp4=vlc.desktop
-video/webm=vlc.desktop
-video/mpeg=vlc.desktop
-video/ogg=vlc.desktop
+video/*=mpv.desktop
+video/mp4=mpv.desktop
+video/webm=mpv.desktop
+video/mpeg=mpv.desktop
+video/ogg=mpv.desktop
 
 #text/*=vim.desktop
 text/x-shellscript=vim.desktop
