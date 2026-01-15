@@ -20,10 +20,11 @@ bind '"\C-o":"lfcd\C-m"'
 #  ls ALIASES  #
 ################
 
-alias ll="ls -lAFh --color=auto --group-directories-first " \
-      la="ls -AF --color=auto --group-directories-first " \
-      l1="ls -1AF --color=auto --group-directories-first " \
-      ls="ls --color=auto --group-directories-first "
+alias lss="ls --color=auto --group-directories-first "
+alias ll="ls -lAFh --color=auto --group-directories-first "
+alias la="ls -AF --color=auto --group-directories-first "
+alias lt="ls -lAFht --color=auto "
+alias l1="ls -1AF --color=auto --group-directories-first "
 
 ################
 #  rm ALIASES  #
@@ -36,11 +37,13 @@ alias ll="ls -lAFh --color=auto --group-directories-first " \
 #  YT-DLP ALIASES  #
 ####################
 
-#alias yt-audio-down="yt-dlp --embed-thumbnail -x --audio-format m4a  --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames " # download audio (not video) from youtube.
+#alias yt-audio-down="yt-dlp --embed-thumbnail -x --audio-format m4a  --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube audios (not videos)
 alias yt-audio-down="yt-dlp --embed-thumbnail -x --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames "
 
 # see: `Video Format Options` section in `man yt-dlp`
-alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download videos from youtube.
+# `yt-dlp -F [URL]` for video formats listing, then
+# `yt-dlp -f [FORMAT-ID] [URL]
+alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube videos
 
 #################
 #  DWM ALIASES  #
