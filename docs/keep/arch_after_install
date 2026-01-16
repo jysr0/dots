@@ -1,6 +1,18 @@
 - systemctl (enable/start) systemd-timesyncd.service
 - chown -R moh:moh /github/cloned/repo
-- optional: xf86-input-synaptics, xxkb, vlc, vlc-plugin-ffmpeg  
+
+- optional: 
+ttf-cascadia-code-nerd 
+ttf-liberation-mono-nerd 
+ttf-liberation 
+ttf-terminus-nerd 
+ttf-jetbrains-mono-nerd 
+ttf-firacode-nerd 
+ttf-meslo-nerd 
+vlc 
+vlc-plugin-ffmpeg  
+xf86-input-synaptics
+xxkb 
 
 yay -S \
 brave-bin
@@ -58,16 +70,9 @@ sysstat \
 sxhkd \
 slock \
 starship \
-ttf-liberation-mono-nerd \
-ttf-liberation \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
-ttf-cascadia-code-nerd \
-ttf-terminus-nerd \
-ttf-meslo-nerd \
-ttf-jetbrains-mono-nerd \
 ttf-sourcecodepro-nerd \
-ttf-firacode-nerd \
 usbutils \
 ueberzugpp \
 unzip \
