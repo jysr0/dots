@@ -1,6 +1,7 @@
 - systemctl (enable/start) systemd-timesyncd.service
 - chown -R moh:moh /github/cloned/repo
 - optional: xf86-input-synaptics, xxkb, vlc, vlc-plugin-ffmpeg  
+
 yay -S \
 brave-bin
 
@@ -10,6 +11,8 @@ acpi \
 alacritty \
 android-tools \
 android-udev \
+adobe-source-sans-fonts \
+adobe-source-serif-fonts \
 brightnessctl \
 bat \
 cronie \
