@@ -44,8 +44,9 @@ iputils \
 imlib2 \
 lm_sensors \
 lf \
-libinput \
 ly \
+libinput \
+libqalculate \
 libnotify \
 mpv \
 mpd \
@@ -73,6 +74,7 @@ starship \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 ttf-sourcecodepro-nerd \
+termdown \
 usbutils \
 ueberzugpp \
 unzip \
