@@ -3,12 +3,9 @@
 
 - optional: 
 ttf-cascadia-code-nerd 
-ttf-liberation-mono-nerd 
 ttf-liberation 
 ttf-terminus-nerd 
 ttf-jetbrains-mono-nerd 
-ttf-firacode-nerd 
-ttf-meslo-nerd 
 vlc 
 vlc-plugin-ffmpeg  
 xf86-input-synaptics
@@ -74,6 +71,9 @@ starship \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 ttf-sourcecodepro-nerd \
+ttf-liberation-mono-nerd \
+ttf-firacode-nerd \
+ttf-meslo-nerd \
 termdown \
 usbutils \
 ueberzugpp \
