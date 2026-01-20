@@ -65,14 +65,14 @@ bindings = [
 	{ key = "c", mods = "Control | Shift", action = "Copy" },
 	{ key = "v", mods = "Control | Shift", action = "Paste" },
 	{ key = "+", mods = "Control", action = "IncreaseFontSize" },
-    { key = "-", mods = "Control", action = "DecreaseFontSize" },
-    { key = "0", mods = "Control", action = "ResetFontSize" },
-    { key = "Numpad0", mods = "Control", action = "ResetFontSize" },
-	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
-	#{ key = "c", mods = "Super | Shift", action = "Quit" },
+	{ key = "-", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "0", mods = "Control", action = "ResetFontSize" },
+	{ key = "Numpad0", mods = "Control", action = "ResetFontSize" },
 	{ key = "PageUp", action = "ScrollHalfPageDown" },
 	{ key = "PageDown", action = "ScrollHalfPageUp" },
+	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
 	{ key = "Return", mods = "Super | Shift", command = "alacritty" },
+	#{ key = "c", mods = "Super | Shift", action = "Quit" },
 ]
 
 [bell]
