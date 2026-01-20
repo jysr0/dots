@@ -71,5 +71,5 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=ro "prevent auto adding com
 " :set incsearch
 " :set hlsearch
 :set tabstop=8
-
-
+:set encoding=utf-8
+:set arabicshape
