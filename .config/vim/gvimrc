@@ -49,27 +49,32 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+
 """""""""""
 " CONFIGS "
 """""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"used to keep the loading of `defaults.vim` even when `vimrc` exists
-unlet! skip_defaults_vim
+" used to keep the loading of `defaults.vim` even when `vimrc` exists
+" unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files.
-" autocmd BufRead,BufNewFile * setlocal syntax=conf "enable syntax highlighting for files.
-autocmd BufNewFile,BufRead * setlocal formatoptions-=ro "prevent auto adding comment leaders, see: vim formatoptions.
+" autocmd.txt doc
+"''''''''''''''''
+" :autocmd BufRead,BufNewFile *.txt setlocal syntax=conf "enable syntax highlighting for text/* files.
 
-" :set linebreak	"see :help 'linebreak'
-" :set wrap			"see :help 'wrap'
+
+" :set linebreak	" see: :help linebreak
+" :set wrap			" see: :help wrap
 :set relativenumber
 :set number
 " :set whichwrap=b,s,<,>,[,]
 " :set incsearch
 " :set hlsearch
 :set tabstop=8
-:set encoding=utf-8
-:set arabicshape
+" :set encoding=utf-8
+" :set arabicshape
+" :set arabic
+
