@@ -1,0 +1,338 @@
+dwm-6.6      
+--------------------------------------------------
+layouts: patch at the end   
+* bottomstack (remove bstack/bstackhoriz functions redefinition from dwm.c not vanitygaps)** ---- (4)
+* centeredmaster (remove centeredmaster/centeredfloatingmaster functions redefinition from dwm.c not vanitygaps)(problems with vanitygaps)** ---- (5)
+* cyclelayouts (use if so much layouts are applied)**----
+* columns 
+* deck (remove deck function redefinition from dwm.c not vanitygaps)**---- (3)
+* fibonacci **---- (2)
+* flextile 
+* gaplessgrid (little problem with vanitygaps inter-horiz/vert gaps)** ----- (1*)
+* gridmode (use 'gaplessgrid/nrowgrid') ----
+* horizontal   
+* leftstack (skip if 'rmaster/xtile' patched)  
+* nmaster ----
+* nrowgrid (little problem with vanitygaps inter-vert gaps)**---- (1*)
+* rmaster (skip if 'leftstack/xtile' patched)  
+* three column ---
+* xtile (skip if 'rmaster/leftstack/vanitygaps' used)  
+--------------------------------------------------
+needed:  
+order: 2 to 27    
+* awesomebar --- 3
+* alpha (fixborders) --- (4) 
+* alwayscenter --- 20
+* attachdirection  --- 7  
+* allowkillrule ---22  
+* barpadding/floatingstatus (skip if statuscmd patched) ---15*
+* bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
+* colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
+* clientopacity (didn't work for dwm-6.6) ---11     X  || defaulttransparency  
+* center ---27 
+* decoration hints  ---10
+* doublepressquit (don't need it)  X  
+* focusonclick  (don't patch)        X
+* hide vacant tags  --- 5  
+* horizontal vertical i3 (notice inc/decrementation of num of masters)(don't need it) ---25    X   
+* inplacerotate ---24 
+* monocle count (don't patch, specially if 'statuscmd' is used)---26    X
+* moveresize (for float layout) ---12  
+* movestack --- (8) || push || mark   
+* pertag  --- 6*  
+* pwkl (apply the patch and if encountered problems patch its fix, see the dwm page)---23  
+* resetlayout (use if 'pertag' is used)(don't patch, has problem in floating layout)---6*    X 
+* resetnmaster (after 'pertag' if patched) ---6*  
+* switchcol ---9 || focusmaster (focusmaster-return)(works only with 1 master) || mark   
+* stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) ---2* 
+* shift tools ---(21) (after scratchpads if patching scratchpads) || swaptags     
+* statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15*
+* systray (after barpadding if patching barpadding) (don't need it)---15*  X 
+* tiledmove ---(18) 
+* togglefloatingcenter --- 19  
+* tagintostack (all master) (don't need it)      X
+* vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2* 
+* viewontag ---14 (skip if 'shift tools' patched) || windowfollow (problem here)  
+* winicon (don't patch) X  
+* zoomswap  --- 16
+------------------------------------
+* attachdirection [use this] ** ------
+      -- skip if those patched:  
+      - attachasideandbelow     
+      - attachbellow  
+* attachasideandbelow ** -------
+       -- skip if those patched:  
+       - attachdirection [use this]   
+       - attachbellow  
+* attachbellow ** ------
+      -- skip if those patched:  
+      - attachasideandbellow   
+      - attachdirection [use this]  
+* allowkillrule [use this] **------
+    -- skip if those patched:  
+    - ispermanent  
+* adjacenttag ** -----
+    -- skip if those patched:  
+    - tagshift      
+    - focusadjacenttag      
+    - shift tools [use this]     
+* alpha (fixborders) ** ---------
+* awesomebar (if used, skip any scratchpad patch) ** ---------
+* alwayscenter ** -------
+* anybar 
+* appicons
+* autodarkmode
+* autoraise windows
+* autoswitch (to monocle)
+
+* barpadding ** -----
+     -- skip if those patched:
+     - statuscmd  [use this]  
+     - floatingstatus   
+* bardwmlogo ** -----
+* bulkill (use safe version if patching 'allowkillrule') **------
+* bottomstack -------
+* bar height
+* backlight
+* betterswallow
+* bidi
+* bottomdockgap (for plank)
+
+* colorschemes ** -------- 
+      -- skip if those patched:  
+      - flycolors  
+      - scheme switch  [use this]
+* clientindicators **  ------
+     -- skip if those patched:
+     - hide vacant tags [use this]
+     - tagcolorscheme  
+     - taggrid
+* cfacts (if this, then don't patch vanitygaps)---------
+     -- skip if those patched:
+     - stackmfact [use this]
+* clientopacity [use this] **-----
+      -- skip if those patched:  
+      - defaulttransparency    
+* center **----
+* cursorwarp ------
+* centeredwindowname
+
+* decoration hints ** -------
+* doublepressquit [use this] ** -----
+      -- skip if those patched:  
+      - onlyquitonempty   
+* defaulttransparency ** -------
+       -- skip if those patched:   
+       - clientopacity [use this]   
+
+* exitmenu ------
+
+* flycolors ** -------
+     -- skip if those patched:  
+     - colorschemes  
+     - scheme switch  [use this]
+* fullgaps ** ---------
+     -- skip if those patched:
+     - vanitygaps  [use this]
+     - tilegap 
+     - functionalgaps
+* functionalgaps ** ------
+     -- skip if those patched:
+     - vanitygaps  [use this]
+     - tilegap 
+     - fullgaps
+* focusmaster (focusmaster-return) ** ---------
+    -- skip if those patched:  
+     - mark  
+     - swapfocus   
+     - switchcol  [use this]   
+* floatingstatus ** -----
+     -- skip if those patched:  
+     - statuscmd [use this]  
+     - barpadding  
+* focusadjacenttag ** -----
+      -- skip if those patched:  
+      - shift tools [use this]   
+      - adjacenttag   
+      - tagshift    
+* focusonclick ** ----------
+* focusurgent ------
+* fullscreen ------
+
+* hide vacant tags [use this] ** --------
+    -- skip if those patched:
+     - clientindicators 
+     - tagcolorscheme  
+     - taggrid
+* horizontal vertical i3 **------
+
+* ispermanent ** --------
+     -- skip if those patched:  
+     - allowkillrule [use this]
+* inplacerotate **-------
+
+* killunsel ** ----------
+* keysequence  --------
+* keycodes  
+
+* launcher ** ------
+* locktagsfor
+
+* mark ** ------
+    -- skip if those patched: 
+    - focusmaster  
+    - swapfocus  
+    - switchcol  [use this]   
+    - push   
+    - movestack [use this]   
+* multipledynamicscratchpads ** ---------
+    -- skip if those patched:  
+     - awesomebar  
+* movestack [use this]** ------
+   -- skip if those patched:  
+   - push   
+   - mark   
+* moveresize (for float layout)** --------
+* monocle count (don't patch, specially if 'statuscmd' is used)**-----
+* mainmon 
+* mpdcontrol  
+
+* notallowed ** --------
+
+* onlyquitonempty ** --------
+     -- skip if those patched:  
+     - doublepressquit [use this]   
+
+* pwkl (keyboard layout per window) ** ------
+* pertag ** ------
+* push (push no master) ** ------
+    -- skip if those patched:  
+    - movestack [use this] 
+    - mark  
+* pango  
+
+* quitprompt ** ------
+
+* resetlayout (use if 'pertag' is used)** ------
+* resetnmaster (after 'pertag' if patched)** ------
+* resizecorners ** ------
+* restartsig (used by luke smith) ** ---------
+* rulerefresher -------
+* restoreafterrestart -------
+
+* sgrstatus (colors for status text)** ------
+      -- skip if those patched:  
+       - statuscolors  
+* statuscolors ** -----
+      -- skip if those patched:  
+       - sgrstatus  
+* statuscmd [use this]**------
+     -- skip if those patched: 
+     - barpadding   
+     - floatingstatus  
+* systray ** ------
+* stackmfact [use this] (if this, then don't patch vanitygaps)**  --------
+    -- skip if those patched:  
+     - cfacts
+* setxkbgroup ** -------
+* spawn cwd ** -----
+* statusbutton ** ------
+* swallow ** -----
+* swapfocus ** --------
+     -- skip if those patched: 
+     - focusmaster 
+     - mark  
+     - switchcol  [use this]   
+* switchcol [use this] ** ------
+     -- skip if those patched: 
+     - focusmaster   
+     - mark  
+     - swapfocus   
+* scheme switch  [use this] ** -------
+      -- skip if those patched:  
+      - colorschemes  
+      - flycolors  
+* swaptags ** -----
+      -- skip if those patched:  
+      - shift tools [use this]     
+* shift tools [use this]** -----
+      -- skip if those patched:  
+       - swaptags   
+       - focusadjacenttag    
+       - adjacenttag    
+       - tagshift    
+       - viewontag    
+       - windowfollow     
+* sticky -----
+* save floats -------
+* statuspadding
+* smartborders
+
+* tagintostack (onemaster) ** ---------
+* tilegap ** ------
+     -- skip if those patched:
+     - fullgaps
+     - vanitygaps  [use this]
+     - functionalgaps
+* tagcolorscheme ** ------
+    -- skip if those patched:
+     - clientindicators 
+     - hide vacant tags  [use this]
+     - taggrid  
+* taggrid ** ------
+    -- skip if those patched:
+     - clientindicators 
+     - hide vacant tags  [use this] 
+     - tagcolorscheme
+* tagshift ** -----
+    -- skip if those patched:  
+    - adjacenttag     
+    - focusadjacenttag   
+    - shift tools [use this]       
+* tiledmove ** ------
+* transfer ** ------
+* taglayouts ** -----
+* tagspawn ** ------
+* togglefloatingcenter ** -----
+* taglabels -------
+* toggletopbar 
+* togglebartag 
+
+* unfloatvisible **----
+* uselessgap ** -----
+* unfocusednoborders ** -----
+* underlinetags -----
+* unicode ellipsis 
+
+* vanitygaps (tile, bstack, ...) [use this] (if this, then don't patch stackmfact/cfacts)** ---
+     -- skip if those patched:
+     - fullgaps
+     - tilegap 
+     - functionalgaps
+* viewontag ** -------
+     -- skip if those patched:  
+     - windowfollow     
+     - shift tools [use this]   
+
+* windowfollow ** -----
+     -- skip if those patched:  
+     - viewontag  
+     - shift tools [use this]    
+* warp (cursor) ** -----
+* winicon ** -------
+* winview (use if any scratchpad patch is used)(skip if 'awesomebar' used)**----
+* win31theme ----
+* windowmap ----
+
+* xtile ** ------
+    -- must patch before this: 
+    - pertag  
+* xrdb -----
+     -- skip if those patched:  
+     - xresources [use this]  
+* xresources [use this] ------
+     -- skip if those patched: 
+      - xrdb  
+* xkb ----
+
+* zoomswap ** ------
