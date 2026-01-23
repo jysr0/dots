@@ -29,7 +29,7 @@ size = 9.7 #9.7, 11
 #normal     = { family = "Maple Mono NL NF", style = "Regular" }
 #normal     = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 #normal     = { family = "FiraCode Nerd Font Mono", style = "Retina" }
-normal      = { family = "CaskaydiaMono NFM", style = "SemiLight" }
+normal      = { family = "CaskaydiaMono NFM", style = "Regular" }
 italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
 bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
 bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
