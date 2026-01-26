@@ -2,10 +2,13 @@
 - chown -R moh:moh /github/cloned/repo
 
 - optional: 
+otf-firamono-nerd 
 ttf-cascadia-code-nerd 
 ttf-liberation 
 ttf-terminus-nerd 
 ttf-jetbrains-mono-nerd 
+ttf-firacode-nerd 
+ttf-nerd-fonts-symbols-mono 
 vlc 
 vlc-plugin-ffmpeg  
 xf86-input-synaptics
@@ -26,6 +29,7 @@ brightnessctl \
 bat \
 cronie \
 clipmenu \
+cmatrix \
 dmenu \
 dunst \
 dialog \
@@ -52,8 +56,8 @@ noto-fonts-emoji \
 noto-fonts-cjk \
 networkmanager \
 nsxiv \
+ncurses \
 otf-font-awesome \
-otf-firamono-nerd \
 polkit \
 picom \
 pamixer \
@@ -72,7 +76,6 @@ ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 ttf-sourcecodepro-nerd \
 ttf-liberation-mono-nerd \
-ttf-firacode-nerd \
 ttf-meslo-nerd \
 termdown \
 usbutils \
