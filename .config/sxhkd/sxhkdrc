@@ -67,8 +67,8 @@ super + alt + {_,shift +} b
 alt + space
 	kill -43 $(pidof dwmblocks)
 # clock at wakeup
-@XF86WakeUp
-	kill -41 $(pidof dwmblocks)
+#@XF86WakeUp
+#	kill -41 $(pidof dwmblocks)
 
 # LOCKSCREEN
 super + shift + ctrl + q
