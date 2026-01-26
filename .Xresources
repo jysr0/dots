@@ -17,5 +17,5 @@ Xcursor.size: 24
 ########
 
 Nsxiv.*.background: #222222
-Nsxiv.*.foreground: #005577
+Nsxiv.*.foreground: #bbbbbb
 Nsxiv.*.font: monospace
