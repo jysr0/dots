@@ -60,7 +60,7 @@ super + alt + {_,shift +} b
 
 # SCREEN SHOT
 {super + Print,Print}
-	{flameshot screen && notify-send 'Fullscreen taken',flameshot gui && notify-send 'Screenshot taken'}
+	{flameshot screen,flameshot gui}
 
 # SIGNALS TO DWMBLOCKS
 # keyboard
