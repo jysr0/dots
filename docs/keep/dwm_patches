@@ -45,7 +45,7 @@ order: 2 to 27
 * resetnmaster (after 'pertag' if patched) ---6*  
 * switchcol ---9 || focusmaster (focusmaster-return)(works only with 1 master) || mark   
 * stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) ---2* 
-* shift tools ---(21) (after scratchpads if patching scratchpads) || swaptags     
+* shift tools ---(21) (after scratchpads if patching scratchpads) (use *.c patch) || swaptags     
 * statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15*
 * systray (after barpadding if patching barpadding) (don't need it)---15*  X 
 * tiledmove ---(18) 
