@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""
 
 call plug#begin()
-"filetype indent off   " Disable file-type-specific indentation
+filetype indent off   " Disable file-type-specific indentation
 "syntax off            " Disable syntax highlighting
 
 " List plugins here:
