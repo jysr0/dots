@@ -70,6 +70,8 @@ alias grep="grep --color=auto "
 #alias s="sudo "
 alias sudo="sudo "
 #alias sn="~/Downloads/Simplenote-linux-2.23.2-x64/simplenote "
+alias v="vim "\
+	vm="vim "
 
 ############################
 # NON-LOGIN SHELL COMMANDS #

@@ -9,6 +9,7 @@ filetype indent off   " Disable file-type-specific indentation
 " List plugins here:
 " Plug 'tpope/vim-sensible'
 Plug 'qpkorr/vim-renamer'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 """"""""
@@ -47,6 +48,8 @@ source $VIMRUNTIME/defaults.vim
 " :set encoding=utf-8
 " :set arabicshape
 " :set arabic
+:set nocompatible
 :set formatoptions=t,c,q,r
+" :set termguicolors
 :syntax on
 :colorscheme default
