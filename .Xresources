@@ -19,3 +19,14 @@ Xcursor.size: 24
 Nsxiv.*.background: #222222
 Nsxiv.*.foreground: #bbbbbb
 Nsxiv.*.font: monospace
+
+#######
+# DWM #
+#######
+
+#dwm.normbordercolor: #212121
+#dwm.normbgcolor: #212121
+#dwm.normfgcolor: #bbbbbb
+#dwm.selbordercolor: #005555
+#dwm.selbgcolor: #005555
+#dwm.selfgcolor: #eeeeee
