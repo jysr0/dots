@@ -4,7 +4,6 @@
 - optional: 
 otf-firamono-nerd 
 ttf-cascadia-code-nerd 
-ttf-liberation 
 ttf-terminus-nerd 
 ttf-jetbrains-mono-nerd 
 ttf-firacode-nerd 
@@ -76,6 +75,7 @@ ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 ttf-sourcecodepro-nerd \
 ttf-liberation-mono-nerd \
+ttf-liberation \
 ttf-meslo-nerd \
 termdown \
 usbutils \
