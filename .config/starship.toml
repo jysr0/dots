@@ -18,8 +18,8 @@
 #format = '$username[@](#7c0c9e)$hostname $directory $character '
 
 format = '''
-[╭─\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]](custom_green) $cmd_duration $character
-[╰](custom_green) '''
+[┌─\[](custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]](custom_green) $cmd_duration $character
+[└](custom_green) '''
 
 #format = '''
 #[╭───](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[──┈┈](custom_green) $character
