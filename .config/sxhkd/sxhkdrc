@@ -6,8 +6,8 @@
 
 
 # TERMINAL
-super + Return
-	$TERMINAL 
+#super + Return
+#	$TERMINAL 
 
 # BROWSER
 super + w
@@ -22,8 +22,8 @@ super + g
 	gimp
 
 # APP MENU
-super + r
-	rofi -show drun
+#super + r
+#	rofi -show drun
 
 # BRIGHTNESS
 XF86MonBrightness{Up,Down}
