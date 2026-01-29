@@ -19,7 +19,7 @@ layouts: patch at the end
 * xtile (skip if 'rmaster/leftstack/vanitygaps' used)  
 --------------------------------------------------
 needed:  
-order: 2 to 27    
+order: 2 to 28    
 * awesomebar --- 3
 * alpha (fixborders) --- (4) 
 * alwayscenter --- 20
@@ -48,6 +48,7 @@ order: 2 to 27
 * shift tools ---(21) (after scratchpads if patching scratchpads) (use *.c patch) || swaptags     
 * statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15*
 * systray (after barpadding if patching barpadding) (don't need it)---15*  X 
+* sticky ---28      
 * tiledmove ---(18) 
 * togglefloatingcenter --- 19  
 * tagintostack (all master) (don't need it)      X
@@ -91,6 +92,7 @@ order: 2 to 27
      - floatingstatus   
 * bardwmlogo ** -----
 * bulkill (use safe version if patching 'allowkillrule') **------
+* bartoggle ** -----
 * bottomstack -------
 * bar height
 * backlight
@@ -114,6 +116,7 @@ order: 2 to 27
       -- skip if those patched:  
       - defaulttransparency    
 * center **----
+* colorbar ** ----
 * cursorwarp ------
 * centeredwindowname
 
@@ -155,7 +158,10 @@ order: 2 to 27
       - shift tools [use this]   
       - adjacenttag   
       - tagshift    
-* focusonclick ** ----------
+* focusonclick ** ------
+* fixmultimon ** -----
+* focusfullscreen ** -----
+* focusmonmouse ** ----
 * focusurgent ------
 * fullscreen ------
 
@@ -203,12 +209,13 @@ order: 2 to 27
      -- skip if those patched:  
      - doublepressquit [use this]   
 
-* pwkl (keyboard layout per window) ** ------
-* pertag ** ------
 * push (push no master) ** ------
     -- skip if those patched:  
     - movestack [use this] 
     - mark  
+* pwkl (keyboard layout per window) ** ------
+* pertag ** ------
+* preventfocusshift ** ----
 * pango  
 
 * quitprompt ** ------
@@ -216,7 +223,7 @@ order: 2 to 27
 * resetlayout (use if 'pertag' is used)** ------
 * resetnmaster (after 'pertag' if patched)** ------
 * resizecorners ** ------
-* restartsig (used by luke smith) ** ---------
+* restartsig ** ---------
 * rulerefresher -------
 * restoreafterrestart -------
 
@@ -230,14 +237,9 @@ order: 2 to 27
      -- skip if those patched: 
      - barpadding   
      - floatingstatus  
-* systray ** ------
 * stackmfact [use this] (if this, then don't patch vanitygaps)**  --------
     -- skip if those patched:  
      - cfacts
-* setxkbgroup ** -------
-* spawn cwd ** -----
-* statusbutton ** ------
-* swallow ** -----
 * swapfocus ** --------
      -- skip if those patched: 
      - focusmaster 
@@ -263,7 +265,13 @@ order: 2 to 27
        - tagshift    
        - viewontag    
        - windowfollow     
-* sticky -----
+* systray ** ------
+* sticky ** -----
+* setxkbgroup ** -------
+* spawn cwd ** -----
+* statusbutton ** ------
+* swallow ** -----
+* spawntag ** ----
 * save floats -------
 * statuspadding
 * smartborders
