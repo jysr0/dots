@@ -8,6 +8,7 @@ ttf-terminus-nerd
 ttf-jetbrains-mono-nerd 
 ttf-firacode-nerd 
 ttf-nerd-fonts-symbols-mono 
+ttf-liberation 
 vlc 
 vlc-plugin-ffmpeg  
 xf86-input-synaptics
@@ -75,7 +76,6 @@ ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
 ttf-sourcecodepro-nerd \
 ttf-liberation-mono-nerd \
-ttf-liberation \
 ttf-meslo-nerd \
 termdown \
 usbutils \
