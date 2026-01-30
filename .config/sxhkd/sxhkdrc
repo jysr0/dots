@@ -71,7 +71,7 @@ alt + space
 #	kill -41 $(pidof dwmblocks)
 
 # LOCKSCREEN
-super + shift + ctrl + q
+super + alt + l
 	xscreensaver-command -quiet -lock
 
 # POWERMENU
