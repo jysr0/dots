@@ -43,9 +43,11 @@ export EDITOR="vim"
 #export PAGER="vim -R"
 #export BROWSER="librewolf"
 #export BROWSER="vivaldi"
-export BROWSER="brave"
+#export BROWSER="brave"
+export BROWSER="chromium"
 export TERMINAL="alacritty"
 export TERM="alacritty"
+
 export HISTSIZE=500 #shell history size
 
 ######
