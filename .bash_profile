@@ -48,8 +48,6 @@ export BROWSER="chromium"
 export TERMINAL="alacritty"
 export TERM="alacritty"
 
-export HISTSIZE=500 #shell history size
-
 ######
 # LF #
 ######
@@ -80,6 +78,12 @@ export STARSHIP_CONFIG=~/.config/starship.toml
 export STARSHIP_CACHE=~/.cache/starship/session_${STARSHIP_SESSION_KEY}.log
 export STARSHIP_SHELL=/usr/bin/sh
 
+#########
+# OTHER #
+#########
+
+export HISTSIZE=500 #shell history size
+
 #########################
 # X11 START UP COMMANDS #
 #########################
@@ -99,9 +103,10 @@ xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
 picom -b
 clipmenud &
-
 #systemctl --user start xscreensaver.service
 xscreensaver &
+
+#systemctl --user start obex.service # for bluetooth file transfer.
 
 xrdb ~/.Xresources
 dwmblocks &
