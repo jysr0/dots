@@ -1,6 +1,9 @@
 # LAUNCHING XSCREENSAVER FROM SYSTEMD:
 # Copy the file /usr/share/xscreensaver/xscreensaver.service into the directory ~/.config/systemd/user/
 # then: systemctl --user enable xscreensaver
+#
+# see also: /etc/security/faillock.conf for failed login attempts & the lockout time after failed attempts.
+#
 
 timeout:	0:10:00
 cycle:		0:00:00
