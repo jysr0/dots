@@ -6,12 +6,26 @@ opacity         = 0.90
 title           = "Alacritty"
 dynamic_title   = false
 
+
+
+
 [scrolling]
 history    = 1000
 multiplier = 1
 
+
+
+
 [font]
-size = 9.7 #9.7, 11
+offset = { x = 0, y = 0 } #the extra space around each character. y can be thought of as modifying the line spacing, and x as modifying the letter spacing.
+
+#determines the locations of the glyphs within their cells with the default being at the bottom. Increasing x moves the glyph to the right, increasing y moves the glyph upward.
+glyph_offset = { x = 0, y = 0 } 
+
+builtin_box_drawing = false
+
+size = 9.0 #8.4, 8.9, 9.0, 9.7, 11
+
 #normal     = { family = "CaskaydiaMono NFM",            style = "Regular" }
 #normal     = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
 #normal     = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
@@ -34,24 +48,37 @@ italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
 bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
 bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
 
+
+
+
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
 selection = { text = "CellBackground", background = "CellForeground" }
-draw_bold_text_with_bright_colors = true
+draw_bold_text_with_bright_colors = false
+
 
 [colors.primary]
-foreground = "#dddddd"
-background = "#090909"
+foreground = "#eeeeee"
+background = "#000000"
 #dim_foreground    = "#828482"
 #bright_foreground = "None"
+
+
+
 
 [selection]
 save_to_clipboard = false
 
+
+
+
 [cursor]
-style = { shape = "Block", blinking = "On" }
+style = { shape = "Block", blinking = "Off" } #shape: Block|Underline|Beam; #blinking: Never|Off|On|Always
 blink_timeout    = 10
 unfocused_hollow = true #when true cursor will be rendered as a hollow box when the window is not focused
+
+
+
 
 [mouse]
 hide_when_typing = true
@@ -59,6 +86,9 @@ bindings = [
 	{ mouse = "Right", mods = "Control", action = "Paste" },
 	{ mouse = "Right", action = "Copy" },
 ]
+
+
+
 
 [keyboard]
 bindings = [
@@ -68,12 +98,15 @@ bindings = [
 	{ key = "-", mods = "Control", action = "DecreaseFontSize" },
 	{ key = "0", mods = "Control", action = "ResetFontSize" },
 	{ key = "Numpad0", mods = "Control", action = "ResetFontSize" },
-	{ key = "PageUp", action = "ScrollHalfPageDown" },
-	{ key = "PageDown", action = "ScrollHalfPageUp" },
+	{ key = "PageUp", action = "ScrollPageDown" },
+	{ key = "PageDown", action = "ScrollPageUp" },
 	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
 	{ key = "Return", mods = "Super | Shift", command = "alacritty" },
 	#{ key = "c", mods = "Super | Shift", action = "Quit" },
 ]
+
+
+
 
 [bell]
 animation = "Ease"
