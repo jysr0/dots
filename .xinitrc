@@ -5,7 +5,6 @@
 #copy runnable .xinitrc content to .bash_profile/.xprofile so ly display manager can start them
 
 
-
 if [ -d "$xinitdir"/xinitrc.d ] ; then
 	for f in "$xinitdir/xinitrc.d"/?*.sh ; do
 		[ -x "$f" ] && . "$f"
@@ -13,7 +12,8 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-#[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f /etc/xprofile ] && . /etc/xprofile
+[ -f ~/.xprofile ] && . ~/.xprofile
 
 #####################
 # START UP COMMANDS #
