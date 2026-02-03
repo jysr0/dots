@@ -2,6 +2,7 @@
 - chown -R moh:moh /github/cloned/repo
 
 - optional (pacman): 
+firefox  
 otf-firamono-nerd  
 ttf-cascadia-code-nerd 
 ttf-terminus-nerd 
@@ -11,6 +12,7 @@ ttf-nerd-fonts-symbols-mono
 ttf-liberation 
 vlc 
 vlc-plugin-ffmpeg  
+vivaldi  
 xf86-input-synaptics
 xxkb 
 
