@@ -1,0 +1,134 @@
+#
+# ~/.bashrc
+#
+# If not running interactively, don"t do anything
+[[ $- != *i* ]] && return
+
+######
+# LF #
+######
+
+#stay in current lf directory:
+lfcd () {
+    # `command` is needed in case `lfcd` is aliased to `lf`
+    cd "$(command lf -print-last-dir "$@")"
+}
+bind '"\C-o":"lfcd\C-m"'
+
+####################
+#  YT-DLP ALIASES  #
+####################
+
+#alias yt-audio-down="yt-dlp --embed-thumbnail -x --audio-format m4a  --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube audios (not videos)
+alias yt-audio-down="yt-dlp --embed-thumbnail -x --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames "
+
+# see: `Video Format Options` section in `man yt-dlp`
+# `yt-dlp -F [URL]` for video formats listing, then
+# `yt-dlp -f [FORMAT-ID] [URL]
+alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube videos
+
+#################
+#  DWM ALIASES  #
+#################
+
+# remove 'config.h'/'blocks.h'(in dwmblocks), each time before 'making'
+alias dwmc="vim ~/.suckless/dwm/config.def.h "
+alias dwmm="cd ~/.suckless/dwm/ && sudo make clean install && cd - "
+alias dmc="vim ~/.suckless/dmenu/config.def.h "
+alias dmm="cd ~/.suckless/dmenu/ && sudo make clean install && cd - "
+alias stc="vim ~/.suckless/st/config.def.h "
+alias stm="cd ~/.suckless/st/ && sudo make clean install && cd - "
+#alias dwmbc="vim ~/.suckless/dwmblocks/blocks.def.h "
+#alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd - "
+alias dwmbc="vim ~/.suckless/dwmblocks-async/config.h "
+alias dwmbm="cd ~/.suckless/dwmblocks-async/ && sudo make install  && cd - "
+
+############################
+# NON-LOGIN SHELL COMMANDS #
+############################
+
+#keep shell history accross terminal sessions
+#also there is HISTSIZE env var to determine how much commands to remember
+shopt -s histappend 
+
+xset r rate 200 55
+
+#################
+# OTHER ALIASES #
+#################
+
+#alias s="sudo "
+alias sudo="sudo "
+
+alias grep="grep --color=auto "
+
+alias v="vim "\
+	vm="vim "
+
+#alias rm="trash "
+#alias rmdir="trash "
+
+alias lss="ls --color=auto --group-directories-first "
+alias ll="ls -lAFh --color=auto --group-directories-first "
+alias la="ls -AF --color=auto --group-directories-first "
+alias lt="ls -lAFht --color=auto "
+alias l1="ls -1AF --color=auto --group-directories-first "
+
+alias yy="yay "\
+	y="yay "\
+	pac="sudo pacman "\
+	p="sudo pacman "
+
+alias dbr="sudo rm /var/lib/pacman/db.lck "
+
+##########
+# PROMPT #
+##########
+
+#see: https://en.wikipedia.org/wiki/ANSI_escape_code
+
+# \e[ = \033[ = ESC[
+# ESC[38;2;⟨r⟩;⟨g⟩;⟨b⟩m Select RGB foreground color
+# ESC[48;2;⟨r⟩;⟨g⟩;⟨b⟩m Select RGB background color
+
+__endeffect__="\[\033[0m\]"
+
+#colors:
+#__username__="\[\033[1;38:2:0:204:0m\]"
+#__username__="\[\033[1;38:2:255:178:102m\]" 
+#__username__="\[\033[1;38:2:153:255:153m\]" 
+__username__="\[\033[1;38:2:102:175:0m\]"
+__at__="\[\033[1;38:2:0:153:76m\]"
+__hostname__="\[\033[1;38:2:0:102:102m\]" 
+__workingdir__="\[\033[1;38:2:153:51:255m\]"
+__dollar__="\[\033[1;38:2:204:153:255m\]" 
+__colon__="\[\033[1;38:2:204:255:153m\]" 
+
+__username1__="\[\033[1;38:2:44:91:115m\]"
+__at1__="\[\033[1;38:2:124:12:158m\]" 
+__hostname1__="\[\033[1;38:2:153:203:168m\]" 
+__dollar1__="\[\033[1;38:2:48:182:130m\]" 
+
+__workingdir1__="\[\033[1;38:2:89:197:155m\]"
+__workingdir2__="\[\033[1;38:2:106:203:165m\]"
+__workingdir3__="\[\033[1;38:2:121:208:174m\]"
+__workingdir4__="\[\033[1;38:2:208:121:155m\]"
+__workingdir5__="\[\033[1;38:2:155:208:121m\]"
+__workingdir6__="\[\033[1;38:2:121:208:191m\]"
+
+#prompts:
+# PS1="$__username__\u$__endeffect__$__at__@$__endeffect__$__hostname__\h$__endeffect__$__colon__:$__endeffect__ $__workingdir__\W$__endeffect__$__dollar__\$$__endeffect__ " #MINE
+# PS1="$__username__\u$__endeffect__$__at__@$__endeffect__$__hostname__\h$__endeffect__ $__workingdir__\W$__endeffect__$__dollar__\$$__endeffect__ " #MINE
+
+# PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+
+PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir2__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+# PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir6__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+# PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir3__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+# PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir4__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+
+############
+# STARSHIP #
+############
+
+eval "$(starship init bash)"
