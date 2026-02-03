@@ -28,7 +28,7 @@ order: 2 to 28
 * barpadding/floatingstatus (skip if statuscmd patched) ---15*
 * bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
-* clientopacity (install: xcompmgr & transset-df) ---11 || defaulttransparency  
+* clientopacity (install: xcompmgr & transset-df)(problems here skip)---11    X || defaulttransparency ('clientopacity' better)    
 * center ---27 
 * decoration hints  ---10
 * doublepressquit (don't need it)  X  
@@ -112,9 +112,9 @@ order: 2 to 28
 * cfacts (if this, then don't patch vanitygaps)---------
      -- skip if those patched:
      - stackmfact [use this]
-* clientopacity [use this] **-----
+* clientopacity [use this]**-----
       -- skip if those patched:  
-      - defaulttransparency    
+      - defaulttransparency      
 * center **----
 * colorbar ** ----
 * cursorwarp ------
@@ -125,7 +125,7 @@ order: 2 to 28
       - onlyquitonempty   
 * defaulttransparency ** -------
        -- skip if those patched:   
-       - clientopacity [use this]   
+       - clientopacity [use this]    
 * decoration hints ** -----
 
 * exitmenu ------
