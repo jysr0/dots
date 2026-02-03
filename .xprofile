@@ -103,6 +103,9 @@ dunst &
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
 #picom -b
+xcompmgr -C -f -o 0.90 -I 0.035 -O 0.059 & #fade-in/out number: the lower the slower.
+#transset-df -a 0.75 &
+
 clipmenud &
 #systemctl --user start xscreensaver.service
 xscreensaver &
