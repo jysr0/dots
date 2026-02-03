@@ -2,7 +2,6 @@
 # ~/.bash_profile
 #
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-#[[ -f ~/.xprofile ]] && . ~/.xprofile
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
@@ -102,7 +101,7 @@ dunst &
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
-picom -b
+#picom -b
 clipmenud &
 #systemctl --user start xscreensaver.service
 xscreensaver &
