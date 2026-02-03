@@ -2,6 +2,7 @@
 # ~/.bash_profile
 #
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+#[[ -f ~/.xprofile ]] && . ~/.xprofile
 
 #export DISPLAY=":0"
 #export HOME="$HOME"
