@@ -28,7 +28,7 @@ order: 2 to 28
 * barpadding/floatingstatus (skip if statuscmd patched) ---15*
 * bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
-* clientopacity (install: xcompmgr & transset-df)(problems here skip)---11    X || defaulttransparency ('clientopacity' better)    
+* clientopacity (install: xcompmgr & transset-df)(problems with fading, turn off fading)(patch at end to tinker with)---11    X || defaulttransparency      
 * center ---27 
 * decoration hints  ---10
 * doublepressquit (don't need it)  X  

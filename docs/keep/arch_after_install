@@ -2,8 +2,7 @@
 - chown -R moh:moh /github/cloned/repo
 
 - optional (pacman): 
-otf-firamono-nerd 
-picom  
+otf-firamono-nerd  
 ttf-cascadia-code-nerd 
 ttf-terminus-nerd 
 ttf-jetbrains-mono-nerd 
@@ -71,6 +70,7 @@ pipewire-pulse \
 plocate \
 poppler \
 python-mutagen \
+picom \
 rofi \
 sysstat \
 sxhkd \
