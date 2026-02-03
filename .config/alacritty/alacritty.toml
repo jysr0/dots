@@ -1,16 +1,20 @@
 [window]
-dimensions      = { columns = 88, lines = 27 }
-dynamic_padding = true
+#dimensions      = { columns = 88, lines = 27 }
+dynamic_padding = false
 opacity         = 0.90
+blur            = false
 #startup_mode   = "Windowed"
 title           = "Alacritty"
-dynamic_title   = false
+dynamic_title   = true
+class = { instance = "alacritty", general = "alacritty" }
+#decorations_theme_variant = "None" # Dark|Light|None
+level = "Normal"
 
 
 
 
 [scrolling]
-history    = 1000
+history    = 10000
 multiplier = 1
 
 
