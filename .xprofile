@@ -51,8 +51,10 @@ export EDITOR="vim"
 #export BROWSER="firefox"
 export BROWSER="chromium"
 
-export TERMINAL="alacritty"
-export TERM="alacritty"
+#export TERMINAL="alacritty"
+#export TERM="alacritty"
+export TERMINAL="st"
+export TERM="st"
 
 ######
 # LF #
