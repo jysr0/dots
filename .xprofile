@@ -41,11 +41,16 @@ export XDG_AUDIO_DIR="$HOME/audio"
 
 export EDITOR="vim"
 #export PAGER="vim -R"
+
 #export BROWSER="librewolf"
 #export BROWSER="vivaldi"
 #export BROWSER="brave"
 #export BROWSER="qutebrowser"
+#export BROWSER="vivaldi"
+#export BROWSER="vivaldi-stable"
+#export BROWSER="firefox"
 export BROWSER="chromium"
+
 export TERMINAL="alacritty"
 export TERM="alacritty"
 
@@ -102,9 +107,9 @@ dunst &
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
-#picom -b
+picom -b #use picom rather than xcompmgr.
 #xcompmgr -C -f -o 0.90 -I 0.035 -O 0.059 & #fade-in/out number: the lower the slower.
-xcompmgr &
+#xcompmgr &
 #transset-df -a 0.75 &
 
 clipmenud &
