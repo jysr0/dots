@@ -19,8 +19,8 @@ layouts: patch at the end
 * xtile (skip if 'rmaster/leftstack/vanitygaps' used)  
 --------------------------------------------------
 needed:  
-order: 2 to 28    
-* awesomebar --- 3
+order: 2 to 30    
+* awesomebar (works but skip it) (skip if patching 'scratchpads') --- 3
 * alpha (fixborders) --- (4) 
 * alwayscenter --- 20
 * attachdirection  --- 7  
@@ -29,6 +29,7 @@ order: 2 to 28
 * bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
 * clientopacity (install: xcompmgr & transset-df)(problems with screen rendering and fading, turn off fading)(patch at end to tinker with)---11    X || defaulttransparency      
+* cursorwarp (skip if 'awesomebar' patched)(edit switchcol/zoom/togglescratch functions so it works on 'switchcol' and 'zoomswap' and 'scratchpads' patches)---30    
 * center ---27 
 * decoration hints  ---10
 * doublepressquit (don't need it)  X  
@@ -41,11 +42,11 @@ order: 2 to 28
 * movestack --- (8) || push || mark   
 * pertag  --- 6*  
 * pwkl (apply the patch and if encountered problems patch its fix, see the dwm page)---23  
-* resetlayout (use if 'pertag' is used)(don't patch, has problem in floating layout)---6*    X 
+* resetlayout (use if 'pertag' is used)(don't patch, has problem in floating layout with 'moveresize')---6*    X 
 * resetnmaster (after 'pertag' if patched) ---6*  
 * switchcol ---9 || focusmaster (focusmaster-return)(works only with 1 master) || mark   
 * stackmfact/cfacts (if this, then don't patch vanitygaps and related) (see vanitygaps page for solution) (cfacts didn't work for dwm-6.6 just skip) ---2* 
-* shift tools ---(21) (after scratchpads if patching scratchpads) (use *.c patch) || swaptags     
+* shift tools ---(21) (use *.c patch) (use scratchpads one if 'scratchpads' patched) || swaptags     
 * statuscmd (careful here)(skip if barpadding patched)(also patch dwmblocks and notice the dates to be same)(or just use dwmblocks-async) --- 15*
 * systray (after barpadding if patching barpadding) (don't need it)---15*  X 
 * sticky ---28      
@@ -55,7 +56,8 @@ order: 2 to 28
 * vanitygaps (tile, bstack, ...) (if this, then don't patch stackmfact and related) (see vanitygaps page for solution) --- 2* 
 * viewontag ---14 (skip if 'shift tools' patched) || windowfollow (problem here)  
 * winicon (don't patch) X  
-* zoomswap  --- 16
+* scratchpads (skip if 'awesomebar' patched)---29   
+* zoomswap  --- 16    
 ------------------------------------
 * attachdirection [use this] ** ------
       -- skip if those patched:  
@@ -77,8 +79,12 @@ order: 2 to 28
     - tagshift      
     - focusadjacenttag      
     - shift tools [use this]     
+* awesomebar ** ----
+     -- skip if those patched:
+     - skip any other scratchpad       
+     - cursorwarp [use this]     
+     - scratchpads [use this]   
 * alpha (fixborders) ** ---------
-* awesomebar (if used, skip any scratchpad patch) ** ---------
 * alwayscenter ** -------
 * anybar 
 * appicons
@@ -115,9 +121,11 @@ order: 2 to 28
 * clientopacity [use this]**-----
       -- skip if those patched:  
       - defaulttransparency      
+* cursorwarp [use this]**------
+     -- skip if those patched:  
+      - awesomebar    
 * center **----
 * colorbar ** ----
-* cursorwarp ------
 * centeredwindowname
 
 * doublepressquit [use this] ** -----
@@ -265,6 +273,9 @@ order: 2 to 28
        - tagshift    
        - viewontag    
        - windowfollow     
+* scratchpads [use this]** -----
+     -- skip if those patched:   
+     - awesomebar     
 * systray ** ------
 * sticky ** -----
 * setxkbgroup ** -------
@@ -327,10 +338,10 @@ order: 2 to 28
      - viewontag  
      - shift tools [use this]    
 * warp (cursor) ** -----
+* windowmap **----
 * winicon ** -------
 * winview (use if any scratchpad patch is used)(skip if 'awesomebar' used)**----
 * win31theme ----
-* windowmap ----
 
 * xtile ** ------
     -- must patch before this: 
