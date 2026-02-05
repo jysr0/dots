@@ -29,7 +29,7 @@ order: 2 to 30
 * bulkill  (after systray if patching systray)(use safe version if patching allowkillrule) --- (17)  
 * colorschemes (careful here) (not needed actually) --- 13 ||  scheme switch  
 * clientopacity (install: xcompmgr & transset-df)(problems with screen rendering and fading, turn off fading)(patch at end to tinker with)---11    X || defaulttransparency      
-* cursorwarp (skip if 'awesomebar' patched)(edit switchcol/zoom/togglescratch functions so it works on 'switchcol' and 'zoomswap' and 'scratchpads' patches)---30    
+* cursorwarp (skip if 'awesomebar'/'movestack' patched)(edit switchcol/zoom/togglescratch functions so it works on 'switchcol' and 'zoomswap' and 'scratchpads' patches)---30    
 * center ---27 
 * decoration hints  ---10
 * doublepressquit (don't need it)  X  
@@ -39,7 +39,7 @@ order: 2 to 30
 * inplacerotate ---24 
 * monocle count (don't patch, specially if 'statuscmd' is used)---26    X
 * moveresize (for float layout) ---12  
-* movestack --- (8) || push || mark   
+* movestack (use 'push' if 'cursorwarp' patched)--- (8) || push ---8 || mark   
 * pertag  --- 6*  
 * pwkl (apply the patch and if encountered problems patch its fix, see the dwm page)---23  
 * resetlayout (use if 'pertag' is used)(don't patch, has problem in floating layout with 'moveresize')---6*    X 
@@ -124,6 +124,7 @@ order: 2 to 30
 * cursorwarp [use this]**------
      -- skip if those patched:  
       - awesomebar    
+      - movestack (use 'push' if 'cursorwarp' patched)    
 * center **----
 * colorbar ** ----
 * centeredwindowname
@@ -204,7 +205,8 @@ order: 2 to 30
      - awesomebar  
 * movestack [use this]** ------
    -- skip if those patched:  
-   - push   
+   - cursorwarp (use 'push' if this patched)   
+   - push (use this if 'cursorwarp' patched)  
    - mark   
 * moveresize (for float layout)** --------
 * monocle count (don't patch, specially if 'statuscmd' is used)**-----
@@ -217,7 +219,7 @@ order: 2 to 30
      -- skip if those patched:  
      - doublepressquit [use this]   
 
-* push (push no master) ** ------
+* push (push no master) (use this if 'cursorwarp' patched)** ------
     -- skip if those patched:  
     - movestack [use this] 
     - mark  
