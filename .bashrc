@@ -76,8 +76,8 @@ alias l1="ls -1AF --color=auto --group-directories-first "
 
 alias yy="yay "\
 	y="yay "\
-	pac="sudo pacman "\
-	p="sudo pacman "
+	pac="pacman "\
+	p="pacman "
 
 alias dbr="sudo rm /var/lib/pacman/db.lck "
 
