@@ -8,8 +8,9 @@ filetype indent off   " Disable file-type-specific indentation
 
 " List plugins here:
 " Plug 'tpope/vim-sensible'
-Plug 'qpkorr/vim-renamer'
-Plug 'ap/vim-css-color'
+Plug 'qpkorr/vim-renamer' " rename files at once.
+Plug 'ap/vim-css-color' " color background of color codes.
+"Plug 'yorickpeterse/happy_hacking.vim' " scheme.
 call plug#end()
 
 """"""""
@@ -43,13 +44,18 @@ source $VIMRUNTIME/defaults.vim
 :set number
 " :set whichwrap=b,s,<,>,[,]
 " :set incsearch
-" :set hlsearch
+" :set hlsearch " highlight while searching.
 :set tabstop=8
-" :set encoding=utf-8
+:set encoding=utf-8
 " :set arabicshape
 " :set arabic
 :set nocompatible
 :set formatoptions=t,c,q,r
 " :set termguicolors
-:syntax on
-:colorscheme default
+" :syntax on
+:filetype on
+:colorscheme habamax
+:set bg=dark
+" :set virtualedit=onemore " careful here, see: :help ve
+" :set noinsertmode " wether to set 'insert mode' as default when vim opens.
+" :set {autowriteall|autowrite} " see help.
