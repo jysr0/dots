@@ -24,6 +24,7 @@ syntax off            " Disable syntax highlighting
 Plug 'qpkorr/vim-renamer' " rename files at once.
 " Plug 'ap/vim-css-color' " color background of color codes.
 " Plug 'yorickpeterse/happy_hacking.vim' " scheme.
+" Plug 'whatyouhide/vim-gotham' " scheme.
 call plug#end()
 
 
@@ -64,6 +65,7 @@ call plug#end()
 " :set virtualedit=onemore " careful here, see: :help ve
 " :set noinsertmode " wether to set 'insert mode' as default when vim opens.
 " :set {autowriteall|autowrite} " see help.
+" :colorscheme gotham256
 :colorscheme default
-:highlight clear
+" :highlight clear
 " :set all&
