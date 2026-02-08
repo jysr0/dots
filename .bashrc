@@ -4,6 +4,8 @@
 # If not running interactively, don"t do anything
 [[ $- != *i* ]] && return
 
+
+
 ######
 # LF #
 ######
@@ -14,6 +16,8 @@ lfcd () {
     cd "$(command lf -print-last-dir "$@")"
 }
 bind '"\C-o":"lfcd\C-m"'
+
+
 
 ####################
 #  YT-DLP ALIASES  #
@@ -26,6 +30,8 @@ alias yt-audio-down="yt-dlp --embed-thumbnail -x --no-playlist -P ${XDG_AUDIO_DI
 # `yt-dlp -F [URL]` for video formats listing, then
 # `yt-dlp -f [FORMAT-ID] [URL]
 alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube videos
+
+
 
 #################
 #  DWM ALIASES  #
@@ -43,6 +49,8 @@ alias stm="cd ~/.suckless/st/ && sudo make clean install && cd - "
 alias dwmbc="vim ~/.suckless/dwmblocks-async/config.h "
 alias dwmbm="cd ~/.suckless/dwmblocks-async/ && sudo make install  && cd - "
 
+
+
 ############################
 # NON-LOGIN SHELL COMMANDS #
 ############################
@@ -51,7 +59,9 @@ alias dwmbm="cd ~/.suckless/dwmblocks-async/ && sudo make install  && cd - "
 #also there is HISTSIZE env var to determine how much commands to remember
 shopt -s histappend 
 
-xset r rate 200 55
+xset r rate 189 58
+
+
 
 #################
 # OTHER ALIASES #
@@ -80,6 +90,8 @@ alias yy="yay "\
 	p="pacman "
 
 alias dbr="sudo rm /var/lib/pacman/db.lck "
+
+
 
 ##########
 # PROMPT #
@@ -126,6 +138,8 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir6__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir3__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir4__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+
+
 
 ############
 # STARSHIP #

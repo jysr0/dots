@@ -12,9 +12,9 @@
 Xcursor.theme: BreezeX-Dark
 Xcursor.size: 24
 
-########
+#########
 # NSXIV #
-########
+#########
 
 Nsxiv.*.background: #222222
 Nsxiv.*.foreground: #bbbbbb
