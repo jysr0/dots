@@ -93,35 +93,38 @@ export STARSHIP_SHELL=/usr/bin/sh
 
 export HISTSIZE=500 #shell history size
 
-#########################
-# X11 START UP COMMANDS #
-#########################
+###############
+# X11 START UPs
+###############
 
 #dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
 #dbus-update-activation-environment XDG_CURRENT_DESKTOP DISPLAY # used for filechoose when (down/up)load from browser
 
-#setxkbmap -model acer_laptop -option grp:alt_space_toggle us,ara
-xset r rate 200 55 2> /dev/null
-sxhkd &
-dunst &
-#xrandr --dpi 110 #for dwmblocks-async size
-
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
+
+#systemctl --user start obex.service # for bluetooth file transfer.
+#xrandr --dpi 110 #for dwmblocks-async size
+systemctl --user start xdg-desktop-portal-lxqt.service
+
+#setxkbmap -model acer_laptop -option grp:alt_space_toggle us,ara
+xset r rate 189 58
+clipmenud &
+
+sxhkd &
+dunst &
+
+#systemctl --user start xscreensaver.service
+xscreensaver &
 
 picom -b #use picom rather than xcompmgr.
 #xcompmgr -C -f -o 0.90 -I 0.035 -O 0.059 & #fade-in/out number: the lower the slower.
 #xcompmgr &
 #transset-df -a 0.75 &
 
-clipmenud &
-#systemctl --user start xscreensaver.service
-xscreensaver &
-
-#systemctl --user start obex.service # for bluetooth file transfer.
-
 xrdb ~/.Xresources
+
 dwmblocks &
 #exec dwm
 #exec startx dwm #to start dwm
