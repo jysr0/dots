@@ -10,6 +10,8 @@ ttf-jetbrains-mono-nerd
 ttf-firacode-nerd 
 ttf-nerd-fonts-symbols-mono 
 ttf-liberation 
+ttf-meslo-nerd  
+ttf-sourcecodepro-nerd 
 vlc 
 vlc-plugin-ffmpeg  
 vivaldi  
@@ -80,9 +82,8 @@ slock \
 starship \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
-ttf-sourcecodepro-nerd \
 ttf-liberation-mono-nerd \
-ttf-meslo-nerd \
+ttf-inconsolata-lgc-nerd \
 termdown \
 usbutils \
 ueberzugpp \
