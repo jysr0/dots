@@ -4,10 +4,11 @@
 #[[ -f ~/.bashrc ]] && . ~/.bashrc
 #[[ -f ~/.xprofile ]] && . ~/.xprofile
 
+export TMPDIR="/tmp"
 #export DISPLAY=":0"
 #export HOME="$HOME"
-export PATH="$PATH:$(find ~/.scripts -type d | paste -sd ':' -):$HOME/.config/environment.d"
-export TMPDIR="/tmp"
+export PATH="$PATH:$(find ~/.local/bin/ -type d | paste -sd ':' -):$HOME/.config/environment.d"
+#export XAPPLRESDIR="$(find ~/.config/profile/ -type d | paste -sd ':' -)"
 
 #######
 # XDG #
