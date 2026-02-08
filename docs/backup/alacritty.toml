@@ -1,0 +1,119 @@
+[window]
+#dimensions      = { columns = 88, lines = 27 }
+dynamic_padding = false
+opacity         = 0.90
+blur            = false
+#startup_mode   = "Windowed"
+title           = "Alacritty"
+dynamic_title   = true
+class = { instance = "alacritty", general = "alacritty" }
+#decorations_theme_variant = "None" # Dark|Light|None
+level = "Normal"
+
+
+
+
+[scrolling]
+history    = 10000
+multiplier = 1
+
+
+
+
+[font]
+offset = { x = 0, y = 0 } #the extra space around each character. y can be thought of as modifying the line spacing, and x as modifying the letter spacing.
+
+#determines the locations of the glyphs within their cells with the default being at the bottom. Increasing x moves the glyph to the right, increasing y moves the glyph upward.
+glyph_offset = { x = 0, y = 0 } 
+
+builtin_box_drawing = false
+
+size = 9.0 #8.4, 8.9, 9.0, 9.7, 11
+
+#normal     = { family = "CaskaydiaMono NFM",            style = "Regular" }
+#normal     = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiLight" }
+#normal     = { family = "NotoSansM Nerd Font Mono", style = "Regular" }
+#normal     = { family = "LiterationMono Nerd Font Mono", style = "Regular" }
+#normal     = { family = "Hack Nerd Font Mono", style = "Regular" }
+#normal     = { family = "MesloLGS Nerd Font Mono", style = "Regular" }
+#normal     = { family = "MesloLGSDZ Nerd Font Mono", style = "Regular" }
+#normal     = { family = "JetBrainsMono NFM", style = "Regular" }
+#normal     = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
+#normal     = { family = "SauceCodePro Nerd Font Mono", style = "Regular" }
+#normal     = { family = "SauceCodePro NFM", style = "Regular" }
+#normal     = { family = "SauceCodePro NFM", style = "Medium" }
+#normal     = { family = "SauceCodePro NFM", style = "SemiBold" }
+#normal     = { family = "Maple Mono NF", style = "Regular" }
+#normal     = { family = "Maple Mono NL NF", style = "Regular" }
+#normal     = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+#normal     = { family = "FiraCode Nerd Font Mono", style = "Retina" }
+normal      = { family = "CaskaydiaMono NFM", style = "Light" }
+italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
+bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
+bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
+
+
+
+
+[colors]	
+cursor    = { text = "CellBackground", cursor = "CellForeground" }
+selection = { text = "CellBackground", background = "CellForeground" }
+draw_bold_text_with_bright_colors = false
+
+
+[colors.primary]
+foreground = "#eeeeee"
+background = "#000000"
+#dim_foreground    = "#828482"
+#bright_foreground = "None"
+
+
+
+
+[selection]
+save_to_clipboard = false
+
+
+
+
+[cursor]
+style = { shape = "Block", blinking = "Off" } #shape: Block|Underline|Beam; #blinking: Never|Off|On|Always
+blink_timeout    = 10
+unfocused_hollow = true #when true cursor will be rendered as a hollow box when the window is not focused
+
+
+
+
+[mouse]
+hide_when_typing = true
+bindings = [
+	{ mouse = "Right", mods = "Control", action = "Paste" },
+	{ mouse = "Right", action = "Copy" },
+]
+
+
+
+
+[keyboard]
+bindings = [
+	{ key = "c", mods = "Control | Shift", action = "Copy" },
+	{ key = "v", mods = "Control | Shift", action = "Paste" },
+	{ key = "+", mods = "Control", action = "IncreaseFontSize" },
+	{ key = "-", mods = "Control", action = "DecreaseFontSize" },
+	{ key = "0", mods = "Control", action = "ResetFontSize" },
+	{ key = "Numpad0", mods = "Control", action = "ResetFontSize" },
+	{ key = "PageUp", action = "ScrollPageDown" },
+	{ key = "PageDown", action = "ScrollPageUp" },
+	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
+	{ key = "Return", mods = "Super | Shift", command = "alacritty" },
+	#{ key = "c", mods = "Super | Shift", action = "Quit" },
+]
+
+
+
+
+[bell]
+animation = "Ease"
+duration  = 0
+color = "#777777"
+#command = { program = "echo", args = ["WRONG",] }
