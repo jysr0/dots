@@ -1,8 +1,5 @@
-#
-# ~/.bash_profile
-#
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-[[ -f ~/.xprofile ]] && . ~/.xprofile
+
+#[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
 
