@@ -12,8 +12,10 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-[ -f /etc/xprofile ] && . /etc/xprofile
-[ -f ~/.xprofile ] && . ~/.xprofile
+#[ -f /etc/xprofile ] && . /etc/xprofile
+#[ -f ~/.xprofile ] && . ~/.xprofile
+
+[ -f ~/.profile ] && . ~/.profile
 
 #####################
 # START UP COMMANDS #
@@ -34,3 +36,4 @@ fi
 #systemctl --user start clipmenud.service 2> /dev/null
 #xrdb ~/.Xresources
 #dwmblocks &
+#exec startx dwm
