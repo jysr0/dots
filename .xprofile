@@ -4,15 +4,26 @@
 #[[ -f ~/.bashrc ]] && . ~/.bashrc
 #[[ -f ~/.xprofile ]] && . ~/.xprofile
 
-export TMPDIR="/tmp"
+
+
+################################
+# SYSTEM ENVIRONMENT VARIABLES #
+################################
+
+#export TMPDIR="/tmp"
 #export DISPLAY=":0"
 #export HOME="$HOME"
-export PATH="$PATH:$(find ~/.local/bin/ -type d | paste -sd ':' -):$HOME/.config/environment.d"
+
+#export PATH="$PATH:$HOME/.config/environment.d:$(find ~/.local/bin/ -type d | paste -sd ':' -)"
+export PATH="$PATH:$(find ~/.local/bin/ -type d | paste -sd ':' -)"
+
 #export XAPPLRESDIR="$(find ~/.config/profile/ -type d | paste -sd ':' -)"
 
-#######
-# XDG #
-#######
+
+
+##############################
+# USER ENVIRONMENT VARIABLES #
+##############################
 
 #XDG env variables:
 #export XDG_CURRENT_DESKTOP="dwm"
@@ -26,8 +37,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_DATA_DIRS="/usr/share:/usr/local/share"
-export XDG_DESKTOP_DIR="$HOME/desk"
-export XDG_DOWNLOAD_DIR="$HOME/downl"
+export XDG_DESKTOP_DIR="$HOME/desktop"
+export XDG_DOWNLOAD_DIR="$HOME/downloads"
 export XDG_DOCUMENTS_DIR="$HOME/docs"
 export XDG_PICTURES_DIR="$HOME/pics"
 export XDG_VIDEOS_DIR="$HOME/videos"
@@ -36,9 +47,11 @@ export XDG_TEMPLATES_DIR="$HOME/templates"
 export XDG_MUSIC_DIR="$HOME/audio"
 export XDG_AUDIO_DIR="$HOME/audio"
 
-#####################
-# DEFAULT PROGRAMMS #
-#####################
+
+
+###########################################
+# DEFAULT PROGRAMMS ENVIRONMENT VARIABLES #
+###########################################
 
 export EDITOR="vim"
 #export PAGER="vim -R"
@@ -57,6 +70,8 @@ export BROWSER="chromium"
 export TERMINAL="st"
 export TERM="st"
 
+
+
 ######
 # LF #
 ######
@@ -66,18 +81,24 @@ export lf_mode="normal"
 export OPERNER="xdg-open"
 #export UEBERZUGPP_TMPDIR="${TMPDIR}/ueberzugpp"
 
+
+
 ############
 # CLIPMENU #
 ############
 
-export CM_HISTLENGTH="10"
+export CM_HISTLENGTH="100"
 export CM_LAUNCHER="dmenu"
+
+
 
 ########
 # GRIM #
 ########
 
 export GRIM_DEFAULT_DIR="$XDG_PICTURES_DIR"
+
+
 
 ############
 # STARSHIP #
@@ -87,26 +108,33 @@ export STARSHIP_CONFIG=~/.config/starship.toml
 export STARSHIP_CACHE=~/.cache/starship/session_${STARSHIP_SESSION_KEY}.log
 export STARSHIP_SHELL=/usr/bin/sh
 
+
+
 #########
 # OTHER #
 #########
 
 export HISTSIZE=500 #shell history size
 
-###############
-# X11 START UPs
-###############
 
-#dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
+
+#########################
+# X11 START UP COMMANDS #
+#########################
+
+#dbus-update-activation-environment XDG_CURRENT_DESKTOP=dwm DISPLAY=:0 #used for filechoose when (down/up)load from browser
+dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=:0
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
-#dbus-update-activation-environment XDG_CURRENT_DESKTOP DISPLAY # used for filechoose when (down/up)load from browser
 
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
 
-#systemctl --user start obex.service # for bluetooth file transfer.
 #xrandr --dpi 110 #for dwmblocks-async size
-systemctl --user start xdg-desktop-portal-lxqt.service
+
+#systemctl --user start obex.service # for bluetooth file transfer.
+systemctl --user start xdg-desktop-portal.service
+#systemctl --user start xdg-desktop-portal-lxqt.service
+systemctl --user start xdg-desktop-portal-gtk.service
 
 #setxkbmap -model acer_laptop -option grp:alt_space_toggle us,ara
 xset r rate 189 58
