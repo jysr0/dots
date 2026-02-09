@@ -1,3 +1,8 @@
+##############################
+# USER ENVIRONMENT VARIABLES #
+##############################
+
+#XDG env variables:
 #export XDG_CURRENT_DESKTOP="dwm"
 #export XDG_SESSION_TYPE="x11"
 #export XDG_SESSION_TYPE="wayland"
@@ -9,8 +14,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_DATA_DIRS="/usr/share:/usr/local/share"
-export XDG_DESKTOP_DIR="$HOME/desk"
-export XDG_DOWNLOAD_DIR="$HOME/downl"
+export XDG_DESKTOP_DIR="$HOME/desktop"
+export XDG_DOWNLOAD_DIR="$HOME/downloads"
 export XDG_DOCUMENTS_DIR="$HOME/docs"
 export XDG_PICTURES_DIR="$HOME/pics"
 export XDG_VIDEOS_DIR="$HOME/videos"
