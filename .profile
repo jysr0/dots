@@ -82,7 +82,7 @@ export OPERNER="xdg-open"
 # CLIPMENU #
 ############
 
-export CM_HISTLENGTH="100"
+export CM_HISTLENGTH="1000"
 export CM_LAUNCHER="dmenu"
 
 
@@ -125,7 +125,7 @@ dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=arc
 systemctl --user start xdg-desktop-portal.service
 #systemctl --user start xdg-desktop-portal-lxqt.service
 systemctl --user start xdg-desktop-portal-gtk.service
-#systemctl start ly@tty2.service
+#systemctl enable ly@tty2.service #ly DM
 
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
 xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
