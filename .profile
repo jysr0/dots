@@ -1,8 +1,8 @@
 #
 # ~/.bash_profile
 #
-#[[ -f ~/.bashrc ]] && . ~/.bashrc
-#[[ -f ~/.xprofile ]] && . ~/.xprofile
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.xprofile ]] && . ~/.xprofile
 
 
 
@@ -16,7 +16,6 @@
 
 #export TMPDIR="/tmp"
 #export DISPLAY=arch:0.0 #see: man X
-#export HOME="$HOME"
 
 #export PATH="$PATH:$HOME/.config/environment.d:$(find ~/.local/bin/ -type d | paste -sd ':' -)"
 export PATH="$PATH:$(find ~/.local/bin/ -type d | paste -sd ':' -)"
@@ -118,13 +117,14 @@ export HISTSIZE=500 #shell history size
 #########################
 
 #dbus-update-activation-environment XDG_CURRENT_DESKTOP=dwm DISPLAY=arch:0.0 #used for filechoose when (down/up)load from browser
-dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=arch:0.0
+#dbus-update-activation-environment --systemd XDG_CURRENT_DESKTOP=dwm DISPLAY=arch:0.0
 #systemctl --user import-environment XDG_CURRENT_DESKTOP DISPLAY
 
 #systemctl --user start obex.service # for bluetooth file transfer.
-systemctl --user start xdg-desktop-portal.service
+#systemctl --user start xdg-desktop-portal.service
 #systemctl --user start xdg-desktop-portal-lxqt.service
-systemctl --user start xdg-desktop-portal-gtk.service
+#systemctl --user start xdg-desktop-portal-gtk.service
+#systemctl --user start clipmenud.service
 #systemctl enable ly@tty2.service #ly DM
 
 [[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
