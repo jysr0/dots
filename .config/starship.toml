@@ -1,0 +1,131 @@
+# see: https://starship.rs/config/
+
+# ' ': literal string, less escaping
+# " ": string, more escaping
+# ''' ''': multiline literal string, less escaping
+# """ """: mulriline string, more escaping
+#
+# those characters must be escaped with '\' to be printed: $ [ ] ( ) and newline character
+#
+# text groups are in the format: [TEXT](STYLE), e.g. '[a [b](red) c](green)' will print a b c with b red and a and c green
+# see: https://starship.rs/config/#text-group and https://starship.rs/config/#style-strings
+
+
+#  
+
+#format = '$all'
+#format = '\[$username@$hostname[:](bold green) $directory\][\$](#30b682) '
+#format = '$username[@](#7c0c9e)$hostname $directory $character '
+
+
+format = '''[\[](fg:custom_green)$username [@](fg:custom_purpol) $hostname[\]](custom_green)$cmd_duration '''
+
+#format = '''
+#[┌─\[](fg:custom_green)$username[@](bold fg:custom_purpol)$hostname $directory[\]](fg:custom_green) $cmd_duration $character
+#[└](fg:custom_green) '''
+
+#format = '''
+#[╭───](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[──┈┈](custom_green) $character
+#[╰─](custom_green) '''
+
+#format = '''
+#[╭───](custom_green)$cmd_duration
+#[├───](custom_green)$username[@](bold fg:custom_porpul)$hostname $directory[──┈┈](custom_green) $character
+#[╰─](custom_green) '''
+
+#right_format = '$cmd_duration' # requires `ble.sh` to work on bash, see: https://starship.rs/advanced-config/#enable-right-prompt
+
+#scan_timeout = 30
+#command_timeout = 500
+add_newline = false
+follow_symlinks = true
+palette = 'colors'
+[palettes.colors]
+# define colors here, see: https://starship.rs/config/#prompt
+"custom_pink"   = "#fd6fcb"
+"custom_green"  = "#30b682"
+"custom_green1" = "#99cba8"
+"custom_green2" = "#6acba5"
+"custom_purpol" = "#9843b2"
+"custom_blue"   = "#4598c1"
+
+
+
+[username]
+style_root = 'bold red' # 'bold red' 
+style_user = 'custom_blue' # 'bold yellow'
+detect_env_vars = ["USER", "HOSTNAME"] # do not use '$' in front of a env var in the array, use '!' as prefix to NOT detect a variable as so: '!USER'
+format = '[$user]($style)' # '[$user]($style) in ', user and style are vars
+show_always = true # false
+disabled = false
+#aliases = { "moh" = "me" } # replace username with a nickname: { "username" = "nickname", ... }
+
+
+
+[hostname]
+ssh_only = false # true
+ssh_symbol = '🌐 ' # '🌐 '
+trim_at = '' # '.' cut off the hostname at the specified string
+detect_env_vars = ["USER", "HOSTNAME"]
+format = '[$hostname]($style)' # '[$ssh_symbol$hostname]($style) in ', ssh_symbol and hostname and style are vars
+style = 'fg:custom_green1' # 'bold dimmed green', see: https://starship.rs/advanced-config/#style-strings
+disabled = false
+#aliases = { "arch" = "archey" } # if `trim_at` is specified only the untrimed part (first part) will be replaced with the alias
+
+
+# ✗ 󰬅 󰞇 
+[character]
+format = '$symbol' # '$symbol '
+#success_symbol = '[](#30b682)' # '[❯](bold green)'
+success_symbol = ''
+error_symbol = '[](red)' # '[❯](bold red)'
+#vimcmd_symbol = ''             # '[❮](bold green)' #only supported in: cmd, fish, zsh
+#vimcmd_replace_one_symbol = '' # '[❮](bold green)'  #only supported in: fish
+#vimcmd_replace_symbol = ''     # '[❮](bold purple)'  #only supported in: fish
+#vimcmd_visual_symbol = ''      # '[❮](bold yellow)'  #only supported in: fish
+disabled = false
+
+
+
+[directory]
+truncation_length = 1 # 3, shows only 'specified number' of directories unless it is '0' shows absolute path
+truncate_to_repo = true # true
+format = '[$path]($style)[$read_only]($read_only_style)' # '[$path]($style)[$read_only]($read_only_style) '
+style = 'custom_green2' # 'bold cyan'
+disabled = false
+read_only = '🔒' # '🔒'
+read_only_style = '' # 'red'
+#truncation_symbol = '.../' # '', symbol who will replace the truncated directory path at `truncation_length`
+#before_repo_root_style = '' # equivalent to `style`
+#repo_root_style = '' # equivalent to `style`
+repo_root_format = '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)' # '[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) '
+#home_symbol = '🏠' # '~'
+home_symbol = ''
+use_os_path_sep = true
+#fish_style_pwd_dir_length = 0 # 0
+use_logical_path = true # true, If false instead render the physical filesystem path with symlinks resolved
+#before_root_path = '' # '/path/to/home/' # concider the path: /path/to/home/git_repo/src/lib
+#repo_root = '' # 'git_repo' # concider the path: /path/to/home/git_repo/src/lib
+#path = '' # '/src/lib' # concider the path: /path/to/home/git_repo/src/lib
+[directory.substitutions] #A table of substitutions to be made to the directory path, note that this will disable the fish style PWD
+#'/Volumes/network/path' = '/net'
+#'src/com/long/java/path' = 'mypath'
+
+
+
+[fill]
+symbol = '$cmd_duration' # '.'
+style = '$cmd_duration.style' # 'bold black'
+disabled = false
+
+
+
+[cmd_duration] # see the warning at: https://starship.rs/config/#command-duration
+min_time = 2_000 # 2_000, in milliseconds, shortest duration to show time for.
+show_milliseconds = false
+format = '[\[$duration\]]($style)' # 'took [$duration]($style) '
+style = 'yellow' # 'bold yellow'
+disabled = false
+show_notifications = false
+#min_time_to_notify = 0_500# 45_000, in millisec
+#notification_timeout = 3_000 
