@@ -1,0 +1,204 @@
+st 0.9.3     
+------------------------
+schemes:   
+* cyberpunk neon   
+* darkpastel  
+* dracula 
+* gruber darker  
+* gruvbox  
+* gruvbox material  
+* habamax ** ----
+* invert 
+* junescheme ** -----
+* moonfly  
+* nordtheme  
+* onedark ** ----
+* palettes  
+* solarized   
+* sunset  
+* windows xp colorscheme  
+------------------------
+needed:
+order: 1 to 29     
+* alpha ---1 || alpha focus highlight   
+* anysize ---5  
+* blinking cursor ---3    
+* boxdraw ---(4) || charoffsets        
+* changealpha (after 'alpha')---2    
+* clickurl (highlights URLs)(skip if 'externalpipe/glyph wide support' patched) ---6 || clickurl nocontrol (skip if 'boxdraw' patched) X  
+* colorschemes ---7 || invert     
+* drag n drop ---8  
+* dynamic cursor color ---9 
+* desktopentry (see 'netwmicon')(keep last)---10   
+* externalpipe (see its page)(skip if 'clickurl' patched) ---12    
+* externalpipe signal (after 'externalpipe')(see its page)(don't need it)---13  X  
+* font2 ---14  
+* fullscreen (don't need it)---15   
+* glyph wide support (after 'boxdraw')(skip if 'clickurl' patched) ---16  
+* gradient (after 'alpha')(see its page)(skip if 'changealpha' patched) ---17  
+* hidecursor ---18   
+* iso14755 ---19   
+* keyboard select ---20  
+* minimum contrast ---(21)  
+* netwmicon (after 'desktopentry')(see its page)(keep last) ---11   
+* newterm (see its page first) ---22    
+* relativeborder (issue with 'boxdraw')---23  
+* scrollback reflow standalone (normal one) 
+|| scrollback (st-scrollback-0.9.2.diff & 
+st-scrollback-reflow-0.9.2.diff & 
+st-scrollback-mouse-0.9.2.diff & 
+st-scrollback-mouse-altscreen-20220127-2c5edf2.diff &
+st-scrollback-mouse-increment-0.9.2.diff) ---24  
+* sync (part 1 then part 2)(skip if 'scrollback' patched) ---25  
+* vertcenter ---26  
+* workingdir (see also 'newterm') ---27  
+* xclearwin (for colorschemes)---28  
+* xrandrfontsize (for multiple monitors)---29  
+------------------------
+* alpha [use this] ** ----  
+      -- skip if those patched:  
+      - alpha focus highlight      
+      - ligatures   
+* alpha focus highlight ** ----
+      -- skip if those patched:  
+       - alpha [use this]    
+       - changealpha [use this]    
+* anysize ** ----
+     -- skip if those patched:  
+     - kitty graphics protocol [use this]   
+* anygeometry -----
+     -- skip if those patched:  
+     - relativeborder [use this]    
+
+* boxdraw [use this]** ----
+     -- skip if those patched:  
+     - charoffsets     
+     - ligatures   
+* blinking cursor **----
+* bold is not bright ----
+
+* charoffsets ** ----
+    -- skip if those patched:   
+    - boxdraw [use this]     
+* changealpha (after 'alpha') [use this]**----
+    -- skip if those patched:   
+    - alpha focus highlight    
+    - gradient    
+* clickurl (highlights URLs) [use this] **----
+    -- skip if those patched:  
+    - clickurl nocontrol (underlines URLs)       
+    - externalpipe     
+    - glyph wide support     
+* clickurl nocontrol (underlines URLs) ** ---
+     --skip if those patched:  
+     - clickurl (highlights URLs) [use this]    
+     - boxdraw [use this]   
+* colorschemes [use this] ** -----
+    -- skip if those patched:  
+    - invert   
+* copyurl **----
+* customcursor (after 'blinking cursor')** ----
+* clipboard **---
+* cyclefonts ----
+* colors at launch ----
+
+* drag n drop **----
+* dynamic cursor color ** ----
+* desktopentry (concider using 'netwmicon' also)** ----
+* disable bold italic fonts ----
+
+* externalpipe ** ----
+     -- skip if those patched:     
+     - clickurl [use this]     
+* externalpipe signal (after 'externalpipe') ** ----
+
+* font2 ** ----
+* fontmetrics (see its page if 'boxdraw' patched)** ----
+* fullscreen **----
+* fix keyboard input   
+
+* gradient (after 'alpha') **---
+    -- skip if those patched:   
+    - changealpha [use this]    
+* glyph wide support (after 'boxdraw') ** -----
+    -- skip if those patched:  
+    - clickurl [use this]     
+
+* hidecursor ** ----
+
+* invert ** ----
+    -- skip if those patched:  
+    - colorschemes [use this]   
+* iso14755 ** ----
+
+* kitty graphics protocol (not needed) [use this] ** ---
+     -- skip if those patched:   
+     - anysize     
+     - undercurl   
+* keyboard select ** ----
+
+* ligatures (not needed)** ----
+   -- skip if those patched:  
+   - alpha [use this]   
+   - scrollback  
+   - scrollback reflow standalone [use this]    
+   - boxdraw [use this]    
+* lesscases ----
+* line snap delimeter ---
+
+* minimum contrast ** ----
+
+* newterm (see its page first)** ----
+* nowide ** ----
+* nobadweight ---
+
+* open selected text ** ----
+* optionscheme **---
+* option ---
+* open copied url ----
+
+* palettes ** ----
+* paste controls ----
+
+* relativeborder [use this]** ----
+    -- skip if those patched:   
+    - anygeometry    
+* right click to plumb ---
+
+* scrollback [use this]** ----
+    -- skip if those patched:  
+    - ligatures 
+    - scrollback reflow standalone    
+    - sync    
+* scrollback reflow standalone (normal one) ** ----
+    -- skip if those patched:   
+    - scrollback [use this]    
+    - ligatures 
+* sync (part 1 then part 2)** ----
+   -- skip if those patched:  
+   - scrollback [use this]       
+* spoiler ---
+* selectioncolors ----
+* selectionbgalpha (after 'selectioncolors') ----
+
+* title parsing fix ** ----
+* themed cursor ---
+
+* undercurl ** ----
+    -- skip if those patched:  
+    - kitty graphics protocol [use this]   
+* unfocused cursor ----
+
+* vertcenter ** -----
+* vim browse ---
+* visualbell3 ---
+
+* workingdir (same 'newterm' aproach)** ---
+* w3m ----
+
+* xclearwin ** ----
+* xrandrfontsize ** ----
+* xtheme ** ----
+* xresources ** ----
+* xresources with reload signal **---
+
