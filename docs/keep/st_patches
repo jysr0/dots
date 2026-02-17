@@ -25,7 +25,7 @@ order: 1 to 29
 * blinking cursor ---3    
 * boxdraw ---(4) || charoffsets        
 * changealpha (after 'alpha')---2    
-* clickurl (highlights URLs)(skip if 'externalpipe/glyph wide support' patched) ---6 || clickurl nocontrol (skip if 'boxdraw' patched) X  
+* clickurl (highlights URLs)(skip if 'externalpipe/glyph wide support' patched)(won't click on URL if capslock is on) X || clickurl nocontrol (skip if 'externalpipe' patched)(keep last)---6   
 * colorschemes ---7 || invert     
 * drag n drop ---8  
 * dynamic cursor color ---9 
@@ -84,15 +84,14 @@ st-scrollback-mouse-increment-0.9.2.diff) ---24
     -- skip if those patched:   
     - alpha focus highlight    
     - gradient    
-* clickurl (highlights URLs) [use this] **----
+* clickurl (highlights URLs) **----
     -- skip if those patched:  
-    - clickurl nocontrol (underlines URLs)       
+    - clickurl nocontrol (underlines URLs) [use this]         
     - externalpipe     
     - glyph wide support     
-* clickurl nocontrol (underlines URLs) ** ---
+* clickurl nocontrol (underlines URLs) [use this] ** ---
      --skip if those patched:  
-     - clickurl (highlights URLs) [use this]    
-     - boxdraw [use this]   
+     - clickurl (highlights URLs)          
 * colorschemes [use this] ** -----
     -- skip if those patched:  
     - invert   
