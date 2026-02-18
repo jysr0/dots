@@ -1,7 +1,12 @@
+[general]
+live_config_reload = true
+
+
+
 [window]
 #dimensions      = { columns = 88, lines = 27 }
 dynamic_padding = false
-opacity         = 0.90
+opacity         = 0.85
 blur            = false
 #startup_mode   = "Windowed"
 title           = "Alacritty"
@@ -47,7 +52,7 @@ size = 9.0 #8.4, 8.9, 9.0, 9.7, 11
 #normal     = { family = "Maple Mono NL NF", style = "Regular" }
 #normal     = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 #normal     = { family = "FiraCode Nerd Font Mono", style = "Retina" }
-normal      = { family = "CaskaydiaMono NFM", style = "Light" }
+normal      = { family = "CaskaydiaMono NFM", style = "Regular" }
 italic      = { family = "CaskaydiaMono NFM", style = "Italic" }
 bold        = { family = "CaskaydiaMono NFM", style = "Bold" }
 bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
@@ -58,7 +63,7 @@ bold_italic = { family = "CaskaydiaMono NFM", style = "Bold Italic" }
 [colors]	
 cursor    = { text = "CellBackground", cursor = "CellForeground" }
 selection = { text = "CellBackground", background = "CellForeground" }
-draw_bold_text_with_bright_colors = false
+draw_bold_text_with_bright_colors = true
 
 
 [colors.primary]
@@ -77,8 +82,8 @@ save_to_clipboard = false
 
 
 [cursor]
-style = { shape = "Block", blinking = "Off" } #shape: Block|Underline|Beam; #blinking: Never|Off|On|Always
-blink_timeout    = 10
+style = { shape = "Block", blinking = "On" } #shape: Block|Underline|Beam; #blinking: Never|Off|On|Always
+blink_timeout    = 60
 unfocused_hollow = true #when true cursor will be rendered as a hollow box when the window is not focused
 
 
