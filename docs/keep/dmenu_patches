@@ -1,0 +1,154 @@
+dmenu 5.4
+--------------
+schemes:    
+• dracula   
+• gruvbox   
+• solarized  
+• xtheme   
+--------------
+needed:
+order: 1 to 22    
+• alpha ---1   
+• border ---4   
+• center ---3 || xyw   
+• colored caret ---13   
+• fuzzymatch ---10   
+• fuzzyhighlight (skip if 'highlight' patched)---11 || highlight (skip if 'fuzzyhighlight' patched)      
+• grid ---5  
+• gridnav (after 'grid') ---6     
+• listfullwidth || vertfull || inline prompt || lines bellow prompt (see 'no input')---2   
+• line height ---12 || bar height         
+• mouse support (skip if 'multi selection' patched)(after 'grid' if patched)(see 'scroll') ---8   
+• multi selection (skip if 'mouse support' patched) ---9   
+• navhistory (won't remember history with 'mouse support') ---14    
+• no default select (after 'gridnav') ---7   
+• numbers ---15  
+• no input (see its page) ---22  
+• password (skip if 'scroll' patched)(see its page)---16  
+• png images (see its page)(keep last) ---17  
+• preselect ---18  
+• qalc (see its page)(don't need it)---19 
+• scroll (skip if 'password' patched)(see 'mouse support')---20  
+• topbar ---21  
+--------------
+• alpha ** ----
+• allow color font ----
+
+• bar height ** ---
+• border (see 'center') ** ----
+• bidi ---
+
+• center (see 'border') [use this] ** -----
+    -- skip if those patched:  
+    - xyw    
+• colored caret ** -----
+• case insensitive ---
+
+• date ** ---
+• dynamicoptions ** ---
+• dmenupadding ---
+• desktoponly ---
+
+• emoji highlight ---
+
+• fuzzyhighlight [use this] ** ---
+   -- skip if those patched:   
+   - highlight   
+• fuzzymatch **---
+
+• grid **---
+• gridnav (after 'grid') **---   
+
+• highlight ** ----
+   -- skip if those patched:  
+   - fuzzyhighlight [use this]     
+• highpriority (see 'no sort') [use this] ** ---
+   -- skip if those patched:  
+   - sort by popilarity    
+
+• inline prompt  ** ---
+    -- skip if those patched:  
+    - lines bellow prompt [use this]  
+    - listfullwidth       
+    - vertfull   
+• instant ** ---
+• incremental (see 'non blocking stdin') ---
+• initialtext ---
+
+• json ---
+
+• lines bellow prompt (see 'no input') [use this] ** ---
+    -- skip if those patched:  
+    - inline prompt    
+    - listfullwidth     
+    - vertfull   
+• listfullwidth  ** ---
+   -- skip if those patched:
+   - vertfull  
+   - inline prompt   
+   - lines bellow prompt [use this]    
+• line height ** ---
+
+• mouse support [use this] ** ----
+    -- skip if those patched:  
+    - multi selection  
+• multi selection ** ---  
+   -- skip if those patched:  
+   - mouse support [use this]   
+• managed ** ---
+• morecolor ---
+
+• navhistory ** ----
+• no default select ** ---
+• no input (see its page)** ---
+• no sort (after 'highpriority')(see 'highpriority') ** ---
+• noescape ** ---
+• numbers ** ---
+
+• password [use this]** ---
+   -- skip if those patched:  
+   - scroll    
+• png images (see its page) ** ---
+• preselect ** ---
+• pipeout ---
+• prefix completion --- 
+• printindex ---
+• printinputtext ---
+
+• qalc ** --- 
+
+• restrict return ** ---
+• reject no match ---
+
+• sort by popilarity ** ---  
+   -- skip if those patched:  
+   - highpriority [use this]   
+• scroll ** ---
+   -- skip if those patched:  
+   - password [use this]    
+• separator ** ---
+• symbols ** ---
+
+• tsv ** --- 
+   -- skip if those patched:  
+   - tsv alt [use this]  
+• tsv alt [use this] ** ----
+   -- skip if those patched:  
+   - tsv    
+• topbar ** ---
+• tidy ---
+• tmenu ---
+
+• vertfull ** ---
+   --skip if those patched:  
+   - listfullwidth   
+   - inline prompt   
+   - lines bellow prompt [use this]   
+• vi mode ** ---
+
+• xyw ** ---
+   -- skip if those patched:  
+   - center [use this]   
+• xresources ** ---
+• xresources alt ** ---
+
