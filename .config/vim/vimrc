@@ -55,12 +55,16 @@ call plug#end()
 " :set whichwrap=b,s,<,>,[,]
 " :set incsearch
 " :set hlsearch " highlight while searching.
-:set tabstop=8
+:set expandtab
+:set tabstop=4
+:set shiftwidth=4
+" :set cino="#4"
 " :set encoding=utf-8
 " :set arabicshape
 " :set arabic
 :set nocompatible
-:set formatoptions=t,c,q,r
+:set formatoptions=""
+" :set comments+=""
 " :set termguicolors
 " :set virtualedit=onemore " careful here, see: :help ve
 " :set noinsertmode " wether to set 'insert mode' as default when vim opens.
@@ -68,4 +72,8 @@ call plug#end()
 " :colorscheme gotham256
 :colorscheme default
 " :highlight clear
+" set tildeop
+" set nrformats=bin,hex
+:set clipboard^="autoselectplus"
+
 " :set all&
