@@ -30,6 +30,7 @@ pipewire-pulse \
 pipewire-alsa \
 sof-firmware \
 ttf-cascadia-mono-nerd \
+ttf-ubuntu-mono-nerd \
 ttf-noto-nerd \
 ttf-liberation-mono-nerd \
 ttf-linux-libertine \

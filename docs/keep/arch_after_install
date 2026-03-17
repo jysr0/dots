@@ -48,6 +48,7 @@ flameshot \
 fzf \
 gvim \
 gtk3 \
+gd \
 hwinfo \
 iputils \
 imlib2 \
@@ -75,6 +76,7 @@ plocate \
 poppler \
 python-mutagen \
 picom \
+pacman-contrib \
 rofi \
 sysstat \
 sxhkd \
@@ -82,6 +84,7 @@ slock \
 starship \
 ttf-noto-nerd \
 ttf-cascadia-mono-nerd \
+ttf-ubuntu-mono-nerd \
 ttf-liberation-mono-nerd \
 termdown \
 usbutils \
