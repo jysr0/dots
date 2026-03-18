@@ -2,7 +2,7 @@
 # GENERAL CONFIGS #
 ###################
 
-*.font: monospace:size=10
+*.font: monospace:size=11
 #*.alpha: 0.9
 
 ################
@@ -11,7 +11,7 @@
 
 #Xcursor.theme: BreezeX-Dark
 Xcursor.theme: Adwaita
-Xcursor.size: 30
+Xcursor.size: 28
 
 #########
 # NSXIV #
