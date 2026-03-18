@@ -119,3 +119,8 @@ yt-dlp \
 zathura \
 zathura-pdf-poppler \
 zip
+
+
+
+## Artix linux
+sudo pacman -S alsa-utils acpi alacritty android-tools android-udev adobe-source-sans-fonts brightnessctl bat connman connman-runit cronie cmatrix dmenu dunst dialog figlet ffmpeg ffmpegthumbnailer flameshot fzf gvim gtk3 gd hwinfo iputils imlib2 lm_sensors lf ly ly-runit libinput libqalculate libnotify mpv mpd mpc noto-fonts-emoji noto-fonts-cjk nsxiv ncurses  polkit pamixer pipewire pipewire-alsa pipewire-pulse plocate poppler python-mutagen picom pacman-contrib rofi sysstat sxhkd slock starship ttf-noto-nerd ttf-cascadia-mono-nerd ttf-ubuntu-mono-nerd ttf-liberation-mono-nerd ungoogled-chromium usbutils ueberzugpp unzip wireplumber xorg xorg-xinit xorg-xwininfo xorg-xprop xorg-xsetroot xorg-setxkbmap xorg-xset xorg-xev xclip xsel xdg-utils xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-lxqt xwallpaper  xscreensaver  xorg-fonts-misc xf86-input-libinput xorg-xlsfonts xcompmgr yt-dlp zathura zathura-pdf-poppler zip
