@@ -9,8 +9,9 @@
 # CURSOR THEME #
 ################
 
-Xcursor.theme: BreezeX-Dark
-Xcursor.size: 24
+#Xcursor.theme: BreezeX-Dark
+Xcursor.theme: Adwaita
+Xcursor.size: 30
 
 #########
 # NSXIV #
