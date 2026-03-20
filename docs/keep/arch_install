@@ -1,5 +1,22 @@
-- Mount boot partition to /mnt/boot/efi
-- After (arch-chroot /mnt) install grub efibootmgr
+- other packages: 
+networkmanager \
+
+
+
+# fonts:
+ttf-noto-emoji-monochrome (aur) non-color emoji
+|
+joypixels (aur)
+openmoji (aur)
+ttf-symbola-free (aur) 
+ttf-twemoji (aur) twitter emojis
+
+# fonts for arabic:
+ttf-dejavu
+otf-kawkab-mono (aur)
+ttf-qurancomplex-fonts (aur)
+
+
 
 pacstrap -K /mnt \
 alacritty \
@@ -7,6 +24,7 @@ alsa-utils \
 base \
 base-devel \
 broadcom-wl-dkms \
+connman \
 efibootmgr \
 grub \
 git \
@@ -17,10 +35,10 @@ linux-firmware \
 linux-headers \
 man-db \
 man-pages \
-noto-fonts-emoji \
 noto-fonts \
+noto-fonts-extra \
 noto-fonts-cjk \
-networkmanager \
+noto-fonts-emoji \
 os-prober \
 otf-font-awesome \
 otf-libertinus \
@@ -38,20 +56,4 @@ wireplumber \
 xorg \
 xdg-desktop-portal \
 xdg-desktop-portal-gtk \
-xdg-utils \
-
-
-
-# fonts:
-ttf-noto-emoji-monochrome (aur) non-color emoji
-|
-joypixels (aur)
-openmoji (aur)
-ttf-symbola-free (aur) 
-ttf-twemoji (aur) twitter emojis
-
-# fonts for arabic:
-ttf-dejavu
-otf-kawkab-mono (aur)
-ttf-qurancomplex-fonts (aur)
-
+xdg-utils

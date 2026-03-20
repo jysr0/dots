@@ -1,7 +1,10 @@
 - chown -R moh:moh /github/cloned/repo
 
+
+
 - optional (pacman): 
 firefox \
+networkmanager \
 otf-firamono-nerd \
 ttf-cascadia-code-nerd \
 ttf-terminus-nerd \
@@ -23,11 +26,15 @@ vivaldi \
 xf86-input-synaptics \
 xxkb
 
+
+
 - optional (yay):   
 brave-bin  
 
 yay -S \
 transset-df
+
+
 
 sudo pacman -S \
 alsa-utils \
@@ -68,7 +75,6 @@ mpd \
 mpc \
 noto-fonts-emoji \
 noto-fonts-cjk \
-networkmanager \
 nsxiv \
 ncurses \
 otf-font-awesome \
