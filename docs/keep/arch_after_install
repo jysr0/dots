@@ -17,7 +17,6 @@ ttf-sourcecodepro-nerd \
 ttf-linux-libertine \
 ttf-libertinus \
 ttf-noto-nerd \
-ttf-cascadia-mono-nerd \
 ttf-ubuntu-mono-nerd \
 ttf-liberation-mono-nerd \
 vlc \
@@ -93,6 +92,7 @@ sysstat \
 sxhkd \
 slock \
 starship \
+ttf-cascadia-mono-nerd \
 termdown \
 usbutils \
 ueberzugpp \
