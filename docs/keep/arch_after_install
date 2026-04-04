@@ -57,6 +57,7 @@ ffmpeg \
 ffmpegthumbnailer \
 flameshot \
 fzf \
+fontforge \
 gvim \
 gtk3 \
 gd \
