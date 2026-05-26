@@ -18,8 +18,8 @@ super + e
 	$TERMINAL -e lfub
 
 # GIMP
-super + g
-	gimp
+#super + g
+#	gimp
 
 # APP MENU
 #super + r
