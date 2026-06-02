@@ -29,6 +29,7 @@ xxkb
 
 - optional (yay):   
 brave-bin  
+maplemononl-nf   
 
 yay -S \
 transset-df
