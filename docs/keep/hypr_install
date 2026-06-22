@@ -7,7 +7,7 @@ woomer \
 hyprmag-git
 
 sudo pacman -S \
-dolphin \
+thunar \
 grim \
 hyprland \
 hypridle \
