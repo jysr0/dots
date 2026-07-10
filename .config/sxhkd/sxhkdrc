@@ -60,7 +60,7 @@ super + alt + {_,shift +} b
 
 # SCREEN SHOT
 {super + Print,Print}
-	{flameshot screen -c -p $XDG_PICTURES_DIR,flameshot gui -c -p $XDG_PICTURES_DIR}
+	{flameshot full -c -p $XDG_PICTURES_DIR,flameshot gui -c -p $XDG_PICTURES_DIR}
 
 # SIGNALS TO DWMBLOCKS
 # keyboard
