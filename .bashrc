@@ -23,13 +23,13 @@ bind '"\C-o":"lfcd\C-m"'
 #  YT-DLP ALIASES  #
 ####################
 
-#alias yt-audio-down="yt-dlp --embed-thumbnail -x --audio-format m4a  --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube audios (not videos)
-alias yt-audio-down="yt-dlp --embed-thumbnail -x --no-playlist -P ${XDG_AUDIO_DIR:-$HOME/audio} -o '%(title)s.%(ext)s' --restrict-filenames "
+#alias yta="yt-dlp --embed-thumbnail -x --audio-format m4a  --no-playlist -P ${XDG_MUSIC_DIR:-$HOME/Music} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube audios (not videos)
+alias yta="yt-dlp --embed-thumbnail -x --no-playlist -P ${XDG_MUSIC_DIR:-$HOME/Music} -o '%(title)s.%(ext)s' --restrict-filenames "
 
 # see: `Video Format Options` section in `man yt-dlp`
 # `yt-dlp -F [URL]` for video formats listing, then
 # `yt-dlp -f [FORMAT-ID] [URL]
-alias yt-videos-down="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube videos
+alias ytv="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/Videos} -o '%(title)s.%(ext)s' --restrict-filenames " # download youtube videos
 
 
 
@@ -67,7 +67,7 @@ xset r rate 189 58
 # OTHER ALIASES #
 #################
 
-#alias s="sudo "
+alias s="sudo "
 alias sudo="sudo "
 
 alias grep="grep --color=auto "
@@ -86,8 +86,8 @@ alias l1="ls -1AF --color=auto --group-directories-first "
 
 alias yy="yay "\
 	y="yay "\
-	pac="pacman "\
 	p="pacman "
+
 
 alias dbr="sudo rm /var/lib/pacman/db.lck "
 
@@ -145,4 +145,4 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 # STARSHIP #
 ############
 
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
