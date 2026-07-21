@@ -24,7 +24,7 @@
     X( "",  "sb-bat",							5,			8)\
     X( "",	"sb-vol",							0,			5)\
     X( "", 	"sb-time",							60,			7)\
-    X( "", 	"sb-pow-mnu",						0,			3)
+    X( "", 	"sb-power-menu",						0,			3)
     
     //X( "",	"sb-bright",						0,			2)
     //X( "",	"sb-kb",						    0,			9)
