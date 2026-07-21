@@ -51,7 +51,7 @@ super + shift + v
 
 #EMOJIS & ICONS
 super + alt + {_,shift +} g
-	{emoji,icon}
+	{emoji.sh,icon.sh}
 
 #WALLPAPER
 super + alt + {_,shift +} b
