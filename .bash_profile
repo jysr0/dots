@@ -1,5 +1,7 @@
-
-#[[ -f ~/.bashrc ]] && . ~/.bashrc
+#
+# ~/.bashrc
+#
+[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
 
@@ -28,7 +30,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CONFIG_DIRS="/etc/xdg"
 export XDG_DATA_DIRS="/usr/share:/usr/local/share"
-export XDG_DESKTOP_DIR="$HOME/desktop"
+export XDG_DESKTOP_DIR="$HOME/Desktop"
 export XDG_DOWNLOAD_DIR="$HOME/Downloads"
 export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_PICTURES_DIR="$HOME/Pictures"
@@ -49,13 +51,14 @@ export EDITOR="vim"
 
 #export BROWSER="librewolf"
 #export BROWSER="brave"
+export BROWSER="brave-nightly"
 #export BROWSER="qutebrowser"
 #export BROWSER="vivaldi"
 #export BROWSER="vivaldi-stable"
 #export BROWSER="firefox"
 #export BROWSER="chromium"
 #export BROWSER="opera"
-export BROWSER="microsoft-edge-stable"
+#export BROWSER="microsoft-edge-stable"
 
 #export TERMINAL="alacritty"
 #export TERM="alacritty"
@@ -79,8 +82,13 @@ export OPERNER="xdg-open"
 # CLIPMENU #
 ############
 
-export CM_HISTLENGTH="1000"
+#clipmenu:
+export CM_HISTLENGTH="100"
 export CM_LAUNCHER="dmenu"
+
+#clipmenud:
+export CM_MAX_CLIPS="100" 
+export CM_SELECTIONS="clipboard"
 
 
 
@@ -125,8 +133,8 @@ export HISTSIZE=500 #shell history size
 #systemctl --user start clipmenud.service
 #systemctl enable ly@tty2.service #ly DM
 
-[[ -f "$XDG_CACHE_HOME/bg.jpg" ]] || cp $XDG_PICTURES_DIR/backgrounds/0062.png $XDG_CACHE_HOME/bg.jpg
-xwallpaper --stretch $XDG_CACHE_HOME/bg.jpg 2> /dev/null
+[[ -f "$XDG_CACHE_HOME/Wallpaper.jpg" ]] || cp $XDG_PICTURES_DIR/Wallpapers/0062.png $XDG_CACHE_HOME/Wallpaper.jpg
+xwallpaper --stretch $XDG_CACHE_HOME/Wallpaper.jpg 2> /dev/null
 
 #xrandr --dpi 110 #for dwmblocks-async size
 
