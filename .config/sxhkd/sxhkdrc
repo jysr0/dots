@@ -5,31 +5,31 @@
 #
 
 
-# TERMINAL
+#TERMINAL
 #super + Return
 #	$TERMINAL 
 
-# BROWSER
+#BROWSER
 super + w
 	$BROWSER
 
-# FILE MANAGER
+#FILE MANAGER
 super + e
 	$TERMINAL -e lfub
 
-# GIMP
+#GIMP
 #super + g
 #	gimp
 
-# APP MENU
+#LAUNCHER
 #super + r
 #	rofi -show drun
 
-# BRIGHTNESS
+#BRIGHTNESS
 XF86MonBrightness{Up,Down}
 	brightnessctl -q -e2 -n10 s {5%+,5%-} && kill -36 $(pidof dwmblocks)
 
-# VOLUME
+#VOLUME
 XF86Audio{Mute,RaiseVolume,LowerVolume}
 #	pamixer {-t,-i,-d} 2 && pkill -RTMIN+5 dwmblocks
 	pamixer {-t,-i,-d} 2 && kill -39 $(pidof dwmblocks)
@@ -41,43 +41,42 @@ XF86Audio{Mute,RaiseVolume,LowerVolume}
 	# wpctl set-volume 		@DEFAULT_AUDIO_SINK@   2%-    && pkill -RTMIN+5 dwmblocks	\
 	#}
 
-# CLIPBOARD VIEW
+#CLIPBOARD
 #super + alt + v
 super + v
 	clipmenu
-# CLIPBOARD CLEAR
 #super + alt + v
 super + shift + v
 	clipdel -d '.*' && notify-send 'Clipboard cleared'
 
-# {EMOJIS,ICONS}
+#EMOJIS & ICONS
 super + alt + {_,shift +} g
 	{emoji,icon}
 
-# {BACKGROUND SET,BACKGROUND RANDOM SET}
+#WALLPAPER
 super + alt + {_,shift +} b
-	{bground,bg-ran}
+	{wallpaper.sh,wallpaper_random.sh}
 
-# SCREEN SHOT
+#SCREENSHOT
 {super + Print,Print}
 	{flameshot full -c -p $XDG_PICTURES_DIR,flameshot gui -c -p $XDG_PICTURES_DIR}
 
-# SIGNALS TO DWMBLOCKS
+#SIGNALS TO DWMBLOCKS
 # keyboard
-alt + space
-	kill -43 $(pidof dwmblocks)
+#alt + space
+#	kill -43 $(pidof dwmblocks)
 # clock at wakeup
 #@XF86WakeUp
 #	kill -41 $(pidof dwmblocks)
 
-# LOCKSCREEN
+#LOCKSCREEN
 super + alt + l
 	xscreensaver-command -quiet -lock
 
-# POWERMENU
+#POWERMENU
 super + alt + x
-	pow-mnu
+	power_menu.sh
 
-# DWM EXIT
+#DWM EXIT
 #super + shift + q
 #	loginctl -s 15 --no-ask-password terminate-session ${XDG_SESSION_ID}
