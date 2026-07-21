@@ -2,7 +2,7 @@
 # GENERAL CONFIGS #
 ###################
 
-*.font: monospace:size=11
+*.font: monospace:size=10
 #*.alpha: 0.9
 
 ################
