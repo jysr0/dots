@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# try $BLOCK_BUTTON and $BUTTON
+case $BLOCK_BUTTON in
+	1) power_menu.sh;;
+esac
+
+printf ""

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# sudo pacman -S -y -u --noconfirm && printf "\n\nHit <ENTER> to quit..."; read -r _
+yay -S -y -u --noconfirm && printf "\n\nHit <ENTER> to quit..."; read -r _
