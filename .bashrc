@@ -39,10 +39,13 @@ alias ytv="yt-dlp --no-playlist -P ${XDG_VIDEOS_DIR:-$HOME/Videos} -o '%(title)s
 
 # remove 'config.h'/'blocks.h'(in dwmblocks), each time before 'making'
 alias dwmc="vim ~/.suckless/dwm/config.def.h "
+alias dwmcr="rm ~/.suckless/dwm/config.h "
 alias dwmm="cd ~/.suckless/dwm/ && sudo make clean install && cd - "
 alias dmc="vim ~/.suckless/dmenu/config.def.h "
+alias dmcr="rm ~/.suckless/dmenu/config.h "
 alias dmm="cd ~/.suckless/dmenu/ && sudo make clean install && cd - "
 alias stc="vim ~/.suckless/st/config.def.h "
+alias stcr="rm ~/.suckless/st/config.h "
 alias stm="cd ~/.suckless/st/ && sudo make clean install && cd - "
 #alias dwmbc="vim ~/.suckless/dwmblocks/blocks.def.h "
 #alias dwmbm="cd ~/.suckless/dwmblocks/ && sudo make clean install  && cd - "
@@ -138,6 +141,7 @@ PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__end
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir6__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir3__\W$__endeffect__$__dollar1__\$$__endeffect__ "
 # PS1="$__username1__\u$__endeffect__$__at1__@$__endeffect__$__hostname1__\h$__endeffect__ $__workingdir4__\W$__endeffect__$__dollar1__\$$__endeffect__ "
+
 
 
 
