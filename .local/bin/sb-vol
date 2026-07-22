@@ -6,7 +6,8 @@
 # try $BLOCK_BUTTON and $BUTTON
 case $BLOCK_BUTTON in
 	1) pamixer -t;;
-	3) pamixer --set-volume 100;;
+	#2) pamixer --set-volume 100;;
+	3) pamixer --set-volume   0;;
 	4) pamixer -d 2;; 
 	5) pamixer -i 2;; 
 esac
@@ -15,7 +16,7 @@ mute="$(pamixer --get-mute)"
 vol="$(pamixer --get-volume)"
 
 if [[ $mute == "true" ]]; then
-	printf "🔇     " && exit
+	printf "󰕿muted" && exit
 fi
 
 case $vol in
