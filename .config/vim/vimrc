@@ -38,7 +38,21 @@ call plug#end()
 " insert.txt
 " options.txt
 " quickref.txt
-
+" recover.txt
+" rileft.txt
+" scroll.txt
+" spell.txt
+" syntax.txt
+" tags
+" terminal.txt
+" term.txt
+" textprop.txt
+" tips.txt
+" undo.txt
+" userfunc.txt 
+" visual.txt
+" windows.txt
+" usr_XX.txt
 
 
 """""""""""
@@ -75,5 +89,6 @@ call plug#end()
 " set tildeop
 " set nrformats=bin,hex
 :set clipboard^="autoselectplus"
+:set showmode
 
 " :set all&
