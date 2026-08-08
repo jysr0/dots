@@ -53,6 +53,7 @@ call plug#end()
 " visual.txt
 " windows.txt
 " usr_XX.txt
+" usr_toc.txt
 
 
 """""""""""
@@ -90,5 +91,8 @@ call plug#end()
 " set nrformats=bin,hex
 :set clipboard^="autoselectplus"
 :set showmode
+:set ruler
+" :set nowrapscan
+" :syntax enable
 
 " :set all&
