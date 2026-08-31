@@ -308,7 +308,7 @@ user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
 
 // PREF: restore Top Sites on New Tab page
-user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 
 // PREF: remove default Top Sites (Facebook, Twitter, etc.)
 // This does not block you from adding your own.
@@ -339,8 +339,8 @@ user_pref("browser.contentblocking.category", "strict");
 user_pref("permissions.default.geo", 2);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("browser.search.suggest.enabled", false);
-user_pref("browser.urlbar.groupLabels.enabled", true);
-user_pref("browser.formfill.enable", true);
+user_pref("browser.urlbar.groupLabels.enabled", false);
+user_pref("browser.formfill.enable", false);
 user_pref("browser.urlbar.trimHttps", false);
 user_pref("extensions.enabledScopes", 5);
 user_pref("dom.security.https_only_mode", true);
