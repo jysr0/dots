@@ -304,12 +304,6 @@ user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
 user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
 //user_pref("gfx.font_rendering.cleartype_params.enhanced_contrast", 50); // 50-100 [OPTIONAL]
 
-// PREF: random
-user_pref("browser.contentblocking.category", "strict");
-user_pref("permissions.default.geo", 2);
-user_pref("permissions.default.desktop-notification", 2);
-user_pref("browser.search.suggest.enabled", false);
-
 // PREF: show weather on New Tab page
 user_pref("browser.newtabpage.activity-stream.showWeather", false);
 
@@ -331,6 +325,27 @@ user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsor
 
 // PREF: enable container tabs
 user_pref("privacy.userContext.enabled", true);
+
+/** MOZILLA ***/
+user_pref("permissions.default.desktop-notification", 2);
+user_pref("permissions.default.geo", 2);
+user_pref("geo.provider.network.url", "https://beacondb.net/v1/geolocate");
+user_pref("browser.search.update", false);
+user_pref("permissions.manager.defaultsUrl", "");
+user_pref("extensions.getAddons.cache.enabled", false);
+
+// PREF: random
+user_pref("browser.contentblocking.category", "strict");
+user_pref("permissions.default.geo", 2);
+user_pref("permissions.default.desktop-notification", 2);
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.groupLabels.enabled", true);
+user_pref("browser.formfill.enable", true);
+user_pref("browser.urlbar.trimHttps", false);
+user_pref("extensions.enabledScopes", 5);
+user_pref("dom.security.https_only_mode", true);
+
+
 
 /****************************************************************************
  * END: BETTERFOX                                                           *
