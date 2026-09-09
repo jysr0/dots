@@ -100,9 +100,9 @@ user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("editor.truncate_user_pastes", false);
 
 /** EXTENSIONS ***/
-user_pref("extensions.enabledScopes", 5);
+    user_pref("extensions.enabledScopes", 5);   
 
-/** HEADERS / REFERERS ***/
+/** HEADERS / REFERERS ***/         
 user_pref("network.http.referer.XOriginTrimmingPolicy", 2);
 
 /** CONTAINERS ***/
@@ -145,6 +145,7 @@ user_pref("datareporting.usage.uploadEnabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.normandy.enabled", false);
 user_pref("app.normandy.api_url", "");
+user_pref("nimbus.rollouts.enabled", false);
 
 /** CRASH REPORTS ***/
 user_pref("breakpad.reportURL", "");
@@ -333,6 +334,20 @@ user_pref("geo.provider.network.url", "https://beacondb.net/v1/geolocate");
 user_pref("browser.search.update", false);
 user_pref("permissions.manager.defaultsUrl", "");
 user_pref("extensions.getAddons.cache.enabled", false);
+
+/** SHUTDOWN & SANITIZING ***/
+//user_pref("privacy.history.custom", false);
+
+/** AI ***/
+user_pref("browser.ai.control.default", "blocked"); // blocked available enabled
+user_pref("browser.ml.enable", false);
+user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.chat.menu", false);
+user_pref("browser.tabs.groups.smart.enabled", false);
+user_pref("browser.ml.linkPreview.enabled", false);
+
+/** EXPERIMENTS ***/
+user_pref("nimbus.rollouts.enabled", false);
 
 // PREF: random
 user_pref("browser.contentblocking.category", "strict");
