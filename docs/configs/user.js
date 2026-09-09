@@ -339,7 +339,7 @@ user_pref("extensions.getAddons.cache.enabled", false);
 //user_pref("privacy.history.custom", false);
 
 /** AI ***/
-user_pref("browser.ai.control.default", "blocked"); // blocked available enabled
+user_pref("browser.ai.control.default", "available"); // blocked available enabled
 user_pref("browser.ml.enable", false);
 user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.chat.menu", false);
