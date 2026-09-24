@@ -3,16 +3,19 @@ live_config_reload = true
 working_directory = "C:/Users/YsrYser" #windows
 
 [window]
-dimensions      = { columns = 88, lines = 27 }
-dynamic_padding = false
-opacity         = 0.94
-blur            = false
+level = "Normal" # AlwaysOnTop
 #startup_mode   = "Windowed"
+dimensions = { columns = 100, lines = 30 }
+position = { x = 300, y = 100 } # "None"
+padding = { x = 10, y = 10 }
+decorations = "Full" # "None" | "Transparent" | "Buttonless"
+#decorations_theme_variant = "None" # Dark|Light|None
+dynamic_padding = false
+opacity         = 0.95
+blur            = true
 title           = "Alacritty"
 dynamic_title   = false
 class = { instance = "alacritty", general = "alacritty" }
-#decorations_theme_variant = "None" # Dark|Light|None
-level = "Normal"
 
 [scrolling]
 history    = 10000
@@ -20,11 +23,10 @@ multiplier = 1
 
 [font]
 offset = { x = 0, y = 0 } #the extra space around each character. y can be thought of as modifying the line spacing, and x as modifying the letter spacing.
-#determines the locations of the glyphs within their cells with the default being at the bottom. Increasing x moves the glyph to the right, increasing y moves the glyph upward.
-glyph_offset = { x = 0, y = 0 } 
+glyph_offset = { x = 0, y = 0 } #determines the locations of the glyphs within their cells with the default being at the bottom. Increasing x moves the glyph to the right, increasing y moves the glyph upward.
 builtin_box_drawing = false
-size = 10
-normal      = { family = "CaskaydiaMono Nerd Font Mono", style = "Regular" }
+size = 9.5
+normal      = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiBold" }
 italic      = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
 bold        = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
 bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
@@ -65,8 +67,8 @@ bindings = [
 	{ key = "Numpad0", mods = "Control", action = "ResetFontSize" },
 	{ key = "PageDown", action = "ScrollPageDown" },
 	{ key = "PageUp", action = "ScrollPageUp" },
-	{ key = "PageDown", mods = "Control | Shift", action = "ScrollLineDown" },
-	{ key = "PageUp", mods = "Control | Shift", action = "ScrollLineUp" },
+	{ key = "PageDown", mods = "Shift", action = "ScrollLineDown" },
+	{ key = "PageUp", mods = "Shift", action = "ScrollLineUp" },
 	#{ key = "t", mods = "Control | Shift", action = "SpawnNewInstance" },
 	{ key = "Return", mods = "Super | Shift", command = "alacritty" },
 	#{ key = "c", mods = "Super | Shift", action = "Quit" },
