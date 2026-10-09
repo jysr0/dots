@@ -1,0 +1,27 @@
+/* Open Firefox > about:config > open local folder > create chrome folder > paste this file */
+
+
+
+/*
+
+// Global UI Font Configuration 
+* {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif !important;
+  font-size: 13px !important;
+}
+
+// Tabs Font Styling 
+.tab-text {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 12.5px !important;
+}
+
+// Sidebar and Bookmarks Toolbar Font Styling 
+#PlacesToolbarItems, 
+#sidebar-search-container #search-box, 
+.sidebar-placesTree {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 12px !important;
+}
+
+*/
