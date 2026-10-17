@@ -3,16 +3,16 @@ live_config_reload = true
 working_directory = "C:/Users/YsrYser" #windows
 
 [window]
-level = "Normal" # AlwaysOnTop
-#startup_mode   = "Windowed"
+level = "Normal" # AlwaysOnTop Normal
+startup_mode   = "Windowed" # "Windowed" | "Maximized" | "Fullscreen" | "SimpleFullscreen", (comment: dimentsions, position)
 dimensions = { columns = 100, lines = 30 }
-position = { x = 300, y = 100 } # "None"
-padding = { x = 10, y = 10 }
+position = { x = 280, y = 100 } # "None"
+padding = { x = 5, y = 5 }
 decorations = "Full" # "None" | "Transparent" | "Buttonless"
 #decorations_theme_variant = "None" # Dark|Light|None
-dynamic_padding = false
-opacity         = 0.95
-blur            = true
+dynamic_padding = true
+opacity         = 0.93
+blur            = false
 title           = "Alacritty"
 dynamic_title   = false
 class = { instance = "alacritty", general = "alacritty" }
@@ -25,8 +25,8 @@ multiplier = 1
 offset = { x = 0, y = 0 } #the extra space around each character. y can be thought of as modifying the line spacing, and x as modifying the letter spacing.
 glyph_offset = { x = 0, y = 0 } #determines the locations of the glyphs within their cells with the default being at the bottom. Increasing x moves the glyph to the right, increasing y moves the glyph upward.
 builtin_box_drawing = false
-size = 9.5
-normal      = { family = "CaskaydiaMono Nerd Font Mono", style = "SemiBold" }
+size = 9
+normal      = { family = "CaskaydiaMono Nerd Font Mono", style = "Light" }
 italic      = { family = "CaskaydiaMono Nerd Font Mono", style = "Italic" }
 bold        = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold" }
 bold_italic = { family = "CaskaydiaMono Nerd Font Mono", style = "Bold Italic" }
