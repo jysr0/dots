@@ -81,7 +81,7 @@ alias v="vim "\
 #alias rm="trash "
 #alias rmdir="trash "
 
-alias lss="ls --color=auto --group-directories-first "
+alias lss="ls -F --color=auto --group-directories-first "
 alias ll="ls -lAFh --color=auto --group-directories-first "
 alias la="ls -AF --color=auto --group-directories-first "
 alias lt="ls -lAFht --color=auto "
